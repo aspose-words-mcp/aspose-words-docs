@@ -10,7 +10,7 @@ ai_search_scope: words_java
 ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 ai_search_fast_endpoint: "https://docsearch.api.aspose.cloud/search"
 url: /java/what-s-new-in-aspose-words-for-java/
-timestamp: 2026-08-20-11-12-25
+timestamp: 2026-09-28-06-12-25
 ---
 
 {{% alert color="grey" %}}
@@ -22,6 +22,27 @@ This page lists the most notable new features and enhancements introduced in rec
 {{% /alert %}}
 
 This page describes the most interesting new Aspose.Words features introduced in recent releases.
+
+## Aspose.Words for Java 26.9
+
+Aspose.Words 26.9 adds more control over document comparison and digital signature timestamping, and improves PDF accessibility. The release also enhances PDF layout tagging for footnotes and endnotes.
+
+### Rendering
+
+#### Improved PDF Accessibility <sup>26.9</sup>
+
+PDF layout tagging has been improved by placing footnote and endnote tags according to accessibility best practices.
+
+### Other
+
+* The ability to control whether list definition content is included when comparing documents has been introduced by adding the **CompareListDefinitions** property to the AdvancedCompareOptions class. <sup>26.9</sup>
+* The ability to add RFC 3161 timestamps to digital signatures has been introduced by adding the **TimestampSettings** property to the SignOptions class. <sup>26.9</sup>
+
+{{% alert color="primary" %}}
+
+Learn more about [Aspose.Words for Java 26.9 Release Notes](https://releases.aspose.com/words/java/release-notes/2026/aspose-words-for-java-26-9-release-notes/).
+
+{{% /alert %}}
 
 ## Aspose.Words for Java 26.5, 26.6, 26.7, 26.8
 
@@ -259,79 +280,6 @@ Learn more about [Aspose.Words for Java 25.10 Release Notes](https://releases.as
 Learn more about [Aspose.Words for Java 25.11 Release Notes](https://releases.aspose.com/words/java/release-notes/2025/aspose-words-for-java-25-11-release-notes/).
 
 Learn more about [Aspose.Words for Java 25.12 Release Notes](https://releases.aspose.com/words/java/release-notes/2025/aspose-words-for-java-25-12-release-notes/).
-
-{{% /alert %}}
-
-## Aspose.Words for Java 25.5, 25.6, 25.7, 25.8
-
-Aspose.Words 25.5 enhances chart customization with new styling options and improves Markdown export by offering control over how empty paragraphs are handled.
-
-Aspose.Words 25.6 enhances rendering precision and visualization features by introducing advanced image export options, improved MathML handling, and better chart representation.
-
-Aspose.Words 25.7 introduces AI enhancements with support for self-hosted LLMs, more precise control during text replacement, flexible table row visibility, and richer typography with OpenType Font Variations.
-
-Aspose.Words 25.8 expands capabilities for Markdown import/export, enhances Find and Replace with an option to ignore Office Math objects, introduces print job page tracking, and provides greater control over page extraction.
-
-### AI-powered Features
-
-#### Integrating a Self-Hosted LLM <sup>25.7</sup>
-
-The ability to integrate and use self-hosted LLM (Large Language Model) has been introduced, providing greater privacy and control over AI-powered document features.
-
-### Converting, Loading, and Saving Documents
-
-#### Export Empty Paragraphs to Markdown <sup>25.5</sup>
-
-The ability to control how empty paragraphs are exported to Markdown has been introduced by adding the [MarkdownEmptyParagraphExportMode](https://reference.aspose.com/words/java/com.aspose.words/markdownemptyparagraphexportmode/) enumeration and the [EmptyParagraphExportMode](https://reference.aspose.com/words/java/com.aspose.words/markdownsaveoptions/#getEmptyParagraphExportMode) property.
-
-#### Export Multi-page Documents to Raster Image Formats <sup>25.6</sup>
-
-The ability to export multi-page documents to raster image formats (such as PNG and JPEG) with [customizable layouts](https://reference.aspose.com/words/java/com.aspose.words/multipagelayout/) – Horizontal, Vertical, or Grid – has been introduced by extending image export functionality.
-
-#### Export Non-compatible Tables to Raw HTML <sup>25.8</sup>
-
-The ability to control how non-compatible tables are rendered when exporting to raw HTML has been introduced by adding the new [MarkdownExportAsHtml](https://reference.aspose.com/words/java/com.aspose.words/markdownexportashtml/) enumeration.
-
-#### Specify Character for Soft Line Breaks When Importing to Markdown <sup>25.8</sup>
-
-The ability to specify a character for soft line breaks when importing to Markdown has been introduced by adding the new [SoftLineBreakCharacter](https://reference.aspose.com/words/java/com.aspose.words/markdownloadoptions/#getSoftLineBreakCharacter) property.
-
-### Rendering
-
-#### Setting the Chart Style <sup>25.5</sup>
-
-The ability to set the chart style has been introduced by adding the [ChartStyle](https://reference.aspose.com/words/java/com.aspose.words/chartstyle/) enumeration and the [Style](https://reference.aspose.com/words/java/com.aspose.words/chart/#getStyle) property.
-
-#### Rendering Connector Lines in MathML Expressions <sup>25.6</sup>
-
-The rendering of connector lines in MathML expressions has been implemented to ensure more accurate and visually consistent display of mathematical formulas.
-
-#### Rendering Legends for Waterfall Charts <sup>25.6</sup>
-
-The rendering of legends for ["Waterfall" charts](https://reference.aspose.com/words/java/com.aspose.words/chartseriestype/) has been introduced, increasing data transparency and improving the interpretability of these charts.
-
-#### Support for OpenType Font Variations <sup>25.7</sup>
-
-Initial support for OpenType Font Variations has been implemented, allowing for more flexible and expressive typographic rendering.
-
-### Other
-
-* The ability to wrap mathematical formulas containing multiple slashes has been enhanced, improving layout clarity and formula legibility. <sup>25.6</sup>
-* A new [ReplacingArgs.MatchEndNode](https://reference.aspose.com/words/java/com.aspose.words/replacingargs/#getMatchEndNode) property has been added to enable more precise control during text replacement operations across document content. <sup>25.7</sup>
-* The ability to programmatically show or hide specific table rows has been introduced by adding the [Row.Hidden](https://reference.aspose.com/words/java/com.aspose.words/row/#getHidden) property. <sup>25.7</sup>
-* A new [IgnoreOfficeMath](https://reference.aspose.com/words/java/com.aspose.words/findreplaceoptions/#getIgnoreOfficeMath) property has been added to ignore Office Math objects when searching and replacing. <sup>25.8</sup>
-* A new [PagesRemaining](https://reference.aspose.com/words/java/com.aspose.words/asposewordsprintdocument/#getPagesRemaining) property has been added to check the number of pages remaining in a print job. <sup>25.8</sup>
-* New options have been added to the [PageExtractOptions](https://reference.aspose.com/words/java/com.aspose.words/pageextractoptions/) class to provide more control over the page extraction process. <sup>25.8</sup>
-
-{{% alert color="primary" %}}
-
-Learn more about [Aspose.Words for Java 25.5 Release Notes](https://releases.aspose.com/words/java/release-notes/2025/aspose-words-for-java-25-5-release-notes/).
-
-Learn more about [Aspose.Words for Java 25.6 Release Notes](https://releases.aspose.com/words/java/release-notes/2025/aspose-words-for-java-25-6-release-notes/).
-
-Learn more about [Aspose.Words for Java 25.7 Release Notes](https://releases.aspose.com/words/java/release-notes/2025/aspose-words-for-java-25-7-release-notes/).
-
-Learn more about [Aspose.Words for Java 25.8 Release Notes](https://releases.aspose.com/words/java/release-notes/2025/aspose-words-for-java-25-8-release-notes/).
 
 {{% /alert %}}
 
