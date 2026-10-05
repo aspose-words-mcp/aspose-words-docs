@@ -10,10 +10,31 @@ ai_search_scope: words_cpp
 ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 ai_search_fast_endpoint: "https://docsearch.api.aspose.cloud/search"
 url: /cpp/what-s-new-in-aspose-words-for-cpp/
-timestamp: 2026-09-02-11-12-25
+timestamp: 2026-10-05-11-12-25
 ---
 
 This page describes the most interesting new Aspose.Words features introduced in recent releases.
+
+## Aspose.Words for .NET 26.9
+
+Aspose.Words 26.9 adds more control over document comparison and digital signature timestamping, and improves PDF accessibility. The release also enhances PDF layout tagging for footnotes and endnotes.
+
+### Rendering
+
+#### Improved PDF Accessibility <sup>26.9</sup>
+
+PDF layout tagging has been improved by placing footnote and endnote tags according to accessibility best practices.
+
+### Other
+
+* The ability to control whether list definition content is included when comparing documents has been introduced by adding the **CompareListDefinitions** property to the AdvancedCompareOptions class. <sup>26.9</sup>
+* The ability to add RFC 3161 timestamps to digital signatures has been introduced by adding the **TimestampSettings** property to the SignOptions class. <sup>26.9</sup>
+
+{{% alert color="primary" %}}
+
+Learn more about [Aspose.Words for C++ 26.9 Release Notes](https://releases.aspose.com/words/cpp/release-notes/2026/aspose-words-for-cpp-26-9-release-notes/).
+
+{{% /alert %}}
 
 ## Aspose.Words for С++ 26.5, 26.6, 26.7, 26.8
 
