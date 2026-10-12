@@ -58,7 +58,7 @@ Note that with the same technique, you can convert any flow-layout format docume
 
 ### Convert to Different PDF Standards
 
-Aspose.Words provides the[PdfCompliance](https://reference.aspose.com/words/net/aspose.words.saving/pdfcompliance/)enumeration to support the conversion of DOC orDOCX into various PDF format standards (such as PDF 1.7, PDF 1.5, etc.).
+Aspose.Words provides the[PdfCompliance](https://reference.aspose.com/words/net/aspose.words.saving/pdfcompliance/)enumeration to support the conversion of DOC orDOCX into various PDF format standards (such as PDF 1.7, PDF 2.0, etc.).
 
 The following code example demonstrates how to convert a document to PDF 1.7 using[PdfSaveOptions](https://reference.aspose.com/words/net/aspose.words.saving/pdfsaveoptions/)with compliance to PDF17:
 

@@ -13,11 +13,19 @@ url: /cpp/convert-a-document-to-mhtml-and-send-it-by-email/
 timestamp: 2024-01-27-14-07-04
 ---
 
-Aspose.Words can convert any document to the MHTML (Web Archive) format. This makes it convenient to use Aspose.Words and `Aspose.Email` together. You can load a predefined document in any supported format, such as DOC, OOXML, or RTF, into Aspose.Words, fill it with data, save the resulting document as MHTML, and then send it by e‑mail using `Aspose.Email`.
+{{% alert color="grey" %}}
+
+## Purpose Summary
+
+This page describes how to convert a document to MHTML and send it via email, demonstrating both conversion settings and SMTP workflow integration.
+
+{{% /alert %}}
+
+Aspose.Words can convert any document to the MHTML (Web Archive) format. This makes it convenient to use Aspose.Words and `Aspose.Email` together. You can load a predefined document in any supported format, such as DOC, OOXML, or RTF, into Aspose.Words, fill it with data, save the resulting document as MHTML, and then send it by e-mail using `Aspose.Email`.
 
 The following code example shows how to convert any document to MHTML and send it by email:
 
-{{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Loading-and-Saving-ConvertDocumentToHTML-ConvertDocumentToMhtmlAndEmail.cpp" >}}
+{{< gist "aspose-words-gists" "537e7d4e2ddd23fa701dc4bf315064b9" "docx-to-mhtml.cs" >}}
 
 ------ 
 
@@ -30,7 +38,7 @@ The following code example shows how to convert any document to MHTML and send i
    **A:** Yes. Converting the document to MHTML uses Aspose.Words, while sending the e‑mail uses Aspose.Email. Both products require their own valid licenses. Apply each license before using the corresponding API (e.g., `Aspose::Words::License` for Words and `Aspose::Email::License` for Email).
 
 3. **Q: How can I set the e‑mail subject, body, and attachment programmatically in C++?**  
-   **A:** Use the `Aspose::Email::MailMessage` class. Create a `MailMessage`, set `Subject` and `Body`, then add the MHTML file as an attachment with `MailMessage::Attachments->Add`. Finally, send the message with `SmtpClient`. Example:
+   **A:** Use the `Aspose::Email::MailMessage` class. Create a `MailMessage`, set `Subject` and `Body`, then add the MHTML file as an attachment with `msg->get_Attachments()->Add`. Finally, send the message with `SmtpClient`. Example:
 
    ```cpp
    System::SharedPtr<Aspose::Email::MailMessage> msg = System::MakeObject<Aspose::Email::MailMessage>();

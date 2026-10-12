@@ -13,6 +13,14 @@ url: /cpp/working-with-pdfa-or-pdfua/
 timestamp: 2024-01-27-14-07-04
 ---
 
+{{% alert color="grey" %}}
+
+## Purpose Summary
+
+This page explains how to work with PDF/A and PDF/UA output modes.
+
+{{% /alert %}}
+
 PDF/A and PDF/UA format imposes several requirements related to the document content that cannot be fulfilled during automatic conversion from a document in Word format to PDF. These requirements should be verified and corrected either in a Word document before conversion or in a PDF document after conversion in order to produce a fully PDF/A and PDF/UA compliant document.
 
 Basic requirements are for the structure or fonts of a PDF/A and PDF/UA document, which we will consider in the following sections.
@@ -262,25 +270,7 @@ Sometimes there is a problem that it is not possible to set alt text for autogen
 
 Follow the code example to update `TOC` fields using the Aspose.Words Document Object Model (DOM):
 
-{{< highlight cpp >}}
-auto doc = MakeObject<Document>(filename);
-auto tocHyperLinks = doc->get_Range()->get_Fields()->
-    LINQ_Where([](SharedPtr<Field> f) {return f->get_Type() == FieldType::FieldHyperlink; })->            
-    LINQ_Where([](SharedPtr<FieldHyperlink> f) { return f->get_DisplayResult().StartsWith(u"#_Toc"); });
-
-for (const auto& link : tocHyperLinks)
-    link->set_ScreenTip(link->get_DisplayResult());
-
-auto opt = MakeObject<PdfSaveOptions>();
-opt->set_Compliance(PdfCompliance::PdfUa1);
-opt->set_DisplayDocTitle(true);
-opt->set_ExportDocumentStructure(true);
-opt->get_OutlineOptions()->set_HeadingsOutlineLevels(3);
-opt->get_OutlineOptions()->set_CreateMissingOutlineLevels(true);
-
-auto outFile = filename.substr(0, filename.find_last_of('.')) + "_aw.pdf";
-doc->Save(outFile, opt);
-{{< /highlight >}}
+{{< gist "aspose-words-gists" "2eba16c4be2387db396fa53e0d8e3127" "update-screen-tip.h" >}}
 
 ### Table Headers
 
@@ -396,7 +386,7 @@ Microsoft Word document does not allow users to set abbreviations and acronyms e
 | PDF/A-1a                                           | {{< emoticons/tick >}}  |
 | PDF/A-1b                                           | {{< emoticons/tick >}}  |
 | PDF/A-2a                                           | {{< emoticons/tick >}}  |
-| PDF/A-2b                                           | {{< emoticons/tick >}}  |
+| PDF/A-2u                                           | {{< emoticons/tick >}}  |
 | PDF/A-4                                            | {{< emoticons/tick >}}  |
 | PDF/UA-1                                           | {{< emoticons/tick >}}  |
 
@@ -411,7 +401,7 @@ The sections below describe such nuances and options for their solution.
 | PDF/A-1a                                           | {{< emoticons/tick >}}  |
 | PDF/A-1b                                           | {{< emoticons/tick >}}  |
 | PDF/A-2a                                           | {{< emoticons/tick >}}  |
-| PDF/A-2b                                           | {{< emoticons/tick >}}  |
+| PDF/A-2u                                           | {{< emoticons/tick >}}  |
 | PDF/A-4                                            | {{< emoticons/tick >}}  |
 | PDF/UA-1                                           | {{< emoticons/tick >}}  |
 
@@ -433,7 +423,7 @@ Aspose.Words does not verify the legal restrictions of the used fonts – it is 
 | PDF/A-1a                                           |                         |
 | PDF/A-1b                                           |                         |
 | PDF/A-2a                                           | {{< emoticons/tick >}}  |
-| PDF/A-2b                                           | {{< emoticons/tick >}}  |
+| PDF/A-2u                                           | {{< emoticons/tick >}}  |
 | PDF/A-4                                            | {{< emoticons/tick >}}  |
 | PDF/UA-1                                           | {{< emoticons/tick >}}  |
 
@@ -466,7 +456,7 @@ The usage of the `.notdef` glyph is prohibited. The `.notdef` glyph will appear 
 | PDF/A-1a                                           |                         |
 | PDF/A-1b                                           |                         |
 | PDF/A-2a                                           | {{< emoticons/tick >}}  |
-| PDF/A-2b                                           | {{< emoticons/tick >}}  |
+| PDF/A-2u                                           | {{< emoticons/tick >}}  |
 | PDF/A-4                                            | {{< emoticons/tick >}}  |
 | PDF/UA-1                                           |                         |
 

@@ -63,7 +63,6 @@ Below you can compare images on which TIFF binarization was performed at various
 
 ## Related APIs
 
-
 - [Document.Save](https://reference.aspose.com/words/net/aspose.words/document/save/#save)
 - [ImageSaveOptions](https://reference.aspose.com/words/net/aspose.words.saving/imagesaveoptions/)
 - [SaveFormat](https://reference.aspose.com/words/net/aspose.words.saving/imagesaveoptions/properties/saveformat)

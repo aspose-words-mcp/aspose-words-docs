@@ -13,6 +13,14 @@ url: /cpp/convert-a-multi-page-document-to-an-image/
 timestamp: 2025-07-16-11-12-25
 ---
 
+{{% alert color="grey" %}}
+
+## Purpose Summary
+
+This page explains how to convert multi-page documents into multi-frame images, including configuration of image size, resolution, and page range.
+
+{{% /alert %}}
+
 Aspose.Words for C++ allows users to export multi-page documents to raster images. This can be useful for generating previews, archives, or visual representations of documents for non-editable use.
 
 ## What Formats Support Multi-page Export?
@@ -38,36 +46,13 @@ The feature of exporting a multi-page document to an image is implemented using 
 
 The following code example shows how to save a multi-page DOCX document as JPEG image with Horizontal layout:
 
-{{< highlight cpp >}}
-auto doc = System::MakeObject<Aspose::Words::Document>(u"Rendering.docx");
-
-auto options = System::MakeObject<Aspose::Words::Saving::ImageSaveOptions>(Aspose::Words::SaveFormat::Jpeg);
-// Set up Horizontal layout.
-options.MultiPageLayout = MultiPageLayout.Horizontal(10);
-
-doc->Save(u"ImageSaveOptions.GridLayout.jpg", options);
-{{< /highlight >}}
+{{< gist "aspose-words-gists" "8eeaafcfcc55d78505f0f378ad8c6907" "horizontal-layout.cs" >}}
 
 You can also customize the output file page appearance – specify [BackColor](https://reference.aspose.com/words/cpp/aspose.words.saving/multipagelayout/get_backcolor/), [BorderColor](https://reference.aspose.com/words/cpp/aspose.words.saving/multipagelayout/get_bordercolor/), and [BorderWidth](https://reference.aspose.com/words/cpp/aspose.words.saving/multipagelayout/get_borderwidth/).
 
 The following code example shows how to save a multi-page DOCX document as PNG image with Grid layout:
 
-{{< highlight cpp >}}
-auto doc = System::MakeObject<Aspose::Words::Document>(u"Rendering.docx");
-
-auto options = System::MakeObject<Aspose::Words::Saving::ImageSaveOptions>(Aspose::Words::SaveFormat::Jpeg);
-// Set up a grid layout with:
-// - 3 columns per row.
-// - 10pts spacing between pages (horizontal and vertical).
-options->set_PageLayout(Aspose::Words::Saving::MultiPageLayout::Grid(3, 10.0f, 10.0f));
-
-// Customize the background and border.
-options->get_PageLayout()->set_BackColor(System::Drawing::Color::get_LightGray());
-options->get_PageLayout()->set_BorderColor(System::Drawing::Color::get_Blue());
-options->get_PageLayout()->set_BorderWidth(2.0f);
-
-doc->Save(u"ImageSaveOptions.GridLayout.png", options);
-{{< /highlight >}}
+{{< gist "aspose-words-gists" "8eeaafcfcc55d78505f0f378ad8c6907" "grid-layout.cs" >}}
 
 ------ 
 

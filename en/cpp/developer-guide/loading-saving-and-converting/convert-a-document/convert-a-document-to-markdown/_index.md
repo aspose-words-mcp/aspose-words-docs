@@ -14,9 +14,17 @@ url: /cpp/convert-a-document-to-markdown/
 timestamp: 2024-10-21-08-52-03
 ---
 
+{{% alert color="grey" %}}
+
+## Purpose Summary
+
+This page explains how to convert a Word document to Markdown and outlines the Markdown save options that control formatting precision and compatibility.
+
+{{% /alert %}}
+
 Markdown is a popular format used to markup text and its further converting to HTML, PDF, DOCX, or other formats. Many developers choose this format for writing documentation, preparing articles for publication on blogs, describing projects, and so on.
 
-Markdown is so popular because it is easy to work with this format, as well as it can be quite simply converted to other formats. For this reason, Aspose.Words provides the ability to convert a document in [any supported load format](https://reference.aspose.com/words/cpp/aspose.words/) to Markdown and vice versa – Aspose.Words also supports the most popular [save formats](https://reference.aspose.com/words/cpp/aspose.words/saveformat/).
+Markdown is so popular because it is easy to work with this format, as well as it can be quite simply converted to other formats. For this reason, Aspose.Words provides the ability to convert a document in [any supported load format](https://reference.aspose.com/words/cpp/aspose.words/) to Markdown and vice versa – Aspose.Words also supports most popular [save formats](https://reference.aspose.com/words/cpp/aspose.words/saveformat/).
 
 Now the functionality for working with the Markdown format is being actively developed to provide you with more opportunities for convenient and comfortable work with documents.
 
@@ -26,7 +34,7 @@ To convert a document to Markdown, you just need to load a document in any suppo
 
 The following code example shows how to convert DOCX to Markdown:
 
-{{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Loading-and-Saving-ConvertDocumentToMarkdown-SaveAsMD.cpp" >}}
+{{< gist "aspose-words-gists" "51b4cb9c451832f23527892e19c7bca6" "docx-to-markdown.cs" >}}
 
 You can also specify the physical folder in which you want to save images when exporting a document to Markdown format. By default, Aspose.Words saves images in the same folder where the document file is saved, but you can override this behavior using the [ImagesFolder](https://reference.aspose.com/words/cpp/aspose.words.saving/markdownsaveoptions/get_imagesfolder/) property.
 
@@ -36,7 +44,7 @@ If the specified **ImagesFolder** does not exist, it will be created automatical
 
 The following code example shows how to specify a folder for images when saving a document to a stream:
 
-{{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Loading-and-Saving-ConvertDocumentToMarkdown-SetImagesFolder.cpp" >}}
+{{< gist "aspose-words-gists" "51b4cb9c451832f23527892e19c7bca6" "images-folder.cs" >}}
 
 ## Specify Save Options when Converting to Markdown
 
@@ -61,7 +69,7 @@ Aspose.Words currently supports the following Markdown features, which mostly fo
 
 The following example shows how to create a document with some styles and save it to Markdown:
 
-{{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Loading-and-Saving-ConvertDocumentToMarkdown-SupportedMarkdownFeatures.cpp" >}}
+{{< gist "aspose-words-gists" "51b4cb9c451832f23527892e19c7bca6" "supported-features.cs" >}}
 
 The result of this code example is shown below.
 
@@ -73,3 +81,8 @@ There are several nuances and interesting cases, having learned which you can wo
 
 * SetextHeading that allows you to create multi-line headings in Markdown, while regular headings in Markdown can only be single-line. SetextHeading is based on a "Heading N" style, and its level can only be 1 or 2. If N in "Heading N" is greater than or equal to 2, then the corresponding SetextHeading is based on "Heading 2", otherwise on "Heading 1".
 * Different markers for the first level of bulleted lists ("-", "+" or "*", the default marker is “-”.) and different types of numbering for ordered lists ("." or ")", the default marker is ".").
+
+## Related APIs
+
+- [Aspose.Words.Saving](https://reference.aspose.com/words/cpp/aspose.words.saving/) Namespace
+- [save formats](https://reference.aspose.com/words/cpp/aspose.words/saveformat/)

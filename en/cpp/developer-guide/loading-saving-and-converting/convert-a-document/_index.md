@@ -4,16 +4,24 @@ second_title: Aspose.Words for C++
 articleTitle: Convert a Document
 linktitle: Convert a Document
 type: docs
-aliases: [/cpp/converting-a-document/]
-description: "Easily convert documents from one format to another using C++. You can work with all the most popular formats like Microsoft Word formats such as DOCX or DOC, OpenDocument formats such as ODT or OTT, web formats such as HTML or XHTML, text formats such as MarkDown or TXT, and others."
-keywords: "convert a document c++, convert documents from one format to another c++, convert to markdown c++, convert pdf to docx C++, convert docx to pdf C++, convert doc to pdf C++, convert a document Aspose for C++"
-weight: 30
 ai_search_scope: words_cpp
 ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 ai_search_fast_endpoint: "https://docsearch.api.aspose.cloud/search"
 url: /cpp/convert-a-document/
+weight: 30
+aliases: [/cpp/converting-a-document/]
+description: "Easily convert documents from one format to another using C++. You can work with all the most popular formats like Microsoft Word formats such as DOCX or DOC, OpenDocument formats such as ODT or OTT, web formats such as HTML or XHTML, text formats such as MarkDown or TXT, and others."
+keywords: "convert a document c++, convert documents from one format to another c++, convert to markdown c++, convert pdf to docx C++, convert docx to pdf C++, convert doc to pdf C++, convert a document Aspose for C++"
 timestamp: 2024-09-25-11-08-55
 ---
+
+{{% alert color="grey" %}}
+
+## Purpose Summary
+
+This page describes the general workflow for converting documents between different formats and highlights key considerations for successful conversions.
+
+{{% /alert %}}
 
 The ability to easily and reliably convert documents from one format to another is one of the main feature areas of Aspose.Words.Such a conversion is nothing more than a combination of loading and saving operations.
 
@@ -34,7 +42,7 @@ You can try the conversion functionality by using our [Free online converter](ht
 
 ## Popular Conversions {#popular-conversions}
 
-The current section describes popular conversions, as well as ideas for working with some combinations of formatswhen loading and saving. Using the examples of this section, you can understand that the conversion process itself is quite universal, and there is no point in describing all the possible options, since there are several hundred of them due to the large number of [formats supported by Aspose.Words for C++](/words/cpp/supported-document-formats/).
+The current section describes popular conversions, as well as ideas for working with some combinations of formats when loading and saving. Using the examples of this section, you can understand that the conversion process itself is quite universal, and there is no point in describing all the possible options, since there are several hundred of them due to the large number of [formats supported by Aspose.Words for C++](/words/cpp/supported-document-formats/).
 
 {{% alert color="primary" %}}
 
@@ -43,7 +51,7 @@ Please note that below are the most popular conversion combinations, and not eve
 {{% /alert %}}
 
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-4">
 		<h2>Convert Word to PDF</h2>
 			<ul>
 				<li><a href="/words/cpp/convert-a-document-to-pdf/#converting-doc-or-docx-to-pdf">Convert DOC to PDF</a></li>
@@ -56,7 +64,7 @@ Please note that below are the most popular conversion combinations, and not eve
 				<li><a href="/words/cpp/convert-a-document-to-pdf/#convert-an-image-to-pdf">Convert TIFF to PDF</a></li>
 				<li>and others</li>
 			</ul>
-		<h2>Convert Web Formats to PDF</h2>
+    <h2>Convert Web to PDF</h2>
 			<ul>
 				<li>Convert Markdown to PDF</li>
 				<li>Convert HTML to PDF</li>
@@ -72,11 +80,10 @@ Please note that below are the most popular conversion combinations, and not eve
 				<li>and others</li>
 			</ul>
 	</div>
-	<div class="col-md-6">
+	<div class="col-md-4">
 		<h2>Convert a Document to an Image</h2>
 			<ul>
 				<li><a href="/words/cpp/convert-a-document-to-an-image/">Convert DOCX to JPG</a></li>
-				<li>Convert DOC to PNG</li>
 				<li>and others</li>
 			</ul>
 		<h2>Convert a Document to Markdown</h2>
@@ -101,3 +108,10 @@ Please note that below are the most popular conversion combinations, and not eve
 			</ul>
 	</div>
 </div>
+
+## Related APIs
+
+- [Document](https://reference.aspose.com/words/cpp/aspose.words/document/)
+- [LoadFormat](https://reference.aspose.com/words/cpp/aspose.words/loadformat/)
+- [SaveFormat](https://reference.aspose.com/words/cpp/aspose.words/saveformat/)
+- [PdfSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/pdfsaveoptions/)
