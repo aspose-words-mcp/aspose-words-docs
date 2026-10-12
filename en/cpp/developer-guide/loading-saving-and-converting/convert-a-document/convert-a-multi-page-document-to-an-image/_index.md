@@ -46,13 +46,13 @@ The feature of exporting a multi-page document to an image is implemented using 
 
 The following code example shows how to save a multi-page DOCX document as JPEG image with Horizontal layout:
 
-{{< gist "aspose-words-gists" "8eeaafcfcc55d78505f0f378ad8c6907" "horizontal-layout.cs" >}}
+{{< gist "aspose-words-gists" "506e77996cb7d2e368a64d4ae66af312" "horizontal-layout.h" >}}
 
 You can also customize the output file page appearance – specify [BackColor](https://reference.aspose.com/words/cpp/aspose.words.saving/multipagelayout/get_backcolor/), [BorderColor](https://reference.aspose.com/words/cpp/aspose.words.saving/multipagelayout/get_bordercolor/), and [BorderWidth](https://reference.aspose.com/words/cpp/aspose.words.saving/multipagelayout/get_borderwidth/).
 
 The following code example shows how to save a multi-page DOCX document as PNG image with Grid layout:
 
-{{< gist "aspose-words-gists" "8eeaafcfcc55d78505f0f378ad8c6907" "grid-layout.cs" >}}
+{{< gist "aspose-words-gists" "506e77996cb7d2e368a64d4ae66af312" "grid-layout.h" >}}
 
 ------ 
 

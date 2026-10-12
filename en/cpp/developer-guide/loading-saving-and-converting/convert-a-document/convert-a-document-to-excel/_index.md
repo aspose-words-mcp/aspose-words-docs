@@ -29,7 +29,7 @@ Converting a document to XLSX is a rather complicated process. To save your docu
 
 The following code example shows how to save DOCX to XLSX:
 
-{{< gist "aspose-words-gists" "a50652f28531278511605e0fd778bbdf" "docx-to-xlsx.cs" >}}
+{{< gist "aspose-words-gists" "0833496410d6beb2913f35494196888e" "docx-to-xlsx.h" >}}
 
 {{% alert color="primary" %}}
 
@@ -43,7 +43,7 @@ Also using Aspose.Words, you can find a specific string or regular expression in
 
 The following code example shows how to perform find and replace operation and save result to XLSX:
 
-{{< gist "aspose-words-gists" "a50652f28531278511605e0fd778bbdf" "find-replace-xlsx.cs" >}}
+{{< gist "aspose-words-gists" "b08318e6eb24ad14897dfce529b9b9fc" "find-replace-xlsx.h" >}}
 
 ## Specify Compression Level When Saving to XLSX
 
@@ -51,12 +51,12 @@ You can also specify the compression level when saving using the [CompressionLev
 
 The following code example shows how to specify the compression level when saving to XLSX format:
 
-{{< gist "aspose-words-gists" "a50652f28531278511605e0fd778bbdf" "compress-xlsx.cs" >}}
+{{< gist "aspose-words-gists" "b08318e6eb24ad14897dfce529b9b9fc" "compress-xlsx.h" >}}
 
 ## See Also
 
-- Documentation section[Protect or Encrypt a Document](/words/cpp/protect-or-encrypt-a-document/)for more information about protecting and encrypting a document
-- The article[Find and Replace](/words/cpp/find-and-replace/)for more more information about finding and replacing the content you want
+- Documentation section [Protect or Encrypt a Document](/words/cpp/protect-or-encrypt-a-document/) for more information about protecting and encrypting a document
+- The article [Find and Replace](/words/cpp/find-and-replace/) for more more information about finding and replacing the content you want
 
 ------ 
 

@@ -23,15 +23,15 @@ This page explains how to create or load a document from various sources, includ
 
 {{% /alert %}}
 
-Almost any task that you want to perform with Aspose.Words involves loading a document.The `Document` class represents a document loaded into memory. The document has several overloaded constructors allowing you to create a blank document or to load it from a file or stream.The document can be loaded in any load format supported by Aspose.Words. For the list of all supported load formats, see the[LoadFormat](https://reference.aspose.com/words/cpp/aspose.words/loadformat/)enumeration.
+Almost any task that you want to perform with Aspose.Words involves loading a document. The `Document` class represents a document loaded into memory. The document has several overloaded constructors allowing you to create a blank document or to load it from a file or stream. The document can be loaded in any load format supported by Aspose.Words. For the list of all supported load formats, see the [LoadFormat](https://reference.aspose.com/words/cpp/aspose.words/loadformat/) enumeration.
 
 ## Create a New Document {#create-a-new-document}
 
-We will call the[Document](https://reference.aspose.com/words/cpp/class/aspose.words.document)constructor without parameters to create a new blank document. If you want to generate a document programmatically, the simplest way is to use the[DocumentBuilder](https://reference.aspose.com/words/cpp/class/aspose.words.document_builder)class to add document contents.
+We will call the [Document](https://reference.aspose.com/words/cpp/class/aspose.words.document) constructor without parameters to create a new blank document. If you want to generate a document programmatically, the simplest way is to use the [DocumentBuilder](https://reference.aspose.com/words/cpp/class/aspose.words.document_builder) class to add document contents.
 
 The following code example shows how to create a document using the document builder:
 
-{{< gist "aspose-words-gists" "1d626c7186a318d22d022dc96dd91d55" "create-new-document.cs" >}}
+{{< gist "aspose-words-gists" "9ed4780658a7b003eda4e472d9270e3b" "create-new-document.h" >}}
 
 {{% alert color="primary" %}}
 
@@ -44,7 +44,7 @@ Note the default values:
 
 ## Load a Document {#load-a-document}
 
-To load an existing document in any of the[LoadFormat](https://reference.aspose.com/words/cpp/aspose.words/loadformat/)formats, pass the file name or the stream into one of the Document constructors. The format of the loaded document is automatically determined by its extension.
+To load an existing document in any of the [LoadFormat](https://reference.aspose.com/words/cpp/aspose.words/loadformat/) formats, pass the file name or the stream into one of the Document constructors. The format of the loaded document is automatically determined by its extension.
 
 ### Load from a File {#load-from-a-file}
 
@@ -54,7 +54,7 @@ The following code example shows how to open a document from a file:
 
 {{< gist "aspose-words-gists" "1d626c7186a318d22d022dc96dd91d55" "open-document.cs" >}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-C/blob/master/Examples/Data/Document.docx).
+You can download the template file of this example from [Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-C/blob/master/Examples/Data/Document.docx).
 
 ### Load from a Stream {#load-from-a-stream}
 
@@ -62,10 +62,10 @@ To open a document from a stream, simply pass a stream object that contains the 
 
 The following code example shows how to open a document from a stream:
 
-{{< gist "aspose-words-gists" "1d626c7186a318d22d022dc96dd91d55" "open-from-stream.cs" >}}
+{{< gist "aspose-words-gists" "9ed4780658a7b003eda4e472d9270e3b" "open-from-stream.h" >}}
 
 {{% alert color="primary" %}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-C/blob/master/Examples/Data/Document.docx).
+You can download the template file of this example from [Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-C/blob/master/Examples/Data/Document.docx).
 
 {{% /alert %}}
