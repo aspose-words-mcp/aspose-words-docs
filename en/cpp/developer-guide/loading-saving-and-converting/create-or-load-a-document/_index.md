@@ -4,16 +4,24 @@ second_title: Aspose.Words for C++
 articleTitle: Create or Load a Document
 linktitle: Create or Load a Document
 type: docs
-aliases: [/cpp/creating-or-loading-a-document/]
-description: "Create a blank document or to load it from a file or stream using C++."
-keywords: "create a document c++, load a document c++, create a blank document c++, load a document from file c++, load a document from stream c++, create a document Aspose C++, load a document Aspose C++, load formats supported by Aspose.Words C++"
-weight: 10
 ai_search_scope: words_cpp
 ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 ai_search_fast_endpoint: "https://docsearch.api.aspose.cloud/search"
 url: /cpp/create-or-load-a-document/
+aliases: [/cpp/creating-or-loading-a-document/]
+description: "Create a blank document or to load it from a file or stream using C++."
+keywords: "create a document c++, load a document c++, create a blank document c++, load a document from file c++, load a document from stream c++, create a document Aspose C++, load a document Aspose C++, load formats supported by Aspose.Words C++"
+weight: 10
 timestamp: 2024-01-27-14-07-04
 ---
+
+{{% alert color="grey" %}}
+
+## Purpose Summary
+
+This page explains how to create or load a document from various sources, including streams, files, and byte arrays.
+
+{{% /alert %}}
 
 Almost any task that you want to perform with Aspose.Words involves loading a document.The `Document` class represents a document loaded into memory. The document has several overloaded constructors allowing you to create a blank document or to load it from a file or stream.The document can be loaded in any load format supported by Aspose.Words. For the list of all supported load formats, see the[LoadFormat](https://reference.aspose.com/words/cpp/aspose.words/loadformat/)enumeration.
 
@@ -23,7 +31,7 @@ We will call the[Document](https://reference.aspose.com/words/cpp/class/aspose.w
 
 The following code example shows how to create a document using the document builder:
 
-{{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Loading-and-Saving-CreateDocument-CreateDocument.cpp" >}}
+{{< gist "aspose-words-gists" "1d626c7186a318d22d022dc96dd91d55" "create-new-document.cs" >}}
 
 {{% alert color="primary" %}}
 
@@ -34,19 +42,19 @@ Note the default values:
 
 {{% /alert %}}
 
-## Load a Document
+## Load a Document {#load-a-document}
 
-To load an existing document in any of the `LoadFormat` formats, pass the file name or the stream into one of the Document constructors. The format of the loaded document is automatically determined by its extension.
+To load an existing document in any of the[LoadFormat](https://reference.aspose.com/words/cpp/aspose.words/loadformat/)formats, pass the file name or the stream into one of the Document constructors. The format of the loaded document is automatically determined by its extension.
 
 ### Load from a File {#load-from-a-file}
 
-Pass a file name as a string to the Document constructor to open an existing document from a file.
+Pass a file name as string to the Document constructor to open an existing document from a file.
 
 The following code example shows how to open a document from a file:
 
-{{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Loading-and-Saving-LoadAndSaveToDisk-OpenDocument.cpp" >}}
+{{< gist "aspose-words-gists" "1d626c7186a318d22d022dc96dd91d55" "open-document.cs" >}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-C/tree/master/Examples).
+You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-C/blob/master/Examples/Data/Document.docx).
 
 ### Load from a Stream {#load-from-a-stream}
 
@@ -54,10 +62,10 @@ To open a document from a stream, simply pass a stream object that contains the 
 
 The following code example shows how to open a document from a stream:
 
-{{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Loading-and-Saving-LoadAndSaveToStream-OpeningFromStream.cpp" >}}
+{{< gist "aspose-words-gists" "1d626c7186a318d22d022dc96dd91d55" "open-from-stream.cs" >}}
 
 {{% alert color="primary" %}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-C/tree/master/Examples).
+You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-C/blob/master/Examples/Data/Document.docx).
 
 {{% /alert %}}

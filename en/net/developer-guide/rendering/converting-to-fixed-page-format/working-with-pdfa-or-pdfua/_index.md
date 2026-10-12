@@ -496,8 +496,7 @@ Private Use Area (PUA) characters appear mostly for Windows symbolic fonts like 
    PdfSaveOptions saveOptions = new PdfSaveOptions
    {
        Compliance = PdfCompliance.PdfA2a,
-       EmbedFullFonts = true,
-       FontEmbeddingMode = FontEmbeddingMode.Always
+       EmbedFullFonts = true
    };
    doc.Save("output.pdf", saveOptions);
    ```
@@ -506,7 +505,7 @@ Private Use Area (PUA) characters appear mostly for Windows symbolic fonts like 
    **A:** Use the `PdfSaveOptions.Compliance` property. The enum `PdfCompliance` includes values such as `PdfA1b`, `PdfA2a`, `PdfA4`, and `PdfUa`. Set the desired value before calling `Document.Save`.
 
 3. **Q:** What should I do to ensure all required fonts are embedded for PDF/A compliance?  
-   **A:** Set `PdfSaveOptions.EmbedFullFonts` to `true` and `PdfSaveOptions.FontEmbeddingMode` to `FontEmbeddingMode.Always`. This forces Aspose.Words to embed every font used in the document, satisfying the font‑embedding requirement of PDF/A.
+   **A:** No extra settings are required. PDF/A compliance requires all fonts to be embedded, so Aspose.Words automatically uses `PdfFontEmbeddingMode.EmbedAll` when saving to PDF/A, regardless of the `PdfSaveOptions.FontEmbeddingMode` value. Fonts are embedded as subsets by default; set `PdfSaveOptions.EmbedFullFonts` to `true` if you need complete font files.
 
 4. **Q:** How can I set a document title that appears in the PDF/UA metadata?  
    **A:** Set the built‑in document property `Title` before saving. The title is written to the PDF's metadata and satisfies the PDF/UA requirement for a document title.

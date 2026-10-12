@@ -13,42 +13,50 @@ url: /cpp/convert-a-document-to-html-mhtml-or-epub/
 timestamp: 2024-10-21-08-52-03
 ---
 
+{{% alert color="grey" %}}
+
+## Purpose Summary
+
+This page explains how to convert Word documents to HTML, MHTML, or EPUB, and describes the key options that influence layout and formatting during export.
+
+{{% /alert %}}
+
 Documents in HTML and MHTMLflow-layout formats are also very popular and can be used on any web platform. For that reason, converting documents to HTML and MHTML is an important feature of Aspose.Words.
 
 EPUB (short for "Electronic Publication") is an HTML-based format commonly used for electronic book distribution. This format is fully supported in Aspose.Words for exporting electronic books that are compatible with most reading devices.
 
 ## Convert a Document
 
-For simple conversion to HTML, MHTML, or EPUB,one of the[Save](https://reference.aspose.com/words/cpp/aspose.words/document/save/)method overloads is used. You can save the document to a file or stream and explicitly set the output documentsave format or define it from the file name extension.
+For simple conversion to HTML, MHTML, or EPUB,one of the [Save](https://reference.aspose.com/words/cpp/aspose.words/document/save/) method overloads is used. You can save the document to a file or stream and explicitly set the output documentsave format or define it from the file name extension.
 
 The following example shows how to convert DOCX to HTML with specifying a save format:
 
-{{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Loading-and-Saving-ConvertDocumentToHTML-ConvertDocxToHtml.cpp" >}}
+{{< gist "aspose-words-gists" "c0df00d37081f41a7683339fd7ef66c1" "docx-to-html.cs" >}}
 
 To convert a document to MHTML or EPUB, use `SaveFormat::Mhtml` or `SaveFormat::Epub` respectively.
 
 ## Convert a Document with Round-trip Information
 
-The HTML format does not support many Microsoft Word features, and if we need to restore a document model as close to the original as possible, we need to save some extra information within the HTML file. Such information is also called "round-trip information". For this purpose, Aspose.Wordsprovides an ability to export round-trip information when saving to HTML, MHTML, or EPUB using the[ExportRoundtripInformation](https://reference.aspose.com/words/cpp/aspose.words.saving/htmlsaveoptions/get_exportroundtripinformation/)property. Saving the round-trip information allows restoring document properties such as tabs, comments, headers, and footers during the loading documents of the listed formats back into a**Document**object.
+The HTML format does not support many Microsoft Word features, and if we need to restore a document model as close to the original as possible, we need to save some extra information within the HTML file. Such information is also called "round-trip information". For this purpose, Aspose.Wordsprovides an ability to export round-trip information when saving to HTML, MHTML, or EPUB using the[ExportRoundtripInformation](https://reference.aspose.com/words/cpp/aspose.words.saving/htmlsaveoptions/get_exportroundtripinformation/)property. Saving the round-trip information allows to restore document properties such as tabs, comments, headers, and footers during the loading documents of the listed formats back into a**Document**object.
 
 The default value is**true**for HTML and**false**for MHTML and EPUB:
 
-- When**true**, the round‑trip information is exported as - aw - * CSS properties of the corresponding HTMLelements
-- When**false**, there is no round‑trip information to be output into produced files
+- When**true**, the round-trip information is exported as - aw - * CSS properties of the corresponding HTMLelements
+- When**false**, there is no round-trip information to be output into produced files
 
-The following code example shows how to export round‑trip information when converting a document from DOCX into HTML:
+The following code example shows how to export round-trip information when converting a document from DOCX into HTML:
 
-{{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Loading-and-Saving-ConvertDocumentToHTML-ConvertDocumentToHtmlWithRoundtrip.cpp" >}}
+{{< gist "aspose-words-gists" "c0df00d37081f41a7683339fd7ef66c1" "export-roundtrip-information.cs" >}}
 
 {{% alert color="primary" %}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-C/tree/master/Examples).
+You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-C/blob/master/Examples/Data/Rendering.docx).
 
 {{% /alert %}}
 
 ## Specify Save Options when Conversion to HTML
 
-Aspose.Words allows converting a Word document to HTML using default or custom save options.Few examples of custom save options are described below.
+Aspose.Words allows to convert a Word document to HTML using default or custom save options.Few examples of custom save options are described below.
 
 ### Specify a Folder for Saving Resources
 
@@ -56,11 +64,11 @@ Using Aspose.Words we can specify a physical folder where all resources, such as
 
 Specifying the[ResourceFolder](https://reference.aspose.com/words/cpp/aspose.words.saving/htmlsaveoptions/get_resourcefolder/)property is the simplest way to set the folder where all resources should be written. We can use individual properties, such as[FontsFolder](https://reference.aspose.com/words/cpp/aspose.words.saving/htmlsaveoptions/get_fontsfolder/)which saves fonts to the specified folder and[ImagesFolder](https://reference.aspose.com/words/cpp/aspose.words.saving/htmlsaveoptions/get_imagesfolder/)which saves images to a specified folder.When a relative path is specified,**FontsFolder**and**ImagesFolder**refer to the folder where the code assembly is located,**ResourceFolder**and[CssStyleSheetFileName](https://reference.aspose.com/words/cpp/aspose.words.saving/htmlsaveoptions/get_cssstylesheetfilename/)refer to the output folder where the HTML document is located.
 
-In this example,**ResourceFolder**specifies the relative path. This path refers to the output folder where the HTML document is saved.The value of the**ResourceFolderAlias**property is used to create URLs for all resources.
+In this example,**ResourceFolder**specifies the relative path. This path refers to the output folder where HTML document is saved.The value of the**ResourceFolderAlias**property is used to create URLs for all resources.
 
 The following code example shows how to work with these properties:
 
-{{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Loading-and-Saving-ConvertDocumentToHTML-ExportResourcesUsingHtmlSaveOptions.cpp" >}}
+{{< gist "aspose-words-gists" "c0df00d37081f41a7683339fd7ef66c1" "export-resources.cs" >}}
 
 Using the[ResourceFolderAlias](https://reference.aspose.com/words/cpp/aspose.words.saving/htmlsaveoptions/get_resourcefolderalias/)property, we can also specify the name of the folder used to construct URIs of all resources written into an HTML document. This is the simplest way to specify how URIs should be generated for all resource files. The same information can be specified for images and fonts separately via[ImagesFolderAlias](https://reference.aspose.com/words/cpp/aspose.words.saving/htmlsaveoptions/get_imagesfolderalias/)and[FontsFolderAlias](https://reference.aspose.com/words/cpp/aspose.words.saving/htmlsaveoptions/get_fontsfolderalias/)properties, respectively.
 
@@ -71,51 +79,55 @@ However, there is no individual property for CSS. The behavior of the**FontsFold
 
 ### Export Base64 Encoding FontsResources
 
-Aspose.Words provides an ability tospecify whether font resources should be embedded into HTML in Base64 encodings. To perform this, use the[ExportFontsAsBase64](https://reference.aspose.com/words/cpp/aspose.words.saving/htmlsaveoptions/get_exportfontsasbase64/)property– this is an extension of the[ExportFontResources](https://reference.aspose.com/words/cpp/aspose.words.saving/htmlsaveoptions/get_exportfontresources/)property. By default,its value is**false**,and fonts are written into separate files.But ifthis option is set to**true**, fonts will be embedded into the document's CSS in Base64 encoding. The**ExportFontsAsBase64**property only affects HTML format and does not affect EPUB and MHTML.
+Aspose.Words provides an ability tospecify whether font resources should be embedded into HTML in Base64 encodings. To perform this, use the[ExportFontsAsBase64](https://reference.aspose.com/words/cpp/aspose.words.saving/htmlsaveoptions/get_exportfontsasbase64/) property– this is an extension of the[ExportFontResources](https://reference.aspose.com/words/cpp/aspose.words.saving/htmlsaveoptions/get_exportfontresources/) property. By default,its value is**false**,and fonts are written into separate files.But ifthis option is set to**true**, fonts will be embedded into the document's CSS in Base64 encoding. The**ExportFontsAsBase64** property only affects HTML format and does not affect EPUB and MHTML.
 
 The following code example shows how to export Base64‑encoded fonts to HTML:
 
-{{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Loading-and-Saving-ConvertDocumentToHTML-ExportFontsAsBase64.cpp" >}}
+{{< gist "aspose-words-gists" "c0df00d37081f41a7683339fd7ef66c1" "export-fonts-as-base64.cs" >}}
 
 ## Specify Save Options when Conversion to EPUB
 
-Aspose.Words allows converting a Word document into EPUB format using default or custom save options.You can specify a number of options by passing an instance of[HtmlSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/htmlsaveoptions/)to the `Save` method.
+Aspose.Words allows to convert a Word document into EPUB format using default or custom save options.You can specify a number of options by passing an instance of[HtmlSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/htmlsaveoptions/)to the[Save](https://reference.aspose.com/words/cpp/aspose.words/document/save/)method.
 
 The following code example shows how to converts a Word document to EPUB with specifying some custom save options:
 
-{{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Loading-and-Saving-ConvertDocumentToEPUB-ConvertDocumentToEPUB.cpp" >}}
+{{< gist "aspose-words-gists" "c0df00d37081f41a7683339fd7ef66c1" "split-document-by-headings.cs" >}}
 
 {{% alert color="primary" %}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-C/tree/master/Examples).
+You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-C/blob/master/Examples/Data/Rendering.docx).
 
 {{% /alert %}}
+
+## See Also
+
+- [How to export round‑trip information when saving to HTML](/words/cpp/custom-styles-used-for-proper-aspose-words-html-aspose-words-roundtrip/)
 
 ------  
 
 ## FAQ
 
 1. **Q:** How do I convert a DOCX file to HTML using Aspose.Words for C++?  
-   **A:** Load the document with `Document doc("input.docx");` and call `doc.Save("output.html", SaveFormat::Html);`. This uses the default `HtmlSaveOptions`.  
+   **A:** Load the document with `auto doc = System::MakeObject<Document>(u"input.docx");` and call `doc->Save(u"output.html", SaveFormat::Html);`. This uses the default `HtmlSaveOptions`.  
 
 2. **Q:** How can I preserve Word‑specific features (round‑trip information) when saving to HTML?  
-   **A:** Create an `HtmlSaveOptions` object, set `options.set_ExportRoundtripInformation(true);`, and pass it to `Document::Save`. This embeds additional CSS that allows the document to be re‑loaded with tabs, comments, headers, and footers restored.  
+   **A:** Create an `HtmlSaveOptions` object with `auto options = System::MakeObject<HtmlSaveOptions>();`, call `options->set_ExportRoundtripInformation(true);`, and pass it to `Document::Save`. This embeds additional CSS that allows the document to be re‑loaded with tabs, comments, headers, and footers restored.  
 
 3. **Q:** Where can I specify the folder for images, fonts, and other resources generated during HTML conversion?  
-   **A:** Use `HtmlSaveOptions options;` then set `options.set_ResourceFolder("Resources");`, `options.set_ImagesFolder("Resources/Images");`, and `options.set_FontsFolder("Resources/Fonts");`. The folders are created automatically if they do not exist.  
+   **A:** Create `auto options = System::MakeObject<HtmlSaveOptions>();`, then call `options->set_ResourceFolder(u"Resources");`, `options->set_ImagesFolder(u"Resources/Images");`, and `options->set_FontsFolder(u"Resources/Fonts");`. The folders are created automatically if they do not exist.  
 
 4. **Q:** How do I embed fonts directly into the HTML file as Base64 strings?  
-   **A:** Set `options.set_ExportFontsAsBase64(true);` on an `HtmlSaveOptions` instance before saving. This causes font files to be encoded in Base64 and placed inside the generated CSS, eliminating external font files.  
+   **A:** Call `options->set_ExportFontsAsBase64(true);` on an `HtmlSaveOptions` instance before saving. This causes font files to be encoded in Base64 and placed inside the generated CSS, eliminating external font files.  
 
 5. **Q:** What is the recommended way to convert a document to EPUB with custom options?  
-   **A:** Although EPUB uses `HtmlSaveOptions`, you pass the same options to `Document::Save` with `SaveFormat::Epub`. For example:  
+   **A:** EPUB uses `HtmlSaveOptions`: create the options with `SaveFormat::Epub` and pass them to `Document::Save`. For example:  
 
    ```cpp
-   HtmlSaveOptions options;
-   options.set_ExportFontResources(true);
-   options.set_ExportImagesAsBase64(true);
-   Document doc("input.docx");
-   doc.Save("output.epub", SaveFormat::Epub, &options);
+   auto options = System::MakeObject<HtmlSaveOptions>(SaveFormat::Epub);
+   options->set_ExportFontResources(true);
+   options->set_ExportImagesAsBase64(true);
+   auto doc = System::MakeObject<Document>(u"input.docx");
+   doc->Save(u"output.epub", options);
    ```  
 
    This lets you control font embedding, image handling, and other EPUB‑specific settings.

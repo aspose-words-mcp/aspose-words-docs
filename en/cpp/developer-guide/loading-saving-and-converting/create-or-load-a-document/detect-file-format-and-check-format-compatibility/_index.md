@@ -13,6 +13,14 @@ url: /cpp/detect-file-format-and-check-format-compatibility/
 timestamp: 2024-10-21-11-17-44
 ---
 
+{{% alert color="grey" %}}
+
+## Purpose Summary
+
+This page explains how to detect file format and verify compatibility before loading a document with Aspose.Words.
+
+{{% /alert %}}
+
 Sometimes it is necessary to determine the format of a document before opening because the file extension does not guarantee that the contents of the file are appropriate. For example, it is known that Crystal Reports often outputs documents in RTF format, but gives them the .doc extension.
 
 Aspose.Words provides an ability to obtain information about the file type in order to avoid an exception if you are not sure what the actual content of the file is.
@@ -21,7 +29,7 @@ Aspose.Words provides an ability to obtain information about the file type in or
 
 When you are dealing with multiple documents in various file formats, you may need to separate out those files that can be processed by Aspose.Words from those that cannot. You may also want to know why some of the documents cannot be processed.
 
-If you attempt to load a file into a[Document](https://reference.aspose.com/words/cpp/aspose.words/document/)object and Aspose.Words cannot recognize the file format or the format is not supported, Aspose.Words will throw an exception. You can catch those exceptions and analyze them, but Aspose.Words also provides the[DetectFileFormat](https://reference.aspose.com/words/cpp/aspose.words/fileformatutil/detectfileformat/)method that allows us to quickly determine the file format without loading a document with possible exceptions.This method returns a[FileFormatInfo](https://reference.aspose.com/words/cpp/aspose.words/fileformatinfo/)object that contains the detected information about the file type.
+If you attempt to load a file into a[Document](https://reference.aspose.com/words/cpp/aspose.words/document/)object and Aspose.Words cannot recognize the file format or the format is not supported, Aspose.Words will throw an exception. You can catch those exceptions and analyze them, but Aspose.Words also provides the[DetectFileFormat](https://reference.aspose.com/words/cpp/aspose.words/fileformatutil/detectfileformat/) method that allows us to quickly determine the file format without loading a document with possible exceptions.This method returns a[FileFormatInfo](https://reference.aspose.com/words/cpp/aspose.words/fileformatinfo/)object that contains the detected information about the file type.
 
 {{% alert color="primary" %}}
 
@@ -37,13 +45,13 @@ Since we are dealing with contents in a folder, the first thing we need to do is
 
 The following code example shows how to get a list of all the files in the folder:
 
-{{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Loading-and-Saving-CheckFormat-GetListOfFilesInFolder.cpp" >}}
+{{< gist "aspose-words-gists" "7fe3fc4004f081628a63608db70332b3" "get-files.cs" >}}
 
-When all the files are collected, the rest of the work is done by the**DetectFileFormat**method, which checks the file format.
+When all the files are collected, the rest of the work is done by the **DetectFileFormat** method, which checks the file format.
 
 The following code example shows how to iterate over the collected list of files, check the format of each file, and moves each file to the appropriate folder:
 
-{{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Loading-and-Saving-CheckFormat-CheckFormatCompatibility.cpp" >}}
+{{< gist "aspose-words-gists" "7fe3fc4004f081628a63608db70332b3" "check-format-compatibility.cs" >}}
 
 The files are moved into appropriate subfolders using the `Move` method of the `File` class, from the same `System.IO` namespace.
 
@@ -67,9 +75,7 @@ The following files are used in the example above. The file name is on the left 
 |  | Test File (DocPreWord60).doc | Microsoft Word 2.0 document. |
 | Encrypted documents | Test File (Enc).doc | Encrypted Microsoft Word 95/6.0 or Microsoft Word 97 – 2003 document. |
 |  | Test File (Enc).docx | Encrypted Office Open XML WordprocessingML document. |
-| Unsupported file formats | Test File (JPG).jpg | JPEG image file. |
-
------- 
+| Unsupported file formats | Test File (JPG).jpg | JPEG image file. | 
 
 ## FAQ
 
@@ -80,10 +86,10 @@ The following files are used in the example above. The file name is on the left 
    **A:** The `IsEncrypted` property of `FileFormatInfo` is set to `true` when the detected format is encrypted. You can still obtain the file format type, but you must provide the correct password when later loading the file with `Document`.
 
 3. **Q:** How can I check whether a detected format is supported by the current Aspose.Words version before attempting to load it?  
-   **A:** Compare the `FileFormatInfo::GetFileFormatType()` value against the `FileFormat` enumeration. All values listed in the enumeration are supported. If the value is `FileFormat::Unknown` or `FileFormat::Unsupported`, skip loading or handle the file separately.
+   **A:** Check the `LoadFormat` returned by `FileFormatInfo::get_LoadFormat()`. All values listed in the `LoadFormat` enumeration are supported. If the value is `LoadFormat::Unknown`, skip loading or handle the file separately.
 
 4. **Q:** Why does `DetectFileFormat` sometimes report a supported format, yet loading the document still throws an exception?  
    **A:** `DetectFileFormat` reads only a small portion of the file to identify the format. Corrupted files, partially downloaded files, or files that contain unsupported features may still be identified as a known format but fail during full parsing. In such cases, catch the exception from `Document` construction and log the detailed error message.
 
 5. **Q:** Can `DetectFileFormat` differentiate between DOC and DOCX files that share the same `.doc` extension?  
-   **A:** Yes. The method examines the file header, so a DOCX (Office Open XML) file will be reported as `FileFormat::Docx` even if its extension is `.doc`. This allows you to correctly handle files regardless of their extensions.
+   **A:** Yes. The method examines the file header, so a DOCX (Office Open XML) file will be reported as `LoadFormat::Docx` even if its extension is `.doc`. This allows you to correctly handle files regardless of their extensions.

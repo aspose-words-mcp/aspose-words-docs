@@ -13,11 +13,19 @@ url: /cpp/warnings-when-saving-to-pdfa-and-pdfua/
 timestamp: 2024-01-27-14-07-04
 ---
 
+{{% alert color="grey" %}}
+
+## Purpose Summary
+
+This page explains warnings that may appear when saving to PDF/A or PDF/UA and how to handle them.
+
+{{% /alert %}}
+
 PDF/A and PDF/UA formats impose a number of accessibility requirements related to document content that cannot be fulfilled during automatic conversion from Word to PDF. These requirements are described in the previous article *"Working with PDF/A or PDF/UA"*. Now warnings are issued for some of these problems.
 
 Warnings are issued when saving to one of the PDF/A or PDF/UA formats and the issue violates compliance. For example, the warning about missing document title will be issued when saving to PDF/UA and will not be issued when saving to PDF/A.
 
-All warnings are of **WarningType.MinorFormattingLoss** and **WarningSource.Pdf**. Here is a list of the new Description warning values:
+All warnings are of [WarningType](https://reference.aspose.com/words/cpp/aspose.words/warningtype/) **.MinorFormattingLoss** and [WarningSource](https://reference.aspose.com/words/cpp/aspose.words/warningsource/) **.Pdf**. Here is a list of the new Description warning values:
 
 | Description warning value                                    | PDF/A                  | PDF/UA                 |
 | ------------------------------------------------------------ | ---------------------- | ---------------------- |

@@ -4,7 +4,7 @@ second_title: Aspose.Words for C++
 articleTitle: Convert a Document to an Image
 linktitle: Convert a Document to an Image
 type: docs
-description: "Convert a document to image format (JPG, PNG, etc). Create a document preview or create a document scan to send an invoice."
+description: "Convert a document to image format (JPG, PNG, etc). Create a document preview or create a document scan to send an invoice using C++."
 weight: 43
 ai_search_scope: words_cpp
 ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
@@ -13,17 +13,25 @@ url: /cpp/convert-a-document-to-an-image/
 timestamp: 2024-01-30-16-22-34
 ---
 
+{{% alert color="grey" %}}
+
+## Purpose Summary
+
+This page explains how to convert a Word document into images (e.g., PNG, JPEG) using Aspose.Words.
+
+{{% /alert %}}
+
 Sometimes it is required to get an image instead of documents in other formats, such as DOCX or PDF. For example, you need to add a preview of any document page to your website or application, or create a "scan" of a document to send an invoice. This is when you may need to convert a document in any [supported load format](https://reference.aspose.com/words/cpp/aspose.words/loadformat/) to an image, again, in any [supported save format](https://reference.aspose.com/words/cpp/aspose.words/saveformat/).
 
-## Convert to Image Format
+## Convert to Image {#convert-to-image-format}
 
 As with all conversion examples already described, you need to create a new document or load an existing one in any supported format, make the necessary changes, and save it in any available image format, for example, JPEG, PNG, or BMP.
 
 The following code example shows how to convert DOCX to JPEG:
 
-{{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "Examples-DocsExamples-source-File Formats and Conversions-Base conversions-DocxToJpeg.h" >}}
+{{< gist "aspose-words-gists" "ebbb90d74ef57db456685052a18f8e86" "docx-to-jpeg.cs" >}}
 
-## Specify Save Options when Converting to an Image
+## Specify Save Options when Converting to Image {#specify-save-options-when-converting-to-an-image}
 
 Aspose.Words provides you with the [ImageSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/imagesaveoptions/) class, which gives more control over how documents are saved in various image formats. Some properties of this class inherit or overload properties of base classes such as [FixedPageSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/fixedpagesaveoptions/) or [SaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/saveoptions/), but there are also options specific to saving images.
 
@@ -35,8 +43,7 @@ There are also properties that apply to a certain format, for example, [JpegQual
 
 The following code example shows how to create a preview of the first document page with applying some additional settings:
 
-
-{{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Loading-and-Saving-ConvertWordDocument-ConvertDocumentToImage.cpp" >}}
+{{< gist "aspose-words-gists" "ebbb90d74ef57db456685052a18f8e86" "get-jpeg-page-range.cs" >}}
 
 ------ 
 
@@ -52,7 +59,7 @@ The following code example shows how to create a preview of the first document p
    **A:** `HorizontalResolution`, `VerticalResolution`, and `Resolution` control DPI. `JpegQuality` (0‑100) adjusts JPEG compression, while `TiffCompression` sets TIFF compression type. Adjust these on the `ImageSaveOptions` instance before saving.
 
 4. **Q:** How can I change the pixel format or color mode of the output image?  
-   **A:** Set `PixelFormat` (e.g., `PixelFormat::Format24bppRgb`) and `ImageColorMode` (e.g., `ImageColorMode::Grayscale`) on the `ImageSaveOptions` object to modify the image's color representation.
+   **A:** Call `set_PixelFormat` (e.g., `ImagePixelFormat::Format24BppRgb`) and `set_ImageColorMode` (e.g., `ImageColorMode::Grayscale`) on the `ImageSaveOptions` object to modify the image's color representation.
 
 5. **Q:** How do I generate separate image files for every page in a document?  
    **A:** Loop through the page count, update `PageSet` for each page, and call `Save` with a distinct file name, e.g.:

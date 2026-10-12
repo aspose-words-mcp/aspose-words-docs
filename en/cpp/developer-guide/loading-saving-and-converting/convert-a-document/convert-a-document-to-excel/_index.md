@@ -13,18 +13,29 @@ url: /cpp/convert-a-document-to-excel/
 timestamp: 2024-01-31-14-23-37
 ---
 
+{{% alert color="grey" %}}
+
+## Purpose Summary
+
+This page outlines how to convert a Word document to Excel format (XLS/XLSX) using Aspose.Words.
+
+{{% /alert %}}
+
 Converting documents from one format to another is the flagship feature of Aspose.Words. You can convert documents in any available [load format](https://reference.aspose.com/words/cpp/aspose.words/loadformat/) also to XLSX format.
 
 ## Convert a Document to XLSX
 
-Converting a document to XLSX is a rather complicated process. To save your document to XLSX format using Aspose.Words, use the **XlsxSaveOptions** class and the new `Xlsx` element in the [SaveFormat](https://reference.aspose.com/words/cpp/aspose.words/saveformat/) enumeration. As mentioned above, you can save the document in any load format supported by Aspose.Words to XLSX.
+Converting a document to XLSX is a rather complicated process. To save your document to XLSX format using Aspose.Words, use the [XlsxSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/xlsxsaveoptions/) class and the new `Xlsx` element in the [SaveFormat](https://reference.aspose.com/words/cpp/aspose.words/saveformat/) enumeration. As mentioned above, you can save the document in any load format supported by Aspose.Words to XLSX.
 
-The following code example shows how to save PDF to XLSX:
+The following code example shows how to save DOCX to XLSX:
 
-{{< highlight cpp >}}
-auto doc = MakeObject<Document>(MyDir + u"Pdf Document.pdf");
-doc->Save(ArtifactsDir + u"BaseConversions.PdfToXlsx.xlsx");
-{{< /highlight >}}
+{{< gist "aspose-words-gists" "a50652f28531278511605e0fd778bbdf" "docx-to-xlsx.cs" >}}
+
+{{% alert color="primary" %}}
+
+Sometimes it is necessary to specify additional options, which can affect the result of saving a document as a XLSX. These options can be specified using the [XlsxSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/xlsxsaveoptions/) class, containing properties that determine how the XLSX output will be displayed.
+
+{{% /alert %}}
 
 ## Find and Replace When Saving to XLSX
 
@@ -32,35 +43,15 @@ Also using Aspose.Words, you can find a specific string or regular expression in
 
 The following code example shows how to perform find and replace operation and save result to XLSX:
 
-{{< highlight cpp >}}
-auto doc = MakeObject<Document>();
-auto builder = MakeObject<DocumentBuilder>(doc);
-
-builder->Writeln(u"Ruby bought a ruby necklace.");
-
-// We can use a "FindReplaceOptions" object to modify the find-and-replace process.
-auto options = MakeObject<FindReplaceOptions>();
-// Set the "MatchCase" flag to "true" to apply case sensitivity while finding strings to replace.
-// Set the "MatchCase" flag to "false" to ignore character case while searching for text to replace.
-options->set_MatchCase(true);
-
-doc->get_Range()->Replace(u"Ruby", u"Jade", options);
-doc->Save(ArtifactsDir + u"BaseConversions.FindReplaceXlsx.xlsx");
-{{< /highlight >}}
+{{< gist "aspose-words-gists" "a50652f28531278511605e0fd778bbdf" "find-replace-xlsx.cs" >}}
 
 ## Specify Compression Level When Saving to XLSX
 
-You can also specify the compression level when saving using the **CompressionLevel** property.
+You can also specify the compression level when saving using the [CompressionLevel](https://reference.aspose.com/words/cpp/aspose.words.saving/xlsxsaveoptions/get_compressionlevel/) property.
 
 The following code example shows how to specify the compression level when saving to XLSX format:
 
-{{< highlight cpp >}}
-auto doc = MakeObject<Document>(MyDir + u"Document.docx");
-auto saveOptions = MakeObject<XlsxSaveOptions>();
-saveOptions->set_CompressionLevel(CompressionLevel::Maximum);
-
-doc->Save(ArtifactsDir + u"BaseConversions.CompressXlsx.xlsx", saveOptions);
-{{< /highlight >}}
+{{< gist "aspose-words-gists" "a50652f28531278511605e0fd778bbdf" "compress-xlsx.cs" >}}
 
 ## See Also
 
@@ -71,10 +62,10 @@ doc->Save(ArtifactsDir + u"BaseConversions.CompressXlsx.xlsx", saveOptions);
 
 ## FAQ
 
-1. **Q:** How can I convert a PDF document to Excel (XLSX) using Aspose.Words for C++?  
-   **A:** Load the PDF with the `Document` class and call `Save` specifying an XLSX file name. Aspose.Words automatically detects the source format and writes the spreadsheet. Example:  
+1. **Q:** How can I convert a DOCX document to Excel (XLSX) using Aspose.Words for C++?  
+   **A:** Load the DOCX with the `Document` class and call `Save` specifying an XLSX file name. Aspose.Words automatically detects the source format and writes the spreadsheet. Example:  
    ```cpp
-   auto doc = MakeObject<Document>(MyDir + u"Pdf Document.pdf");
+   auto doc = MakeObject<Document>(MyDir + u"Document.docx");
    doc->Save(ArtifactsDir + u"Result.xlsx");
    ```
 
