@@ -74,7 +74,7 @@ Licenses can be applied from various locations:
 
 #### Loading the License file
 
-In Aspose.Words for Android via Java, the license can be[embedded as a resource](/words/java/licensing/), or loaded from a stream:
+In Aspose.Words for Android via Java, the license can be [embedded as a resource](/words/java/licensing/), or loaded from a stream:
 
 1. Put the license file at any location on**/mnt/sdcard/**.
 1. Create a stream that references file.

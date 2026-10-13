@@ -13,7 +13,7 @@ url: /nodejs-net/working-with-watermark/
 timestamp: 2025-07-09-10-05-05
 ---
 
-This topic discusses how to work programmatically with watermark using Aspose.Words. A watermark is a background image that displays behind the text in a document.A watermark can contain a text or an image represented by the[Watermark](https://reference.aspose.com/words/nodejs-net/aspose.words/watermark/)class.
+This topic discusses how to work programmatically with watermark using Aspose.Words. A watermark is a background image that displays behind the text in a document.A watermark can contain a text or an image represented by the [Watermark](https://reference.aspose.com/words/nodejs-net/aspose.words/watermark/) class.
 
 {{% alert color="primary" %}}
 
@@ -29,7 +29,7 @@ In Microsoft Word, a watermark can easily be inserted in a document using the In
 
 ### Add Text Watermark
 
-The following code example demonstrates how to insert a text watermark in a document by defining[TextWatermarkOptions](https://reference.aspose.com/words/nodejs-net/aspose.words/textwatermarkoptions/) using the [setText](https://reference.aspose.com/words/nodejs-net/aspose.words/watermark/setText/) method:
+The following code example demonstrates how to insert a text watermark in a document by defining [TextWatermarkOptions](https://reference.aspose.com/words/nodejs-net/aspose.words/textwatermarkoptions/) using the [setText](https://reference.aspose.com/words/nodejs-net/aspose.words/watermark/setText/) method:
 
 {{< gist "aspose-words-gists" "2936fee38a4d9a8256f95e4276400579" "add-text-watermark.js" >}}
 
@@ -49,7 +49,7 @@ The following code example inserts a watermark into a Word document:
 
 {{% alert color="primary" %}}
 
-You can download the template file of this example from[here](https://github.com/aspose-words/Aspose.Words-for-Node.js-via-.NET/tree/main/Data/Document.docx).
+You can download the template file of this example from [here](https://github.com/aspose-words/Aspose.Words-for-Node.js-via-.NET/tree/main/Data/Document.docx).
 
 {{% /alert %}}
 
@@ -71,7 +71,7 @@ The following code example show you how to set the name of the watermark shape a
 
 ## Add a Watermark in Table Cell
 
-Sometimes you need to insert a watermark/image into a table's cell and display it outside the table,you can use the [isLayoutInCell](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/shapebase/isLayoutInCell/) property. This property gets or sets a flag indicating whether the shape is displayed inside a table or outside of it. Note that this property works only when you optimize the document forMicrosoftWord2010 using the[optimizeFor](https://reference.aspose.com/words/nodejs-net/aspose.words.settings/compatibilityoptions/optimizeFor/) method.
+Sometimes you need to insert a watermark/image into a table's cell and display it outside the table,you can use the [isLayoutInCell](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/shapebase/isLayoutInCell/) property. This property gets or sets a flag indicating whether the shape is displayed inside a table or outside of it. Note that this property works only when you optimize the document forMicrosoftWord2010 using the [optimizeFor](https://reference.aspose.com/words/nodejs-net/aspose.words.settings/compatibilityoptions/optimizeFor/) method.
 
 The following code example shows how to use this property:
 

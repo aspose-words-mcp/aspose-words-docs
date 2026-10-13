@@ -23,7 +23,7 @@ This page explains how to print documents using Aspose.Words and details printer
 
 ## VSTO Words
 
-Call the **PrintOut** method of the **Document** object that you want to print.The following code example prints the active entire document or any current active page.
+Call the **PrintOut** method of the **Document** object that you want to print. The following code example prints the active entire document or any current active page.
 
 {{< highlight csharp >}}
 this.Application.ActiveDocument.PrintOut(true, false, Word.WdPrintOutRange.wdPrintAllDocument,

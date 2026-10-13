@@ -34,6 +34,6 @@ dst_doc.save(@data_dir + "TestFile.SimpleAppendDocument Out.docx")
 
 ## Download Running Code
 
-Download **Joining And Appending (Aspose.Words)**fromany of the below mentioned social coding sites:
+Download **Joining And Appending (Aspose.Words)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-words/Aspose.Words-for-Java/blob/master/Plugins/Aspose_Words_Java_for_Ruby/lib/asposewordsjavaforruby/appenddocument.rb)

@@ -83,12 +83,12 @@ public class Person
  persons.min(p => p.getAge()){{< /highlight >}} |
 | `orderBy(ComparableSelector)` | {{< highlight csharp >}}
  persons.orderBy(p => p.getAge()){{< /highlight >}}Or {{< highlight csharp >}}
- persons.orderBy(p => p.getAge()).thenByDescending(p => p.getName()){{< /highlight >}}Or {{< highlight csharp >}}
- persons.orderBy(p => p.getAge()).thenByDescending(p => p.getName()).thenBy(p => p.getChildren().count()){{< /highlight >}}This method returns an enumeration ordered by a single key. To specify additional ordering keys, you can use the following extension methods of an ordered enumeration:<br>- thenBy(ComparableSelector)<br>- thenByDescending(ComparableSelector) |
+ persons.orderBy(p => p.getAge()). ThenByDescending(p => p.getName()){{< /highlight >}}Or {{< highlight csharp >}}
+ persons.orderBy(p => p.getAge()). ThenByDescending(p => p.getName()). ThenBy(p => p.getChildren().count()){{< /highlight >}}This method returns an enumeration ordered by a single key. To specify additional ordering keys, you can use the following extension methods of an ordered enumeration:<br>- thenBy(ComparableSelector)<br>- thenByDescending(ComparableSelector) |
 | `orderByDescending(ComparableSelector)` | {{< highlight csharp >}}
  persons.orderByDescending(p => p.getAge()){{< /highlight >}}Or {{< highlight csharp >}}
- persons.orderByDescending(p => p.getAge()).thenByDescending(p => p.getName()){{< /highlight >}}Or {{< highlight csharp >}}
- persons.orderByDescending(p => p.getAge()).thenByDescending(p => p.getName())    .thenBy(p => p.getChildren().count()){{< /highlight >}}See the previous note. |
+ persons.orderByDescending(p => p.getAge()). ThenByDescending(p => p.getName()){{< /highlight >}}Or {{< highlight csharp >}}
+ persons.orderByDescending(p => p.getAge()). ThenByDescending(p => p.getName())    . ThenBy(p => p.getChildren().count()){{< /highlight >}}See the previous note. |
 | `select(Selector)` | {{< highlight csharp >}}persons.select(p => p.getName()){{< /highlight >}} |
 | `selectMany(EnumerationSelector)` | {{< highlight csharp >}}persons.selectMany(p => p.getChildren()){{< /highlight >}} |
 | `single()` | {{< highlight csharp >}}
@@ -128,7 +128,7 @@ public class Person
    **A:** Use the `groupBy` extension method. Example: `persons.groupBy(p => p.getAge())` returns a collection of groups. Inside the template you can iterate: `<<foreach [group in persons.groupBy(p => p.getAge())]>> Age: <<group.Key>> Count: <<group.count()>> <<endforeach>>`.
 
 4. **Q:** What extension methods should I use to sort a collection by multiple fields?  
-   **A:** First apply `orderBy` (or `orderByDescending`) with the primary key, then chain `thenBy` or `thenByDescending` for secondary keys. Example: `persons.orderBy(p => p.getAge()).thenByDescending(p => p.getName()).thenBy(p => p.getChildren().count())`.
+   **A:** First apply `orderBy` (or `orderByDescending`) with the primary key, then chain `thenBy` or `thenByDescending` for secondary keys. Example: `persons.orderBy(p => p.getAge()). ThenByDescending(p => p.getName()). ThenBy(p => p.getChildren().count())`.
 
 5. **Q:** How can I check whether any element in a collection satisfies a condition?  
    **A:** Use the `any(Predicate)` method. Example: `persons.any(p => p.getAge() > 65)` returns `true` if at least one person is older than 65, otherwise `false`.

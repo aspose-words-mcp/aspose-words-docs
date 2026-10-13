@@ -28,7 +28,7 @@ Previously, Aspose.Words for Android via Javawas distributed as a single ZIP fil
 1. If you want to use any version before Aspose.Words for Androidvia Java1.11, you just need to unzip any version of Aspose.Words.Android.zip into a directory of your choice.
 1. Include the extracted Jar file in your application using the Build Path configuration for its application.
 
-Versions 1.11 and 1.12 were manually divided into two parts: JAR and APK in order to limit the number of methods in the DEX file.In these versions, we provided our own APK loader to initiate the correct loading of the additional classes.dex file. Starting from version 17.2.0 we support the official workflow described[here](https://developer.android.com/studio/build/multidex.html).
+Versions 1.11 and 1.12 were manually divided into two parts: JAR and APK in order to limit the number of methods in the DEX file.In these versions, we provided our own APK loader to initiate the correct loading of the additional classes.dex file. Starting from version 17.2.0 we support the official workflow described [here](https://developer.android.com/studio/build/multidex.html).
 
 ### How to Use Aspose.Words for Androidvia Java from 1.11 Onward
 
@@ -132,7 +132,7 @@ public void onStart() {
 
 ## How to Use Aspose.Words for Androidvia Javafrom 17.2.0 Onward
 
-1. Download the newest version of[Aspose.Wordsfor Android via Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-words/)
+1. Download the newest version of [Aspose.Wordsfor Android via Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-words/)
 1. Copyaspose-words-18.3-android.via.java.jar into your project's*libs/*folder
 ![install-aspose-words-for-android-via-java-2](install-aspose-words-for-android-via-java-2.jpg)
 

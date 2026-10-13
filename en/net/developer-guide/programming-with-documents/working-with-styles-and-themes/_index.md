@@ -25,7 +25,7 @@ The [StyleCollection](https://reference.aspose.com/words/net/aspose.words/stylec
 
 ## Accessing Styles
 
-You can get a collection of styles defined in the document using the[Document.Styles](https://reference.aspose.com/words/net/aspose.words/documentbase/styles/)property. This collection holds both the built-in and user-defined styles in a document. A particular style could be obtained by its name/alias, style identifier, or index.The following code example demonstrateshow to get access to the collection of styles defined in the document.
+You can get a collection of styles defined in the document using the [Document.Styles](https://reference.aspose.com/words/net/aspose.words/documentbase/styles/) property. This collection holds both the built-in and user-defined styles in a document. A particular style could be obtained by its name/alias, style identifier, or index. The following code example demonstrateshow to get access to the collection of styles defined in the document.
 
 {{< gist "aspose-words-gists" "a73b495f610523670f0847331ef4d6fc" "access-styles.cs" >}}
 
@@ -59,7 +59,7 @@ Note that the second parameter of the **Document.GetChildNodes** method is set t
 
 {{% /alert %}}
 
-It's also worth pointing out that the paragraphs collection does not create an immediate overhead because paragraphs are loaded into this collection only when you access items in them.Then, all you need to do is to go through the collection, using the standard foreach operator and add paragraphs that have the specified style to the paragraphsWithStyle array. The `Paragraph` style name can be found in the [Style.Name](https://reference.aspose.com/words/net/aspose.words/style/name/) property of the [Paragraph.ParagraphFormat](https://reference.aspose.com/words/net/aspose.words/paragraph/paragraphformat/) object.The implementation of RunsByStyleName is almost the same, although we're obviously using [NodeType.Run](https://reference.aspose.com/words/net/aspose.words/nodetype/) to retrieve run nodes. The [Font.Style](https://reference.aspose.com/words/net/aspose.words/font/style/) property of a [Run](https://reference.aspose.com/words/net/aspose.words/run/) object is used to access style information in the **Run** nodes.Below example find all runs formatted with the specified style.
+It's also worth pointing out that the paragraphs collection does not create an immediate overhead because paragraphs are loaded into this collection only when you access items in them. Then, all you need to do is to go through the collection, using the standard foreach operator and add paragraphs that have the specified style to the paragraphsWithStyle array. The `Paragraph` style name can be found in the [Style.Name](https://reference.aspose.com/words/net/aspose.words/style/name/) property of the [Paragraph.ParagraphFormat](https://reference.aspose.com/words/net/aspose.words/paragraph/paragraphformat/) object. The implementation of RunsByStyleName is almost the same, although we're obviously using [NodeType.Run](https://reference.aspose.com/words/net/aspose.words/nodetype/) to retrieve run nodes. The [Font.Style](https://reference.aspose.com/words/net/aspose.words/font/style/) property of a [Run](https://reference.aspose.com/words/net/aspose.words/run/) object is used to access style information in the **Run** nodes.Below example find all runs formatted with the specified style.
 
 {{< gist "aspose-words-gists" "a73b495f610523670f0847331ef4d6fc" "runs-by-style-name.cs" >}}
 
@@ -120,7 +120,7 @@ And here is how you can set theme properties:
    **A:** Call `Document.CopyStylesFromTemplate(string templatePath)` on the target document. This method copies both built‑in and user‑defined styles, redefining any matching style names to match the template while preserving unique styles.
 
 3. **Q:** How do I read or modify the theme colors, fonts, or other theme properties of a document?  
-   **A:** Access the `Document.Theme` property, which returns a `Theme` object. From there you can work with `ThemeColors`, `ThemeFonts`, etc. Example code in the article shows how to get and set these properties using the `Theme` API.
+   **A:** Access the `Document. Theme` property, which returns a `Theme` object. From there you can work with `ThemeColors`, `ThemeFonts`, etc. Example code in the article shows how to get and set these properties using the `Theme` API.
 
 4. **Q:** Can I change the font style (e.g., make text bold or italic) for all runs that use a particular character style?  
    **A:** Retrieve the runs with `RunsByStyleName(string styleName)`, then iterate through the resulting `Run` collection and modify `run.Font.Bold` or `run.Font.Italic` as needed. This updates every run that is associated with the specified character style.

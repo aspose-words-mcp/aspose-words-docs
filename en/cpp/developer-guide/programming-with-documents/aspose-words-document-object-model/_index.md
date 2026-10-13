@@ -106,7 +106,7 @@ Each node has a parent specified by the [ParentNode](https://reference.aspose.co
 - The node has been removed from the tree.
 - This is the root **Document** node which always has a null parent node.
 
-You can remove a node from its parent by calling the [Remove](https://reference.aspose.com/words/cpp/aspose.words/node/remove/) method.The following code example shows how to access the parent node:
+You can remove a node from its parent by calling the [Remove](https://reference.aspose.com/words/cpp/aspose.words/node/remove/) method. The following code example shows how to access the parent node:
 
 {{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Programming-Documents-Node-ExNode-GetParentNode.cpp" >}}
 

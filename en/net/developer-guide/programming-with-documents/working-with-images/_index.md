@@ -27,16 +27,16 @@ Aspose.Words allows users to work with images in a very flexible way. In this ar
 
 ## How to Insert an Image {#insert-an-image}
 
-[DocumentBuilder](https://reference.aspose.com/words/net/aspose.words/documentbuilder/) provides several overloads of the[InsertImage](https://reference.aspose.com/words/net/aspose.words/documentbuilder/insertimage/)method that allows you to insert an inline or floating image. If the image is an EMF or WMF metafile, it will be inserted into the document in metafile format. All other images will be stored in PNG format. The**InsertImage**method can use images from different sources:
+[DocumentBuilder](https://reference.aspose.com/words/net/aspose.words/documentbuilder/) provides several overloads of the [InsertImage](https://reference.aspose.com/words/net/aspose.words/documentbuilder/insertimage/) method that allows you to insert an inline or floating image. If the image is an EMF or WMF metafile, it will be inserted into the document in metafile format. All other images will be stored in PNG format. The**InsertImage**method can use images from different sources:
 
-- From a file or `URL` by passing a `String` parameter[InsertImage](https://reference.aspose.com/words/net/aspose.words/documentbuilder/insertimage/)
+- From a file or `URL` by passing a `String` parameter [InsertImage](https://reference.aspose.com/words/net/aspose.words/documentbuilder/insertimage/)
 - From a stream by passing a `Stream` parameter**InsertImage**
 - From anImageobject by passing an Image parameter**InsertImage**
 - From a byte array by passing a byte array parameter**InsertImage**
 
 For each of the**InsertImage**methods, there are further overloads which allow you to insert an image with the following options:
 - Inline or floating at a specific position, for example,**InsertImage**
-- Percentage scale or custom size, for example,**InsertImage**; furthermore, the**InsertImage**method returns a[Shape](https://reference.aspose.com/words/net/aspose.words.drawing/shape/)object that was just created and inserted so you can further modify properties of theShape
+- Percentage scale or custom size, for example,**InsertImage**; furthermore, the**InsertImage**method returns a [Shape](https://reference.aspose.com/words/net/aspose.words.drawing/shape/) object that was just created and inserted so you can further modify properties of theShape
 
 ### How to Insert an Inline Image {#insert-an-inline-image}
 
@@ -108,7 +108,7 @@ The following code example shows how to achieve this using Aspose.Words API:
 
 ## Save Images as WMF {#save-images-as-wmf}
 
-Aspose.Words provides functionality to save all the available images in a document to [WMF](https://docs.fileformat.com/image/wmf/)format while converting DOCX to RTF.
+Aspose.Words provides functionality to save all the available images in a document to [WMF](https://docs.fileformat.com/image/wmf/) format while converting DOCX to RTF.
 
 The following code example shows how to save images as WMF with RTF save options:
 

@@ -20,7 +20,7 @@ timestamp: 2026-02-03-11-08-55
 This page explains Aspose.Words' rendering process for Python via .NET, describing how flow‑layout documents are paginated and converted to various fixed‑layout formats such as PDF, XPS, HTML, images, and SVG, and outlines the capabilities of its page layout engine.  
 {{% /alert %}}
 
-We use the term "rendering" in Aspose.Words to describe the process of converting a document into a file format or a medium that is paginated or has the concept of pages. We are talking about rendering of a document into pages.The following diagram shows what rendering is in Aspose.Words.
+We use the term "rendering" in Aspose.Words to describe the process of converting a document into a file format or a medium that is paginated or has the concept of pages. We are talking about rendering of a document into pages. The following diagram shows what rendering is in Aspose.Words.
 
 ![rendering_aspose-words](rendering-1.png)
 
@@ -29,7 +29,7 @@ The rendering features of Aspose.Words enable you to perform the following:
 - Convert a document or selected pages to PDF, XPS, HTML, XAML, PostScript, and PCL formats.
 - Convert a document into a multi-page TIFF document, or convert any page into a raster image and save it as BMP, PNG or JPEG.
 - Convert a document page into a Scalable Vector Graphics image (SVG), or convert into a vector image and save it as EMF.
-- Render a[Shape](https://reference.aspose.com/words/python-net/aspose.words.drawing/shape/)object separately from the document to any image format.
+- Render a [Shape](https://reference.aspose.com/words/python-net/aspose.words.drawing/shape/)object separately from the document to any image format.
 
 ## Flow-layout or Fixed-layout Document Formats {#flow-layout-or-fixed-layout-document-formats}
 

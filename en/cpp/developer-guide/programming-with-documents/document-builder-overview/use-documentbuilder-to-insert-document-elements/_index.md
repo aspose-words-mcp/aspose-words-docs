@@ -59,7 +59,7 @@ Use the `DocumentBuilder.RowFormat`property to specify row formatting. It return
 
 ### Ending a Table
 
-Call `DocumentBuilder.EndTable`to finish the current table. This method should be called only once after`DocumentBuilder->EndRow`was called. When called, `DocumentBuilder.EndTable`moves the cursor out of the current cell to a position just after the table.The following example demonstrates how to build a formatted table that contains 2 rows and 2 columns.
+Call `DocumentBuilder.EndTable`to finish the current table. This method should be called only once after`DocumentBuilder->EndRow`was called. When called, `DocumentBuilder.EndTable`moves the cursor out of the current cell to a position just after the table. The following example demonstrates how to build a formatted table that contains 2 rows and 2 columns.
 
 {{< gist "aspose-com-gists" "518f03cac02abb105e02f55edb7de9f9" "cpp-Programming-Documents-Document-DocumentBuilderBuildTable-DocumentBuilderBuildTable.cpp" >}}
 
@@ -76,7 +76,7 @@ DocumentBuilder provides several overloads of the`DocumentBuilder->InsertImage`m
 - From a file or `URL` by passing a string parameter`DocumentBuilder->InsertImage`.
 - From a stream by passing a `Stream` parameter`DocumentBuilder->InsertImage`.
 - From anImageobject by passing an Image parameter`DocumentBuilder->InsertImage`.
-- From a byte array by passing a byte array parameter `DocumentBuilder.InsertImage`.For each of the`DocumentBuilder->InsertImage`methods, there are further overloads which allow you to insert an image with the following options:
+- From a byte array by passing a byte array parameter `DocumentBuilder.InsertImage`. For each of the`DocumentBuilder->InsertImage`methods, there are further overloads which allow you to insert an image with the following options:
 - Inline or floating at a specific position, for example,`DocumentBuilder->InsertImage`.
 - Percentage scale or custom size, for example, `DocumentBuilder.InsertImage`. Furthermore the`DocumentBuilder->InsertImage`method returns a `Shape` object that was just created and inserted so you can further modify properties of theShape.
 
@@ -141,7 +141,7 @@ Customers can specify Locale at field level now and can achieve better control. 
 
 ## Inserting a Hyperlink
 
-Use `DocumentBuilder.InsertHyperlink`to insert a hyperlink into the document. This method accepts three parameters: text of the link to be displayed in the document, link destination (URL or a name of a bookmark inside the document), and a boolean parameter that should be true if the `URL` is a name of a bookmark inside the document.DocumentBuilder.InsertHyperlinkinternally calls `DocumentBuilder.InsertField`.The method always adds apostrophes at the beginning and end of the URL. Note that you need to specify font formatting for the hyperlink display text explicitly using the `Font` property. Below example inserts a hyperlink into a document using DocumentBuilder.
+Use `DocumentBuilder.InsertHyperlink`to insert a hyperlink into the document. This method accepts three parameters: text of the link to be displayed in the document, link destination (URL or a name of a bookmark inside the document), and a boolean parameter that should be true if the `URL` is a name of a bookmark inside the document.DocumentBuilder.InsertHyperlinkinternally calls `DocumentBuilder.InsertField`. The method always adds apostrophes at the beginning and end of the URL. Note that you need to specify font formatting for the hyperlink display text explicitly using the `Font` property. Below example inserts a hyperlink into a document using DocumentBuilder.
 
 {{< gist "aspose-com-gists" "518f03cac02abb105e02f55edb7de9f9" "cpp-Programming-Documents-Document-DocumentBuilderInsertElements-DocumentBuilderInsertHyperlink.cpp" >}}
 

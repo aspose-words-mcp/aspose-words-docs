@@ -17,11 +17,11 @@ weight: 10
 timestamp: 2025-01-21-14-07-04
 ---
 
-Almost any task that you want to perform with Aspose.Words involves loading a document.The [Document](https://reference.aspose.com/words/nodejs-net/aspose.words/document/) class represents a document loaded into memory. The document has several overloaded constructors allowing you to create a blank document or to load it from a file or an Array or Buffer.The document can be loaded in any load format supported by Aspose.Words. For the list of all supported load formats, see the[LoadFormat](https://reference.aspose.com/words/nodejs-net/aspose.words/loadformat/)enumeration.
+Almost any task that you want to perform with Aspose.Words involves loading a document. The [Document](https://reference.aspose.com/words/nodejs-net/aspose.words/document/) class represents a document loaded into memory. The document has several overloaded constructors allowing you to create a blank document or to load it from a file or an Array or Buffer. The document can be loaded in any load format supported by Aspose.Words. For the list of all supported load formats, see the [LoadFormat](https://reference.aspose.com/words/nodejs-net/aspose.words/loadformat/) enumeration.
 
 ## Create a New Document
 
-We will call the[Document](https://reference.aspose.com/words/nodejs-net/aspose.words/document/)constructor without parameters to create a new blank document. If you want to generate a document programmatically, the simplest way is to use the[DocumentBuilder](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/)class to add document contents.
+We will call the [Document](https://reference.aspose.com/words/nodejs-net/aspose.words/document/) constructor without parameters to create a new blank document. If you want to generate a document programmatically, the simplest way is to use the [DocumentBuilder](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/) class to add document contents.
 
 The following code example shows how to create a document using the document builder:
 
@@ -38,7 +38,7 @@ Note the default values:
 
 ## Load a Document
 
-To load an existing document in any of the[LoadFormat](https://reference.aspose.com/words/nodejs-net/aspose.words/loadformat/)formats, pass the file name or the Array or Buffer into one of the [Document](https://reference.aspose.com/words/nodejs-net/aspose.words/document/) constructors. The format of the loaded document is automatically determined by its extension.
+To load an existing document in any of the [LoadFormat](https://reference.aspose.com/words/nodejs-net/aspose.words/loadformat/) formats, pass the file name or the Array or Buffer into one of the [Document](https://reference.aspose.com/words/nodejs-net/aspose.words/document/) constructors. The format of the loaded document is automatically determined by its extension.
 
 ### Load from a File
 
@@ -48,7 +48,7 @@ The following code example shows how to open a document from a file:
 
 {{< gist "aspose-words-gists" "96e42cb4a611465927f8e7b1b3d546d3" "open-document.js" >}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-Node.js-via-.NET/blob/master/Data/Document.docx).
+You can download the template file of this example from [Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-Node.js-via-.NET/blob/master/Data/Document.docx).
 
 ### Load from an Array or Buffer
 
@@ -60,6 +60,6 @@ The following code example shows how to open a document from an Array or Buffer:
 
 {{% alert color="primary" %}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-Node.js-via-.NET/blob/master/Data/Document.docx).
+You can download the template file of this example from [Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-Node.js-via-.NET/blob/master/Data/Document.docx).
 
 {{% /alert %}}

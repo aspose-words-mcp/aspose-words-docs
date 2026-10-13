@@ -19,7 +19,7 @@ In this article, we will talk about inserting an OLE object and setting its prop
 
 ## Insert OLE Object
 
-If you want OLE Object, call the[insertOleObject](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/insertoleobject/) method and pass it the **ProgId** explicitly with other parameters.
+If you want OLE Object, call the [insertOleObject](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/insertoleobject/) method and pass it the **ProgId** explicitly with other parameters.
 
 The following code example shows how to insert OLE Object into a document:
 

@@ -120,7 +120,7 @@ Aspose.Words provides the [StreamFontSource](https://reference.aspose.com/words/
 
 {{< gist "aspose-words-gists" "59118a65c6a0dd4d6856d9ceb07e852e" "resource-steam.h" >}}
 
-**StreamFontSource** is an alternative to [MemoryFontSource](https://reference.aspose.com/words/cpp/aspose.words.fonts/memoryfontsource/) since it is always possible to load a stream to memory and pass it to **MemoryFontSource**.The difference is that the **MemoryFontSource** is stored in the memory all the time, and the **StreamFontSource** is loaded on demand and disposed right away. But it may be loaded several times, as described above. In some cases **MemoryFontSource** is preferable, and in others, **StreamFontSource**.
+**StreamFontSource** is an alternative to [MemoryFontSource](https://reference.aspose.com/words/cpp/aspose.words.fonts/memoryfontsource/) since it is always possible to load a stream to memory and pass it to **MemoryFontSource**. The difference is that the **MemoryFontSource** is stored in the memory all the time, and the **StreamFontSource** is loaded on demand and disposed right away. But it may be loaded several times, as described above. In some cases **MemoryFontSource** is preferable, and in others, **StreamFontSource**.
 
 ## Save and Load a Font Search Cache
 

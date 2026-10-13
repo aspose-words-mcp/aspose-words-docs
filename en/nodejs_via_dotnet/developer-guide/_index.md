@@ -18,8 +18,8 @@ This Developer Guide provides information on using Aspose.Words for Node.js via 
 
 To learn more about Aspose.Words features, select the corresponding section:
 
-- [Loading, Saving and Converting](/words/nodejs-net/loading-saving-and-converting/)– provides information about different ways to load or save documents and format-specific features useful for converting a document from one format to another.
-- [Rendering](/words/nodejs-net/rendering/)– provides information on how to get a paginated representation from a document in flow-layout page format.
-- [Programming with Documents](/words/nodejs-net/programming-with-documents/)– provides information on how to programmatically create, modify, and manage documents including changing both their content and visual appearance.
+- [Loading, Saving and Converting](/words/nodejs-net/loading-saving-and-converting/) – provides information about different ways to load or save documents and format-specific features useful for converting a document from one format to another.
+- [Rendering](/words/nodejs-net/rendering/) – provides information on how to get a paginated representation from a document in flow-layout page format.
+- [Programming with Documents](/words/nodejs-net/programming-with-documents/) – provides information on how to programmatically create, modify, and manage documents including changing both their content and visual appearance.
 
 For a detailed description of classes, methods, and properties refer to the Aspose.Words for Node.js via .NET [API Reference](https://reference.aspose.com/words/nodejs-net/).

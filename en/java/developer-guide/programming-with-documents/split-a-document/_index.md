@@ -21,7 +21,7 @@ This page explains how to split a document into parts programmatically.
 
 {{% /alert %}}
 
-*Splitting*or*split a document*is the process of breaking a large document into a greater number of smaller files.There are various reasons to split a file. For example, you only need some pages from a specific document and not the entire one. Or for privacy reasons, you want to share only some parts of a document with others.With the splitting feature, you can get only the required parts of the document and do the necessary actions with them, for example, to mark up, save, or send.
+*Splitting*or*split a document*is the process of breaking a large document into a greater number of smaller files. There are various reasons to split a file. For example, you only need some pages from a specific document and not the entire one. Or for privacy reasons, you want to share only some parts of a document with others.With the splitting feature, you can get only the required parts of the document and do the necessary actions with them, for example, to mark up, save, or send.
 
 Aspose.Words provides you with an efficient way to split one document into multiple documents by headings or sections. You can also split a document by pages or by page ranges. Both splitting options will be described in this article.
 
@@ -45,7 +45,7 @@ You can try this functionality with our [Free online document splitter](https://
 
 Aspose.Words allows you to split EPUB or HTML documents into chapters according to various criteria.In the process, the style and layout of the source document are preserved for the output documents.
 
-You can specify criteria using the[DocumentSplitCriteria](https://reference.aspose.com/words/java/com.aspose.words/documentsplitcriteria/)enumeration. So you can divide a document into chapters using one of the following criteria or combine more than one criteria together:
+You can specify criteria using the [DocumentSplitCriteria](https://reference.aspose.com/words/java/com.aspose.words/documentsplitcriteria/)enumeration. So you can divide a document into chapters using one of the following criteria or combine more than one criteria together:
 
 - heading paragraph,
 - section break,
@@ -66,7 +66,7 @@ In this section, we consider only some of the possible split criteria.
 
 To split a document into chapters by headings, use the **HeadingParagraph** value of the **DocumentSplitCriteria** property.
 
-If you need to split a document by a specific level of heading paragraphs, such as headings 1, 2, and 3, use also the[DocumentSplitHeadingLevel](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getDocumentSplitHeadingLevel) property. The output will be divided by paragraphs formatted with the specified heading level.
+If you need to split a document by a specific level of heading paragraphs, such as headings 1, 2, and 3, use also the [DocumentSplitHeadingLevel](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getDocumentSplitHeadingLevel) property. The output will be divided by paragraphs formatted with the specified heading level.
 
 The following code example shows how to split a document into smaller parts by heading:
 

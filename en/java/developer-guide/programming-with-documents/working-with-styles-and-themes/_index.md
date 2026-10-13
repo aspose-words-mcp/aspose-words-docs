@@ -29,7 +29,7 @@ The [StyleCollection](https://reference.aspose.com/words/java/com.aspose.words/s
 
 ## Accessing Styles
 
-You can get a collection of styles defined in the document using the[Document.getStyles()](https://reference.aspose.com/words/java/com.aspose.words/document/#getStyles)property. This collection holds both the built-in and user-defined styles in a document. A particular style could be obtained by its name/alias, style identifier, or index.The following code example demonstrateshow to get access to the collection of styles defined in the document.
+You can get a collection of styles defined in the document using the [Document.getStyles()](https://reference.aspose.com/words/java/com.aspose.words/document/#getStyles) property. This collection holds both the built-in and user-defined styles in a document. A particular style could be obtained by its name/alias, style identifier, or index. The following code example demonstrateshow to get access to the collection of styles defined in the document.
 
 {{< gist "aspose-words-gists" "f1e523d4c5e156a1e42b86f56c70bf53" "access-styles.java" >}}
 
@@ -63,7 +63,7 @@ Note that the second parameter of the **Document.GetChildNodes** method is set t
 
 {{% /alert %}}
 
-It's also worth pointing out that the paragraphs collection does not create an immediate overhead because paragraphs are loaded into this collection only when you access items in them.Then, all you need to do is to go through the collection, using the standard foreach operator and add paragraphs that have the specified style to the paragraphsWithStyle array. The `Paragraph` style name can be found in the [Style.Name](https://reference.aspose.com/words/net/aspose.words/style/name/) property of the [Paragraph.ParagraphFormat](https://reference.aspose.com/words/net/aspose.words/paragraph/paragraphformat/) object.The implementation of RunsByStyleName is almost the same, although we're obviously using [NodeType.Run](https://reference.aspose.com/words/net/aspose.words/nodetype/) to retrieve run nodes. The [Font.Style](https://reference.aspose.com/words/net/aspose.words/font/style/) property of a [Run](https://reference.aspose.com/words/net/aspose.words/run/) object is used to access style information in the **Run** nodes.Below example find all runs formatted with the specified style.
+It's also worth pointing out that the paragraphs collection does not create an immediate overhead because paragraphs are loaded into this collection only when you access items in them. Then, all you need to do is to go through the collection, using the standard foreach operator and add paragraphs that have the specified style to the paragraphsWithStyle array. The `Paragraph` style name can be found in the [Style.Name](https://reference.aspose.com/words/net/aspose.words/style/name/) property of the [Paragraph.ParagraphFormat](https://reference.aspose.com/words/net/aspose.words/paragraph/paragraphformat/) object. The implementation of RunsByStyleName is almost the same, although we're obviously using [NodeType.Run](https://reference.aspose.com/words/net/aspose.words/nodetype/) to retrieve run nodes. The [Font.Style](https://reference.aspose.com/words/net/aspose.words/font/style/) property of a [Run](https://reference.aspose.com/words/net/aspose.words/run/) object is used to access style information in the **Run** nodes.Below example find all runs formatted with the specified style.
 
 {{< gist "aspose-words-gists" "f1e523d4c5e156a1e42b86f56c70bf53" "runs-by-style-name.java" >}}
 

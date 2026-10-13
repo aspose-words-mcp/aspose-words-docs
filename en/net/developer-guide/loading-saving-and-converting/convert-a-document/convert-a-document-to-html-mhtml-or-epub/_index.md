@@ -37,7 +37,7 @@ To convert a document to MHTML or EPUB, use `SaveFormat.Mhtml` or `SaveFormat.Ep
 
 ## Convert a Document with Round-trip Information
 
-The HTML format does not support many Microsoft Word features, and if we need to restore a document model as close to the original as possible, we need to save some extra information within the HTML file. Such information is also called "round-trip information". For this purpose, Aspose.Wordsprovides an ability to export round-trip information when saving to HTML, MHTML, or EPUB using the[ExportRoundtripInformation](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/exportroundtripinformation/)property. Saving the round-trip information allows to restore document properties such as tabs, comments, headers, and footers during the loading documents of the listed formats back into a**Document**object.
+The HTML format does not support many Microsoft Word features, and if we need to restore a document model as close to the original as possible, we need to save some extra information within the HTML file. Such information is also called "round-trip information". For this purpose, Aspose.Wordsprovides an ability to export round-trip information when saving to HTML, MHTML, or EPUB using the [ExportRoundtripInformation](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/exportroundtripinformation/) property. Saving the round-trip information allows to restore document properties such as tabs, comments, headers, and footers during the loading documents of the listed formats back into a**Document**object.
 
 The default value is**true**for HTML and**false**for MHTML and EPUB:
 
@@ -50,7 +50,7 @@ The following code example shows how to export round-trip information when conve
 
 {{% alert color="primary" %}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-.NET/blob/master/Examples/Data/Rendering.docx).
+You can download the template file of this example from[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-.NET/blob/master/Examples/Data/Rendering.docx).
 
 {{% /alert %}}
 
@@ -62,15 +62,15 @@ Aspose.Words allows to convert a Word document to HTML using default or custom s
 
 Using Aspose.Words we can specify a physical folder where all resources, such as images, fonts, and external CSS, are saved when a document is converted to HTML. By default, this is an empty string.
 
-Specifying the[ResourceFolder](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/resourcefolder/)property is the simplest way to set the folder where all resources should be written. We can use individual properties, such as[FontsFolder](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/fontsfolder/)which saves fonts to the specified folder and[ImagesFolder](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/imagesfolder/)which saves images to a specified folder.When a relative path is specified,**FontsFolder**and**ImagesFolder**refer to the folder where the code assembly is located,**ResourceFolder**and[CssStyleSheetFileName](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/cssstylesheetfilename/)refer to the output folder where the HTML document is located.
+Specifying the [ResourceFolder](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/resourcefolder/) property is the simplest way to set the folder where all resources should be written. We can use individual properties, such as[FontsFolder](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/fontsfolder/) which saves fonts to the specified folder and [ImagesFolder](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/imagesfolder/) which saves images to a specified folder.When a relative path is specified,**FontsFolder**and**ImagesFolder**refer to the folder where the code assembly is located,**ResourceFolder**and [CssStyleSheetFileName](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/cssstylesheetfilename/) refer to the output folder where the HTML document is located.
 
-In this example,**ResourceFolder**specifies the relative path. This path refers to the output folder where HTML document is saved.The value of the**ResourceFolderAlias**property is used to create URLs for all resources.
+In this example,**ResourceFolder**specifies the relative path. This path refers to the output folder where HTML document is saved. The value of the**ResourceFolderAlias**property is used to create URLs for all resources.
 
 The following code example shows how to work with these properties:
 
 {{< gist "aspose-words-gists" "c0df00d37081f41a7683339fd7ef66c1" "export-resources.cs" >}}
 
-Using the[ResourceFolderAlias](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/resourcefolderalias/)property, we can also specify the name of the folder used to construct URIs of all resources written into an HTML document. This is the simplest way to specify how URIs should be generated for all resource files. The same information can be specified for images and fonts separately via[ImagesFolderAlias](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/imagesfolderalias/)and[FontsFolderAlias](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/fontsfolderalias/)properties, respectively.
+Using the [ResourceFolderAlias](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/resourcefolderalias/) property, we can also specify the name of the folder used to construct URIs of all resources written into an HTML document. This is the simplest way to specify how URIs should be generated for all resource files. The same information can be specified for images and fonts separately via [ImagesFolderAlias](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/imagesfolderalias/) and [FontsFolderAlias](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/fontsfolderalias/) properties, respectively.
 
 However, there is no individual property for CSS. The behavior of the**FontsFolder**,**FontsFolderAlias**,**ImagesFolder**,**ImagesFolderAlias**and**CssStyleSheetFileName**properties are not changed. Note that the**CssStyleSheetFileName**property is used both for specifying folder name and file name.
 
@@ -79,7 +79,7 @@ However, there is no individual property for CSS. The behavior of the**FontsFold
 
 ### Export Base64 Encoding FontsResources
 
-Aspose.Words provides an ability tospecify whether font resources should be embedded into HTML in Base64 encodings. To perform this, use the[ExportFontsAsBase64](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/exportfontsasbase64/) property– this is an extension of the[ExportFontResources](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/exportfontresources/) property. By default,its value is**false**,and fonts are written into separate files.But ifthis option is set to**true**, fonts will be embedded into the document's CSS in Base64 encoding. The**ExportFontsAsBase64** property only affects HTML format and does not affect EPUB and MHTML.
+Aspose.Words provides an ability tospecify whether font resources should be embedded into HTML in Base64 encodings. To perform this, use the [ExportFontsAsBase64](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/exportfontsasbase64/) property– this is an extension of the [ExportFontResources](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/exportfontresources/) property. By default,its value is**false**,and fonts are written into separate files.But ifthis option is set to**true**, fonts will be embedded into the document's CSS in Base64 encoding. The**ExportFontsAsBase64** property only affects HTML format and does not affect EPUB and MHTML.
 
 The following code example shows how to export Base64‑encoded fonts to HTML:
 
@@ -87,7 +87,7 @@ The following code example shows how to export Base64‑encoded fonts to HTML:
 
 ## Specify Save Options when Conversion to EPUB
 
-Aspose.Words allows to convert a Word document into EPUB format using default or custom save options.You can specify a number of options by passing an instance of[HtmlSaveOptions](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/)to the[Save](https://reference.aspose.com/words/net/aspose.words/document/save/#save/)method.
+Aspose.Words allows to convert a Word document into EPUB format using default or custom save options.You can specify a number of options by passing an instance of[HtmlSaveOptions](https://reference.aspose.com/words/net/aspose.words.saving/htmlsaveoptions/) to the [Save](https://reference.aspose.com/words/net/aspose.words/document/save/#save/) method.
 
 The following code example shows how to converts a Word document to EPUB with specifying some custom save options:
 
@@ -95,7 +95,7 @@ The following code example shows how to converts a Word document to EPUB with sp
 
 {{% alert color="primary" %}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-.NET/blob/master/Examples/Data/Rendering.docx).
+You can download the template file of this example from[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-.NET/blob/master/Examples/Data/Rendering.docx).
 
 {{% /alert %}}
 

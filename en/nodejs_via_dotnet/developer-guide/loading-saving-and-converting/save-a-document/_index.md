@@ -16,11 +16,11 @@ aliases: [/nodejs/save-a-document/]
 timestamp: 2025-04-21-14-07-04
 ---
 
-Most of the tasks you need to perform with Aspose.Words involve saving a document. To save a document Aspose.Words provides the [save](https://reference.aspose.com/words/nodejs-net/aspose.words/document/save/) method of the [Document](https://reference.aspose.com/words/nodejs-net/aspose.words/document/) class. There are overloads that allow saving a document to a file or stream. The document can be saved in any save format supported by Aspose.Words. For the list of all supported save formats, see the[SaveFormat](https://reference.aspose.com/words/nodejs-net/aspose.words/saveformat/) enumeration.
+Most of the tasks you need to perform with Aspose.Words involve saving a document. To save a document Aspose.Words provides the [save](https://reference.aspose.com/words/nodejs-net/aspose.words/document/save/) method of the [Document](https://reference.aspose.com/words/nodejs-net/aspose.words/document/) class. There are overloads that allow saving a document to a file or stream. The document can be saved in any save format supported by Aspose.Words. For the list of all supported save formats, see the [SaveFormat](https://reference.aspose.com/words/nodejs-net/aspose.words/saveformat/) enumeration.
 
 ## Save a Document to a File {#save-a-document-to-a-file}
 
-Simply use the[save](https://reference.aspose.com/words/nodejs-net/aspose.words/document/save/) method with a file name. Aspose.Words will determine the save format from the file extension that you specify.
+Simply use the [save](https://reference.aspose.com/words/nodejs-net/aspose.words/document/save/) method with a file name. Aspose.Words will determine the save format from the file extension that you specify.
 
 The following code example shows how to load and save a document to a file:
 
@@ -28,7 +28,7 @@ The following code example shows how to load and save a document to a file:
 
 {{% alert color="primary" %}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-Node.js-via-.NET/blob/master/Data/Document.docx).
+You can download the template file of this example from [Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-Node.js-via-.NET/blob/master/Data/Document.docx).
 
 {{% /alert %}}
 
@@ -40,7 +40,7 @@ The following code example shows how to load and save a document to a stream:
 
 {{< gist "aspose-words-gists" "757cf7d3534a39730cf3290d418681ab" "load-and-save-to-stream.js" >}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-Node.js-via-.NET/blob/master/Data/Document.docx).
+You can download the template file of this example from [Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-Node.js-via-.NET/blob/master/Data/Document.docx).
 
 ## Save a Document to PCL {#save-a-document-to-pcl}
 

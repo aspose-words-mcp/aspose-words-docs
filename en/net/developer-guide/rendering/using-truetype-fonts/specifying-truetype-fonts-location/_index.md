@@ -23,7 +23,7 @@ This page explains how to configure TrueType font locations for rendering.
 
 This topic describes the default behavior of Aspose.Words when it looks for TrueType fonts, including operating system specific differences, and demonstrates how to specify user font sources.
 
-The [FontSourceBase](https://reference.aspose.com/words/net/aspose.words.fonts/fontsourcebase/) class is used to specify various font sources.There are several implementations of the **FontSourceBase** class:
+The [FontSourceBase](https://reference.aspose.com/words/net/aspose.words.fonts/fontsourcebase/) class is used to specify various font sources. There are several implementations of the **FontSourceBase** class:
 
 - [SystemFontSource](https://reference.aspose.com/words/net/aspose.words.fonts/systemfontsource)
 - [FolderFontSource](https://reference.aspose.com/words/net/aspose.words.fonts/folderfontsource)
@@ -62,7 +62,7 @@ Aspose.Words rendering on a server will typically not work with an ASP.NET appli
 
 ### Fonts on Non-Windows Systems
 
-Aspose.Words will look for the fonts in the system font folders. A list of these folders may be seen by the[GetSystemFontFolders](https://reference.aspose.com/words/net/aspose.words.fonts/systemfontsource/getsystemfontfolders/)method.If no supported fonts are found, Aspose.Words will use the built-in default font Fanwood.ttf.
+Aspose.Words will look for the fonts in the system font folders. A list of these folders may be seen by the [GetSystemFontFolders](https://reference.aspose.com/words/net/aspose.words.fonts/systemfontsource/getsystemfontfolders/) method. If no supported fonts are found, Aspose.Words will use the built-in default font Fanwood.ttf.
 
 Since the font metrics of Windows and non-Windows OS are different, Aspose.Words does everything possible to find a similar font and build a layout similar to the original. However, this is not always possible. In these cases, the**FontSettings**class should be used to add custom fonts or substitution rules.
 
@@ -76,11 +76,11 @@ Aspose.Words looks for fonts in the `/Library/Fonts` folder, which is the standa
 
 ## Load Fonts from Folder {#loading-fonts-from-folder}
 
-If the document being processed contains links to fonts that are not on the system, or you don't want to add them to the system folder, or you lack permissions, then the best solution would be to add a folder with your own fonts using the[SetFontsSources](https://reference.aspose.com/words/net/aspose.words.fonts/fontsettings/setfontssources/)method.This will allow to replace thesystem source with a user source. Aspose.Wordswill no longer look for fonts in the registry or Windows\Font folder and instead only scan for fonts within the specified folder(s). The[GetFontSources](https://reference.aspose.com/words/net/aspose.words.fonts/fontsettings/getfontssources/)method will return the corresponding values.
+If the document being processed contains links to fonts that are not on the system, or you don't want to add them to the system folder, or you lack permissions, then the best solution would be to add a folder with your own fonts using the [SetFontsSources](https://reference.aspose.com/words/net/aspose.words.fonts/fontsettings/setfontssources/) method. his will allow to replace thesystem source with a user source. Aspose.Wordswill no longer look for fonts in the registry or Windows\Font folder and instead only scan for fonts within the specified folder(s). The [GetFontSources](https://reference.aspose.com/words/net/aspose.words.fonts/fontsettings/getfontssources/) method will return the corresponding values.
 
 ### Specify One or Multiple Font Folders
 
-The[SetFontsFolder](https://reference.aspose.com/words/net/aspose.words.fonts/fontsettings/setfontsfolder/)and[SetFontsFolders](https://reference.aspose.com/words/net/aspose.words.fonts/fontsettings/setfontsfolder/s)methods are shortcuts to the**SetFontSources**method with one or several[FolderFontSource](https://reference.aspose.com/words/net/aspose.words.fonts/folderfontsource/)instances. These methods are used to indicate where Aspose.Words should look for fonts. If a folder does not exist or is not accessible, Aspose.Words just ignores this folder.If all folders, including sources for the font substitution, were ignored, Aspose.Words will use Fanwood font as a default.
+The [SetFontsFolder](https://reference.aspose.com/words/net/aspose.words.fonts/fontsettings/setfontsfolder/) and [SetFontsFolders](https://reference.aspose.com/words/net/aspose.words.fonts/fontsettings/setfontsfolder/s) methods are shortcuts to the**SetFontSources**method with one or several [FolderFontSource](https://reference.aspose.com/words/net/aspose.words.fonts/folderfontsource/) instances. These methods are used to indicate where Aspose.Words should look for fonts. If a folder does not exist or is not accessible, Aspose.Words just ignores this folder. If all folders, including sources for the font substitution, were ignored, Aspose.Words will use Fanwood font as a default.
 
 The following example demonstrates how to set the folder or source, which Aspose.Words will subsequently use to look for TrueType fonts during rendering or embedding of fonts:
 
@@ -88,7 +88,7 @@ The following example demonstrates how to set the folder or source, which Aspose
 
 {{% alert color="primary" %}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-.NET/blob/master/Examples/Data/Rendering.docx).
+You can download the template file of this example from [Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-.NET/blob/master/Examples/Data/Rendering.docx).
 
 {{% /alert %}}
 
@@ -98,11 +98,11 @@ An extra Boolean parameter controls whether fonts are scanned recursively throug
 
 {{% alert color="primary" %}}
 
-You can download the template file of this example from[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-.NET/blob/master/Examples/Data/Rendering.docx).
+You can download the template file of this example from [Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-.NET/blob/master/Examples/Data/Rendering.docx).
 
 {{% /alert %}}
 
-Note the priorities.If there are fonts with the same family name and style in different font sources, then Aspose.Words will select the font from the source with a higher priority. See the description of the "Priority" field below.
+Note the priorities. If there are fonts with the same family name and style in different font sources, then Aspose.Words will select the font from the source with a higher priority. See the description of the "Priority" field below.
 
 If you don't want to use system fonts at all, Aspose.Words allows you to ignore them and use your own fonts only:
 
@@ -110,17 +110,17 @@ If you don't want to use system fonts at all, Aspose.Words allows you to ignore 
 
 ### PriorityProperty
 
-The[Priority](https://reference.aspose.com/words/net/aspose.words.fonts/fontsourcebase/priority/)property is used when there are fonts with the same family name and style in different font sources.In this case Aspose.Words selects the font from the source with the higher priority value. For example, there is an old version of the fontonthe system folder and customer added a new version of the same font in a custom folder.
+The [Priority](https://reference.aspose.com/words/net/aspose.words.fonts/fontsourcebase/priority/) property is used when there are fonts with the same family name and style in different font sources.In this case Aspose.Words selects the font from the source with the higher priority value. For example, there is an old version of the fontonthe system folder and customer added a new version of the same font in a custom folder.
 
 {{< gist "aspose-words-gists" "7e64f6d40825be58a8c12f1307c12964" "fonts-folders-with-priority.cs" >}}
 
 ## Load Fonts from Stream {#loading-fonts-from-stream}
 
-Aspose.Words provides the[StreamFontSource](https://reference.aspose.com/words/net/aspose.words.fonts/streamfontsource/) class, which allows loading fonts from the stream. To use the stream font source, a user needs to create a derived class from **StreamFontSource** and provide an implementation of the [OpenFontDataStream](https://reference.aspose.com/words/net/aspose.words.fonts/streamfontsource/openfontdatastream/) method. The **OpenFontDataStream** method could be called several times. For the first time, it will be called when Aspose.Words scans the provided font sources to get a list of available fonts. Later it may be called if the font is used in the document to parse the font data and to embed the font data to some output formats.**StreamFontSource** may be useful because it allows loading the font data only when it is required, and not to store it in the memory for the[FontSettings](https://reference.aspose.com/words/net/aspose.words.fonts/fontsettings/) lifetime.
+Aspose.Words provides the [StreamFontSource](https://reference.aspose.com/words/net/aspose.words.fonts/streamfontsource/) class, which allows loading fonts from the stream. To use the stream font source, a user needs to create a derived class from **StreamFontSource** and provide an implementation of the [OpenFontDataStream](https://reference.aspose.com/words/net/aspose.words.fonts/streamfontsource/openfontdatastream/) method. The **OpenFontDataStream** method could be called several times. For the first time, it will be called when Aspose.Words scans the provided font sources to get a list of available fonts. Later it may be called if the font is used in the document to parse the font data and to embed the font data to some output formats.**StreamFontSource** may be useful because it allows loading the font data only when it is required, and not to store it in the memory for the [FontSettings](https://reference.aspose.com/words/net/aspose.words.fonts/fontsettings/) lifetime.
 
 {{< gist "aspose-words-gists" "7e64f6d40825be58a8c12f1307c12964" "resource-steam.cs" >}}
 
-**StreamFontSource**is an alternative to [MemoryFontSource](https://reference.aspose.com/words/net/aspose.words.fonts/memoryfontsource/)since it isalways possible to load a stream to memory and pass it to **MemoryFontSource**.The difference is that the **MemoryFontSource** is stored in the memory all the time, and the**StreamFontSource** is loaded on demand and disposed right away. But it may be loaded several times, as described above. In some cases **MemoryFontSource** is preferable, and in others, **StreamFontSource**.
+**StreamFontSource**is an alternative to [MemoryFontSource](https://reference.aspose.com/words/net/aspose.words.fonts/memoryfontsource/) since it isalways possible to load a stream to memory and pass it to **MemoryFontSource**. The difference is that the **MemoryFontSource** is stored in the memory all the time, and the**StreamFontSource** is loaded on demand and disposed right away. But it may be loaded several times, as described above. In some cases **MemoryFontSource** is preferable, and in others, **StreamFontSource**.
 
 ## Save and Load a Font Search Cache
 
@@ -183,7 +183,7 @@ The cache is also suitable for other scenarios when fonts are loaded over the ne
 
 ## Get a List of Available Fonts {#get-a-list-of-available-fonts}
 
-If you want to get the list ofavailablefonts, which, for example, can be used to render a PDF document, you can use the[GetAvailableFonts](https://reference.aspose.com/words/net/aspose.words.fonts/fontsourcebase/getavailablefonts/)method, as shown in the following code example. The[PhysicalFontInfo](https://reference.aspose.com/words/net/aspose.words.fonts/physicalfontinfo/)class specifies information about the physical font available to Aspose.Words font engine:
+If you want to get the list ofavailablefonts, which, for example, can be used to render a PDF document, you can use the [GetAvailableFonts](https://reference.aspose.com/words/net/aspose.words.fonts/fontsourcebase/getavailablefonts/) method, as shown in the following code example. The [PhysicalFontInfo](https://reference.aspose.com/words/net/aspose.words.fonts/physicalfontinfo/) class specifies information about the physical font available to Aspose.Words font engine:
 
 {{< gist "aspose-words-gists" "7e64f6d40825be58a8c12f1307c12964" "available-fonts.cs" >}}
 

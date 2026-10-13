@@ -32,7 +32,7 @@ doc.save(dataDir + "Aspose_DocToJPG.jpg",SaveFormat.JPEG); //Save the document i
 
 ## docx4j -Convert Document to HTML
 
-This sample uses XSLT (and Xalan) toproduce HTML output. (There is alsoHtmlExporterNonXSLT for environments wherethat is not desirable e.g. Android).If the source docx contained a WMF, thatwill get converted to inline SVG. In orderto see the SVG in your browser, you'll need to rename the file to .xml or serve it with MIME type application/xhtml+xml
+This sample uses XSLT (and Xalan) toproduce HTML output. (There is alsoHtmlExporterNonXSLT for environments wherethat is not desirable e.g. Android). If the source docx contained a WMF, thatwill get converted to inline SVG. In orderto see the SVG in your browser, you'll need to rename the file to .xml or serve it with MIME type application/xhtml+xml
 
 **Java**
 

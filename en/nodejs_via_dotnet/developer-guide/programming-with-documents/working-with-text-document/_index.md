@@ -19,7 +19,7 @@ In this article, we will learn what options can be useful for working with a tex
 
 You can use [addBidiMarks](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/txtsaveoptions/addBidiMarks/) property to specify whether to add bi-directional marks before each BiDi run when exporting in plain text format. Aspose.Words inserts Unicode Character 'RIGHT-TO-LEFT MARK' (U+200F) before each bi-directional [Run](https://reference.aspose.com/words/nodejs-net/aspose.words/run/) in the text. This option corresponds to "Add bi-directional marks" option in MS Word File Conversion dialogue when you export to a Plain Text format. Note that it appears in dialogue only if any of Arabic or Hebrew editing languages are added in MS Word.
 
-The following code example shows how to use[addBidiMarks](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/txtsaveoptions/addBidiMarks/) property.The default value of this property is `False`:
+The following code example shows how to use [addBidiMarks](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/txtsaveoptions/addBidiMarks/) property. The default value of this property is `False`:
 
 {{< gist "aspose-words-gists" "ee038b97a80cf17ce52665651e81d832" "add-bidi-marks.js" >}}
 
@@ -44,7 +44,7 @@ The following code example shows how to trim leading and trailing spaces while i
 
 ## Detect Document Text Direction
 
-Aspose.Words provides [documentDirection](https://reference.aspose.com/words/nodejs-net/aspose.words.loading/txtloadoptions/documentDirection/) property in [TxtLoadOptions](https://reference.aspose.com/words/nodejs-net/aspose.words.loading/txtloadoptions/) class to detect the text direction (RTL / LTR) in the document. This property sets or gets document text directions provided in [documentDirection](https://reference.aspose.com/words/nodejs-net/aspose.words.loading/txtloadoptions/documentdirection/) enumeration.The default value is left to right.
+Aspose.Words provides [documentDirection](https://reference.aspose.com/words/nodejs-net/aspose.words.loading/txtloadoptions/documentDirection/) property in [TxtLoadOptions](https://reference.aspose.com/words/nodejs-net/aspose.words.loading/txtloadoptions/) class to detect the text direction (RTL / LTR) in the document. This property sets or gets document text directions provided in [documentDirection](https://reference.aspose.com/words/nodejs-net/aspose.words.loading/txtloadoptions/documentdirection/) enumeration. The default value is left to right.
 
 The following code example shows how to detect text direction of the document while importing TXT file:
 
@@ -60,7 +60,7 @@ The following code example shows how to export headers and footers to plain text
 
 ## Export List Indentation in Output TXT
 
-Aspose.Words introduced [TxtListIndentation](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/txtlistindentation/) class that allows specifying how list levels are indented while exporting to a plain text format. While working with [TxtSaveOption](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/txtsaveoptions/), the[listIndentation](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/txtsaveoptions/listindentation/) property is provided to specify the character to beused for indenting list levels andcount specifyinghow many characters to use as indentation per one list level. The default value for character property is'\0' indicating that there is no indentation. For count property, the default value is 0 which means no indentation.
+Aspose.Words introduced [TxtListIndentation](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/txtlistindentation/) class that allows specifying how list levels are indented while exporting to a plain text format. While working with [TxtSaveOption](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/txtsaveoptions/), the [listIndentation](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/txtsaveoptions/listindentation/) property is provided to specify the character to beused for indenting list levels andcount specifyinghow many characters to use as indentation per one list level. The default value for character property is'\0' indicating that there is no indentation. For count property, the default value is 0 which means no indentation.
 
 ### Using Tab Character
 

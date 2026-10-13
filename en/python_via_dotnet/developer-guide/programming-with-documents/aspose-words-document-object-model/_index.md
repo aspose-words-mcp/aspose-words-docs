@@ -119,7 +119,7 @@ Each node has a parent specified by the [parent_node](https://reference.aspose.c
 - The node has been removed from the tree.
 - This is the root **Document** node which always has a None parent node.
 
-You can remove a node from its parent by calling the [Node.remove](https://reference.aspose.com/words/python-net/aspose.words/node/remove/) method.The following code example shows how to access the parent node:
+You can remove a node from its parent by calling the [Node.remove](https://reference.aspose.com/words/python-net/aspose.words/node/remove/) method. The following code example shows how to access the parent node:
 
 {{< gist "aspose-words-gists" "3b762e366e876659d4f1b617120f13d1" "get-parent-node.py" >}}
 

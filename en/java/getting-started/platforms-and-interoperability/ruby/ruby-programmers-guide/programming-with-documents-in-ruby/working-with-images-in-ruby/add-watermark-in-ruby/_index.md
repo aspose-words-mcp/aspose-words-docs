@@ -89,6 +89,6 @@ end
 
 ## Download Running Code
 
-Download **Add Watermark (Aspose.Words)**fromany of the below mentioned social coding sites:
+Download **Add Watermark (Aspose.Words)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-words/Aspose.Words-for-Java/blob/master/Plugins/Aspose_Words_Java_for_Ruby/lib/asposewordsjavaforruby/addwatermark.rb)

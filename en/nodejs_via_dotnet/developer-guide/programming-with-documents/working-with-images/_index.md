@@ -25,11 +25,11 @@ Aspose.Words allows users to work with images in a very flexible way. In this ar
 
 For each of the**insertImage**methods, there are further overloads which allow you to insert an image with the following options:
 - Inline or floating at a specific position, for example, **insertImage**
-- Percentage scale or custom size, furthermore, the[DocumentBuilder.insertImage](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/insertImage/)method returns a[Shape](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/shape/)object that was just created and inserted so you can further modify properties of the[Shape](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/shape/)
+- Percentage scale or custom size, furthermore, the [DocumentBuilder.insertImage](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/insertImage/)method returns a [Shape](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/shape/)object that was just created and inserted so you can further modify properties of the [Shape](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/shape/)
 
 ### Inserting an Inline Image
 
-Pass a single string representing a file that contains the image to[insertImage](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/insertimage/)to insert the image into the document as an inline graphic.
+Pass a single string representing a file that contains the image to [insertImage](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/insertimage/)to insert the image into the document as an inline graphic.
 
 The following code example shows how to insert an inline image at the cursor position into a document:
 

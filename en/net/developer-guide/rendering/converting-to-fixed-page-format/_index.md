@@ -27,7 +27,7 @@ Aspose.Words implements its own page layout engine. Prior to delving into its sp
 
 Various document viewing or publishing applications allow users to open (Adobe Acrobat, XPS Viewer), and sometimes edit (Adobe InDesign) documents of specific formats. These applications typically produce so-called "fixed-page" format documents. Such a document format describes precisely where a document's content is placed on every page. Internally, the PDF or XPS format contains a description of every page, as well as drawing instructions, specifying the layout of the content on the page. This is similar to image formats, describing where the content is shown either in raster or vector form.
 
-In contrast, some text editing applications do not support the viewing of a document's pages. For instance, Microsoft Notepad supports very few functions other than simply displaying, editing and printing text.The important observation here is that such applications can neither show pages of the document nor tell a user how many of them would be printed, only allowing to view the document content. The document can be saved in plain text format and can be opened by many other applications. Using an application that allows viewing binary content of an arbitrary file one can see what is stored in the document file – it is just plain text, there is nothing else in it.
+In contrast, some text editing applications do not support the viewing of a document's pages. For instance, Microsoft Notepad supports very few functions other than simply displaying, editing and printing text. The important observation here is that such applications can neither show pages of the document nor tell a user how many of them would be printed, only allowing to view the document content. The document can be saved in plain text format and can be opened by many other applications. Using an application that allows viewing binary content of an arbitrary file one can see what is stored in the document file – it is just plain text, there is nothing else in it.
 
 Slightly more sophisticated text-editing applications, such as Microsoft WordPad, save the document in Rich Text Format (RTF), which supports more formatting functions, such as insertion of images, character formatting, paragraph margins and spacing. However, the RTF format also contains only the document's content, having no information about pages.
 
@@ -61,7 +61,7 @@ Page layout computes where the text will appear and what content will be rendere
 
 ![converting-to-fixed-page-format_2_net](converting-to-fixed-page-format-2.png)
 
-In Aspose.Words, a user can requestwhether to build a new page layout, or update an existing one. Both of these can be performed by the[UpdatePageLayout](https://reference.aspose.com/words/net/aspose.words/document/updatepagelayout/) method, provided by the[Document](https://reference.aspose.com/words/net/aspose.words/document/)class.If a page layout does not exist, but there is need for it (for example, when the document is exported to a fixed-page format), Aspose.Words will automatically call this method. However, if a page layout does already exist, Aspose.Words will use the existing one, in order to avoid consuming the resources necessary to update it. In this case, the user needs to call the `UpdatePageLayout` method, in order to ensure that the page layout is up to date with the document model.
+In Aspose.Words, a user can requestwhether to build a new page layout, or update an existing one. Both of these can be performed by the [UpdatePageLayout](https://reference.aspose.com/words/net/aspose.words/document/updatepagelayout/) method, provided by the [Document](https://reference.aspose.com/words/net/aspose.words/document/) class. If a page layout does not exist, but there is need for it (for example, when the document is exported to a fixed-page format), Aspose.Words will automatically call this method. However, if a page layout does already exist, Aspose.Words will use the existing one, in order to avoid consuming the resources necessary to update it. In this case, the user needs to call the `UpdatePageLayout` method, in order to ensure that the page layout is up to date with the document model.
 
 ### Dynamic Structure
 
@@ -77,22 +77,22 @@ Note, that the page layout is a dynamic structure, which can be partially rebuil
 
 Consider the typical scenario when the `NUMPAGES` field appears in the footer of the first page in the document. The value of this field is the total number of pages. In order to position the field on a page, its value should be known. If only the first page is being currently built then the total number of pages is not yet known. In this case, the page layout has to use the default value and later come back to that field and change its value according to actual computations. However, changing the field value may affect other document content on a page and ultimately cause a new page to be appended or an existing page removed, thus making the computed value outdated. This issue can be solved by making it possible to update the existing page layout.
 
-When creating a layout, it is also possible to set up[LayoutOptions](https://reference.aspose.com/words/net/aspose.words.layout/layoutoptions/) properties that affect the output of the document on pages.
+When creating a layout, it is also possible to set up [LayoutOptions](https://reference.aspose.com/words/net/aspose.words.layout/layoutoptions/) properties that affect the output of the document on pages.
 
 ## Saving to Fixed-page Format
 
 After the page layout is built and the geometry of objects and their position on the page are calculated, the document can be saved in a fixed-page format supported by Aspose.Words. When saving documents to fixed-page formats, the rendering options common to all of these formats can be used. They allow to control:
 
-- The number and range of pages contained in the output document ([PageCount](https://reference.aspose.com/words/net/aspose.words/document/pagecount/)).
-- Progress of page-by-page document saving ([PageSavingCallback](https://reference.aspose.com/words/net/aspose.words.saving/fixedpagesaveoptions/pagesavingcallback/)).
-- A set of characters that are used to numbers rendering ([NumeralFormat](https://reference.aspose.com/words/net/aspose.words.saving/fixedpagesaveoptions/numeralformat/)).
-- A metafile player ([MetafileRenderingOptions](https://reference.aspose.com/words/net/aspose.words.saving/fixedpagesaveoptions/metafilerenderingoptions/)).For more details, see the[Handling Windows Metafiles](/words/net/handling-windows-metafiles/)article.
-- A quality rate for recompressing JPEG images,the value of which may differ slightly, depending on the selected save format([JpegQuality](https://reference.aspose.com/words/net/aspose.words.saving/fixedpagesaveoptions/jpegquality/)).
-- Optimization of vector graphics in Aspose.Words output ([OptimizeOutput](https://reference.aspose.com/words/net/aspose.words.saving/fixedpagesaveoptions/optimizeoutput/)).
-- Graphics options when saving toTiff, Png, Bmp, Jpeg, Emf formats ([UseAntiAliasing](https://reference.aspose.com/words/net/aspose.words.saving/saveoptions/useantialiasing/), [UseHighQualityRendering](https://reference.aspose.com/words/net/aspose.words.saving/saveoptions/usehighqualityrendering/)).
-- Saving the document in grayscale ([ColorMode](https://reference.aspose.com/words/net/aspose.words.saving/fixedpagesaveoptions/colormode/)).
-- Switching between rendering of DrawingML shapes and fallback shapes ([DmlRenderingMode](https://reference.aspose.com/words/net/aspose.words.saving/saveoptions/dmlrenderingmode/)).
-- Switching between DML effects rendering modes ([DmlEffectsRenderingMode](https://reference.aspose.com/words/net/aspose.words.saving/saveoptions/dmleffectsrenderingmode/)).
+- The number and range of pages contained in the output document ( [PageCount](https://reference.aspose.com/words/net/aspose.words/document/pagecount/)).
+- Progress of page-by-page document saving ( [PageSavingCallback](https://reference.aspose.com/words/net/aspose.words.saving/fixedpagesaveoptions/pagesavingcallback/)).
+- A set of characters that are used to numbers rendering ( [NumeralFormat](https://reference.aspose.com/words/net/aspose.words.saving/fixedpagesaveoptions/numeralformat/)).
+- A metafile player ( [MetafileRenderingOptions](https://reference.aspose.com/words/net/aspose.words.saving/fixedpagesaveoptions/metafilerenderingoptions/)). For more details, see the [Handling Windows Metafiles](/words/net/handling-windows-metafiles/)article.
+- A quality rate for recompressing JPEG images,the value of which may differ slightly, depending on the selected save format( [JpegQuality](https://reference.aspose.com/words/net/aspose.words.saving/fixedpagesaveoptions/jpegquality/)).
+- Optimization of vector graphics in Aspose.Words output ( [OptimizeOutput](https://reference.aspose.com/words/net/aspose.words.saving/fixedpagesaveoptions/optimizeoutput/)).
+- Graphics options when saving toTiff, Png, Bmp, Jpeg, Emf formats ( [UseAntiAliasing](https://reference.aspose.com/words/net/aspose.words.saving/saveoptions/useantialiasing/), [UseHighQualityRendering](https://reference.aspose.com/words/net/aspose.words.saving/saveoptions/usehighqualityrendering/)).
+- Saving the document in grayscale ( [ColorMode](https://reference.aspose.com/words/net/aspose.words.saving/fixedpagesaveoptions/colormode/)).
+- Switching between rendering of DrawingML shapes and fallback shapes ( [DmlRenderingMode](https://reference.aspose.com/words/net/aspose.words.saving/saveoptions/dmlrenderingmode/)).
+- Switching between DML effects rendering modes ( [DmlEffectsRenderingMode](https://reference.aspose.com/words/net/aspose.words.saving/saveoptions/dmleffectsrenderingmode/)).
 
 The example below demonstrateshow to save a document to JPEG format usingthe `Save` method and rendering options:
 

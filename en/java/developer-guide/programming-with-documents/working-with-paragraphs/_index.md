@@ -45,7 +45,7 @@ The following code example shows how to set paragraph formatting:
 
 Some formatting objects, such as **Font** or **ParagraphFormat**, support styles. One built-in or user-defined style is represented by a [Style](https://reference.aspose.com/words/java/com.aspose.words/style/) object, which contains the appropriate style properties like name, base style, font, style paragraph formatting, and so on.
 
-In addition, the **Style** object exposes the[StyleIdentifier](https://reference.aspose.com/words/java/com.aspose.words/style/#getStyleIdentifier)property, which returns the locale-independent style identifier represented by the [StyleIdentifier](https://reference.aspose.com/words/java/com.aspose.words/styleidentifier/) enumeration value. The fact is that the names of the built-in styles in Microsoft Word are localized for different languages. Using the style identifier, you can find the correct style regardless of the document language. The enumeration values correspond to the built-in Microsoft Word styles such as *Normal*, *Heading 1*, *Heading 2*  and so on. All user-defined styles are set to the **StyleIdentifier.User** enumeration value.
+In addition, the **Style** object exposes the [StyleIdentifier](https://reference.aspose.com/words/java/com.aspose.words/style/#getStyleIdentifier) property, which returns the locale-independent style identifier represented by the [StyleIdentifier](https://reference.aspose.com/words/java/com.aspose.words/styleidentifier/) enumeration value. The fact is that the names of the built-in styles in Microsoft Word are localized for different languages. Using the style identifier, you can find the correct style regardless of the document language. The enumeration values correspond to the built-in Microsoft Word styles such as *Normal*, *Heading 1*, *Heading 2*  and so on. All user-defined styles are set to the **StyleIdentifier.User** enumeration value.
 
 The following code example shows how to apply a paragraph style:
 
@@ -69,7 +69,7 @@ Aspose.Words exposes the [BreakIsStyleSeparator](https://reference.aspose.com/wo
 
 Borders in Aspose.Words are represented by the [BorderCollection](https://reference.aspose.com/words/java/com.aspose.words/bordercollection/) class –this is a collection of [Border](https://reference.aspose.com/words/java/com.aspose.words/border/) objects that are accessed by index or by border type. The border type is in turn represented by the [BorderType](https://reference.aspose.com/words/java/com.aspose.words/bordertype/) enumeration. Some enumeration values apply to multiple or only one document element. For example, **BorderType.Bottom** applies to a paragraph or table cell, while **BorderType.DiagonalDown** specifies a diagonal border in a table cell only.
 
-Both the border collection and each separate border have similar attributes such as color, line style, line width, distance from text, and optional shadow. They are represented by properties of the same name. You can get different border types by combining property values. In addition, the **BorderCollection** and **Border** objects allow you to reset these values to their default values by calling the [ClearFormatting](https://reference.aspose.com/words/java/com.aspose.words/border/#clearFormatting)method.
+Both the border collection and each separate border have similar attributes such as color, line style, line width, distance from text, and optional shadow. They are represented by properties of the same name. You can get different border types by combining property values. In addition, the **BorderCollection** and **Border** objects allow you to reset these values to their default values by calling the [ClearFormatting](https://reference.aspose.com/words/java/com.aspose.words/border/#clearFormatting) method.
 
 {{% alert color="primary" %}}
 
@@ -77,7 +77,7 @@ Note that when the border properties are reset to their default values, the bord
 
 {{% /alert %}}
 
-Aspose.Words also has the[Shading](https://reference.aspose.com/words/java/com.aspose.words/shading/)class that contains shading attributes for document elements. You can set the desired shading texture and colors that are applied to the background and foreground of an element using the[TextureIndex](https://reference.aspose.com/words/java/com.aspose.words/textureindex/)enumeration value. **TextureIndex** also allows you to apply different patterns to the **Shading** object. For example, to set the background color for a document element, use the **TextureIndex.TextureSolid** value and set the foreground shading color as appropriate.
+Aspose.Words also has the [Shading](https://reference.aspose.com/words/java/com.aspose.words/shading/) class that contains shading attributes for document elements. You can set the desired shading texture and colors that are applied to the background and foreground of an element using the [TextureIndex](https://reference.aspose.com/words/java/com.aspose.words/textureindex/) enumeration value. **TextureIndex** also allows you to apply different patterns to the **Shading** object. For example, to set the background color for a document element, use the **TextureIndex.TextureSolid** value and set the foreground shading color as appropriate.
 
 The following code example shows how to apply borders and shading to a paragraph:
 

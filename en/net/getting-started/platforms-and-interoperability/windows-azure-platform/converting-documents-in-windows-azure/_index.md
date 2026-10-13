@@ -45,13 +45,13 @@ To create the application, you need to perform the following steps:
 
 1. Create a new Cloud Service project in Visual Studio.
 1. Select the Cloud Service to have one WebRole project.
-1. Add the `NuGet` reference to[Aspose.Words](https://www.nuget.org/packages/Aspose.Words/).
+1. Add the `NuGet` reference to [Aspose.Words](https://www.nuget.org/packages/Aspose.Words/).
 1. Add the File Upload control to the Default.aspx form enabling the user to select a file to be uploaded.
 1. Add the Drop Down List control to the Default.aspx form enabling the user to select the output format.
 1. Add the Submit button and the Click event handler for it.
 1. Modify theServiceDefinition.csdef configuration file so that the application can run in Windows Azure under Full Trust. It is recommended that you have *enableNativeCodeExecution = "true"*to avoid any permission issues that may arise when using Aspose.Words to convert documents to PDF or XPS.
 
-The actual code to convert a document using Aspose.Words consists of only two lines, which create a new [Document](https://reference.aspose.com/words/net/aspose.words/document/) object to load the document, and then call the[Save](https://reference.aspose.com/words/net/aspose.words/document/save/#save)method with the desired format. The following code example shows how toconvert a document in Windows Azure:
+The actual code to convert a document using Aspose.Words consists of only two lines, which create a new [Document](https://reference.aspose.com/words/net/aspose.words/document/) object to load the document, and then call the [Save](https://reference.aspose.com/words/net/aspose.words/document/save/#save) method with the desired format. The following code example shows how toconvert a document in Windows Azure:
 
 **.NET**
 
@@ -115,15 +115,15 @@ To test and run the example project, perform the following steps:
    In Visual Studio, right-click on your CloudService project and select Publish. If necessary, log in with your Microsoft Azure account and select a subscription.
    To test, select the Staging Environment and click Publish. After that, in the Azure Activity Log, you will receive a `URL` to the deployed application.
 
-![converting-documents-in-windows-azure-aspose-words-net-1](converting-documents-in-windows-azure-1.png)
+!\[converting-documents-in-windows-azure-aspose-words-net-1](converting-documents-in-windows-azure-1.png)
 
 
 The following picture shows the Web Role project running in the Microsoft Azure cloud:
 
-![converting-documents-in-windows-azure-aspose-words-net-2](converting-documents-in-windows-azure-2.png)
+!\[converting-documents-in-windows-azure-aspose-words-net-2](converting-documents-in-windows-azure-2.png)
 
 ## See Also
 
-- Active[Microsoft Azure subscription](https://docs.microsoft.com/en-us/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing)
-- Create a[free account](https://azure.microsoft.com/en-us/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio)in Microsoft Azure
-- Modify the[ServiceDefinition.csdef](https://docs.microsoft.com/en-us/azure/cloud-services/schema-csdef-webrole#WebRole)configuration file
+- Active [Microsoft Azure subscription](https://docs.microsoft.com/en-us/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing)
+- Create a [free account](https://azure.microsoft.com/en-us/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio) in Microsoft Azure
+- Modify the [ServiceDefinition.csdef](https://docs.microsoft.com/en-us/azure/cloud-services/schema-csdef-webrole#WebRole) configuration file

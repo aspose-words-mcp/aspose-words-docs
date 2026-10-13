@@ -34,7 +34,7 @@ The following table describes elements of the `var` tag.
 
 | Element | Optional? | Remarks |
 | :- | :- | :- |
-| **Variable Type** | Yes | You can specify the type of a variable explicitly. This type must be known by the engine (see “Setting up Known External Types” for more information).If you do not specify the type explicitly, it is determined implicitly by the engine from the specified variable value. |
+| **Variable Type** | Yes | You can specify the type of a variable explicitly. This type must be known by the engine (see “Setting up Known External Types” for more information). If you do not specify the type explicitly, it is determined implicitly by the engine from the specified variable value. |
 | **Variable Name** | No | For a new variable, its name must be a unique identifier. |
 | **Assignment Operator** | No |  |
 | **Variable Value** | No |  |

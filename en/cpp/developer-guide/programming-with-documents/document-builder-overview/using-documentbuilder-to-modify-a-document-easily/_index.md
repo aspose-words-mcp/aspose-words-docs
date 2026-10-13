@@ -63,7 +63,7 @@ Current row formatting is determined by a `RowFormat` object that is returned by
 
 ### List Formatting
 
-Aspose.Words allows the easy creation of lists by applying list formatting. DocumentBuilder provides the `DocumentBuilder.ListFormat` property that returns a `ListFormat` object. This object has several methods to start and end a list and to increase/decrease the indent.There are two general types of lists in Microsoft Word: bulleted and numbered.
+Aspose.Words allows the easy creation of lists by applying list formatting. DocumentBuilder provides the `DocumentBuilder.ListFormat` property that returns a `ListFormat` object. This object has several methods to start and end a list and to increase/decrease the indent. There are two general types of lists in Microsoft Word: bulleted and numbered.
 
 - To start a bulleted list, call `ListFormat.ApplyBulletDefault`.
 - To start a numbered list, call `ListFormat.ApplyNumberDefault`.
@@ -103,7 +103,7 @@ Furthermore, a**Style**object provides the `Style.StyleIdentifier`property that 
 
 Borders are represented by the BorderCollection. This is a collection of Border objects that are accessed by index or by border type. Border type is represented by the `BorderType` enumeration. Some values of the enumeration are applicable to several or only one document element. For example, `BorderType.Bottom` is applicable to a paragraph or table cell while `BorderType.DiagonalDown` specifies the diagonal border in a table cell only.
 
-Both the border collection and each separate border have similar attributes like color, line style, line width, distance from text, and optional shadow. They are represented by properties of the same name. You can achieve different border types by combining the property values. In addition, both**BorderCollection**and**Border**objects allow you to reset these values to default by calling the `Border.ClearFormatting`method. Note that when border properties are reset to default values, the border is invisible.The `Shading` class contains shading attributes for document elements. You can set the desired shading texture and the colors that are applied to the background and foreground of the element.
+Both the border collection and each separate border have similar attributes like color, line style, line width, distance from text, and optional shadow. They are represented by properties of the same name. You can achieve different border types by combining the property values. In addition, both**BorderCollection**and**Border**objects allow you to reset these values to default by calling the `Border.ClearFormatting`method. Note that when border properties are reset to default values, the border is invisible. The `Shading` class contains shading attributes for document elements. You can set the desired shading texture and the colors that are applied to the background and foreground of the element.
 
 The shading texture is set with a `TextureIndex` enumeration value that allows the application of various patterns to the**Shading**object. For example, to set a background color for a document element, use the `TextureIndex.TextureSolid`value and set the foreground shading color as appropriate. Below example shows how to apply borders and shading to a paragraph.
 
@@ -145,7 +145,7 @@ If you are working with a document that contains multiple sections, you can move
 
 ### Moving to a Header/Footer
 
-When you need to place some data into a header or footer, you should move there first using `DocumentBuilder.MoveToHeaderFooter`. The method accepts a HeaderFooterType enumeration value that identifies the type of header or footer to where the cursor should be moved.If you want to create headers and footers that are different for the first page, you need to set the `PageSetup.DifferentFirstPageHeaderFooter`property to**true**. If you want to create headers and footers that are different for even and odd pages, you need to set `PageSetup.OddAndEvenPagesHeaderFooter`to**true**.
+When you need to place some data into a header or footer, you should move there first using `DocumentBuilder.MoveToHeaderFooter`. The method accepts a HeaderFooterType enumeration value that identifies the type of header or footer to where the cursor should be moved. If you want to create headers and footers that are different for the first page, you need to set the `PageSetup.DifferentFirstPageHeaderFooter`property to**true**. If you want to create headers and footers that are different for even and odd pages, you need to set `PageSetup.OddAndEvenPagesHeaderFooter`to**true**.
 
 If you need to get back to the main story, use**DocumentBuilder.MoveToSection**to move out of the header or footer. Below example creates headers and footers in a document using DocumentBuilder.
 
@@ -172,7 +172,7 @@ Use `DocumentBuilder.MoveToCell` if you need to move the cursor to a table cell 
 - columnIndex - the index of the column in the table.
 - characterIndex - the index of the character inside the cell.
 
-The navigation is performed inside the current story of the current section.For the index parameters, when index is greater than or equal to 0, it specifies an index from the beginning with 0 being the first element. When index is less than 0, it specifies an index from the end with -1 being the last element.
+The navigation is performed inside the current story of the current section. For the index parameters, when index is greater than or equal to 0, it specifies an index from the beginning with 0 being the first element. When index is less than 0, it specifies an index from the end with -1 being the last element.
 
 Also, note that characterIndex currently can only specify 0 to move to the beginning of the cell or -1 to move to the end of the cell. Below example shows how to move a cursor position to the specified table cell. You can download template file of this example fromhere.
 

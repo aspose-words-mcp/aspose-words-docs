@@ -69,7 +69,7 @@ The following code example shows how to get names of all merge fields in the tem
 
 ### Get Information About Merge Regions
 
-You may have a scenario where you want to understand how your template is structured through the specified merge regions. You can use some methods to gather all necessary information about merge regions or to get the merge regions hierarchy in your template, such as the [GetRegionsHierarchy](https://reference.aspose.com/words/java/com.aspose.words/mailmerge/#getRegionsHierarchy) method. You can use the properties and methods of the [MailMergeRegionInfo](https://reference.aspose.com/words/java/com.aspose.words/mailmergeregioninfo/) class.The following code example shows how to get merge regions hierarchy:
+You may have a scenario where you want to understand how your template is structured through the specified merge regions. You can use some methods to gather all necessary information about merge regions or to get the merge regions hierarchy in your template, such as the [GetRegionsHierarchy](https://reference.aspose.com/words/java/com.aspose.words/mailmerge/#getRegionsHierarchy) method. You can use the properties and methods of the [MailMergeRegionInfo](https://reference.aspose.com/words/java/com.aspose.words/mailmergeregioninfo/) class. The following code example shows how to get merge regions hierarchy:
 
 {{< gist "aspose-words-gists" "7d267f5905ac7f3d5144e8d4126a0d6d" "get-regions-hierarchy.java" >}}
 

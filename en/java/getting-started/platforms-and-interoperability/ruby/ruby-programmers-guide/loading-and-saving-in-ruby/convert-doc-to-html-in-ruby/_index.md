@@ -43,6 +43,6 @@ doc.save(data_dir + "Out.docx", save_format.DOCX)
 
 ## Download Running Code
 
-Download **Doc to HTML (Aspose.Words)**fromany of the below mentioned social coding sites:
+Download **Doc to HTML (Aspose.Words)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-words/Aspose.Words-for-Java/blob/master/Plugins/Aspose_Words_Java_for_Ruby/lib/asposewordsjavaforruby/doctohtml.rb)

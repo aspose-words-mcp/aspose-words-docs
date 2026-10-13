@@ -34,7 +34,7 @@ Limitations of .NET Standard 2.0, Xamarin.Android, Xamarin.iOS, And `Xamarin.Mac
 
 ## Public API Differences
 
-In **Aspose.Words for** **.NET Standard 2.0, Xamarin.Android, Xamarin.iOS and Xamarin.Mac**`SkiaSharp.SKBitmap` object is used instead of `System.Drawing.Bitmap` in .NET API.The list of affected API:
+In **Aspose.Words for** **.NET Standard 2.0, Xamarin.Android, Xamarin.iOS and Xamarin.Mac**`SkiaSharp.SKBitmap` object is used instead of `System.Drawing.Bitmap` in .NET API. The list of affected API:
 1. Aspose.Words.DocumentBuilder.InsertImage
 1. Aspose.Words.DocumentBuilder.InsertOleObject
 1. Aspose.Words.Drawing.ImageData.SetImage

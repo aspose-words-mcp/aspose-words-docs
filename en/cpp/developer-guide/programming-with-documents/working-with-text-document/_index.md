@@ -52,7 +52,7 @@ The following code example shows how to export headers and footers to plain text
 
 ## Export List Indentation in Output TXT
 
-Aspose.Words introduced the [TxtListIndentation](https://reference.aspose.com/words/cpp/aspose.words.saving/txtlistindentation/) class that allows specifying how list levels are indented while exporting to a plain text format. While working with [TxtSaveOption](https://reference.aspose.com/words/cpp/aspose.words.saving/txtsaveoptions/), the[ListIndentation](https://reference.aspose.com/words/cpp/aspose.words.saving/txtsaveoptions/get_listindentation/) property is provided to specify the character to beused for indenting list levels andcount specifyinghow many characters to use as indentation per one list level.
+Aspose.Words introduced the [TxtListIndentation](https://reference.aspose.com/words/cpp/aspose.words.saving/txtlistindentation/) class that allows specifying how list levels are indented while exporting to a plain text format. While working with [TxtSaveOption](https://reference.aspose.com/words/cpp/aspose.words.saving/txtsaveoptions/), the [ListIndentation](https://reference.aspose.com/words/cpp/aspose.words.saving/txtsaveoptions/get_listindentation/) property is provided to specify the character to beused for indenting list levels andcount specifyinghow many characters to use as indentation per one list level.
 
 The default value for character property is'\0' indicating that there is no indentation. For count property, the default value is 0 which means no indentation.
 

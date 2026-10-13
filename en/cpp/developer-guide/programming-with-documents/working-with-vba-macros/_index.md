@@ -13,11 +13,11 @@ url: /cpp/working-with-vba-macros/
 timestamp: 2024-01-30-16-22-34
 ---
 
-Visual Basic for Applications (VBA) for Microsoft Word is a simple but powerful programming language that can be used to extend the functionality.Aspose.Words API provides three classesto get access to the VBA project source code:
+Visual Basic for Applications (VBA) for Microsoft Word is a simple but powerful programming language that can be used to extend the functionality. Aspose.Words API provides three classesto get access to the VBA project source code:
 
-- The[VBAProject](https://reference.aspose.com/words/cpp/aspose.words.vba/vbaproject/)class provides access to VBA project information
-- The[VBAModulesCollection](https://reference.aspose.com/words/cpp/aspose.words.vba/vbamodulecollection/)class returns the collection of VBA project modules
-- The[VbaModule](https://reference.aspose.com/words/cpp/aspose.words.vba/vbamodule/)class provides access to the VBA project module
+- The [VBAProject](https://reference.aspose.com/words/cpp/aspose.words.vba/vbaproject/) class provides access to VBA project information
+- The [VBAModulesCollection](https://reference.aspose.com/words/cpp/aspose.words.vba/vbamodulecollection/) class returns the collection of VBA project modules
+- The [VbaModule](https://reference.aspose.com/words/cpp/aspose.words.vba/vbamodule/) class provides access to the VBA project module
 
 ## Create a VBA Project
 
@@ -55,7 +55,7 @@ The following code example shows how to clone the VBA Project using the [Clone](
 
 You can also clone VBA modules if needed.
 
-The following code example shows how to clone the VBA Module using the[Clone](https://reference.aspose.com/words/cpp/aspose.words.vba/vbamodule/clone/)property which creates a copy of the existing project:
+The following code example shows how to clone the VBA Module using the [Clone](https://reference.aspose.com/words/cpp/aspose.words.vba/vbamodule/clone/) property which creates a copy of the existing project:
 
 {{< gist "aspose-words-gists" "d55d8631947d283b1f0da99afa06c492" "cpp-Loading-and-Saving-WorkingWithVbaMacros-CloneVbaModule.cpp" >}}
 

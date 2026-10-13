@@ -32,7 +32,7 @@ Note that the font in the document represents an entity, such as family name, st
 
 ## Font Manipulationand Performance Issues
 
-All available font manipulation mechanisms are contained in the[FontSettings](https://reference.aspose.com/words/java/com.aspose.words/fontsettings/)class.This class is responsible for fetching fonts within defined font sources as well as for the Font Substitution process, as described below.
+All available font manipulation mechanisms are contained in the [FontSettings](https://reference.aspose.com/words/java/com.aspose.words/fontsettings/) class. This class is responsible for fetching fonts within defined font sources as well as for the Font Substitution process, as described below.
 
 Fonts are parsed in several steps:
 
@@ -64,10 +64,10 @@ The custom **FontSettings**have higher priority than the default instance.
 
 A text in a document can be formatted with various fonts, such as Arial, Times New Roman, Verdana, and others. When Aspose.Words renders a document, it attempts to select the fonts that are specified in the document.
 
-However, there are situations when the exact font cannot be found and Aspose.Words must substitute it for a similar font instead.Aspose.Words selects the font according to the following process:
+However, there are situations when the exact font cannot be found and Aspose.Words must substitute it for a similar font instead. Aspose.Words selects the font according to the following process:
 1. Aspose.Words tries to find a font among the available font sourceswith an exact font name.
 1. Aspose.Words tries to find the required font among the fonts embedded in the original document. Some document formats such as DOCX can contain embedded fonts.
-1. If Aspose.Words is unable to locate the required fontwith the exact name match,and the[AltName](https://reference.aspose.com/words/java/com.aspose.words/fontinfo/#getAltName)property defined for this font, thenAspose.Words will find the font defined with**AltName**from the[FontInfo](https://reference.aspose.com/words/java/com.aspose.words/fontinfo/)class, which specifies the font information.
+1. If Aspose.Words is unable to locate the required fontwith the exact name match,and the [AltName](https://reference.aspose.com/words/java/com.aspose.words/fontinfo/#getAltName) property defined for this font, thenAspose.Words will find the font defined with**AltName**from the [FontInfo](https://reference.aspose.com/words/java/com.aspose.words/fontinfo/) class, which specifies the font information.
 1. If Aspose.Words is unable to locate the defined font,and**AltName**is not also defined,then the font substitution rules are applied one-by-one, as described below (when the appropriate replacement is found, the Font Substitution Process stops and the next step is not executed):
    1. First, Aspose.Words tries to process the font name to get the substitution, particularly it tries to remove suffixes with "-" and "," separators.<br>
       If this substitution rule takes place, a "Font '<OriginalFont>' has not been found. Using '<SubstitutionFont>' font instead. Reason: font name substitution." warning appears.<br>
@@ -110,7 +110,7 @@ However, there are situations when the exact font cannot be found and Aspose.Wor
       fontSettings.getSubstitutionSettings().getFontInfoSubstitution().setEnabled(false);
       {{< /highlight >}}
       If**FontInfo**is not available for the missing font, then the process stops.
-   1. **DefaultFont**substitution rule will be applied in the case when the `FontInfo` substitution has also failed. This rule is also enabled by default. According to this rule, Aspose.Words will attempt to use the default font specified in the[DefaultFontName](https://reference.aspose.com/words/java/com.aspose.words/defaultfontsubstitutionrule/#getDefaultFontName)property.If the user has not chosen their own default font, then "Times New Roman" will be used as the default font.This rule can be disabled as shown below:<br>
+   1. **DefaultFont**substitution rule will be applied in the case when the `FontInfo` substitution has also failed. This rule is also enabled by default. According to this rule, Aspose.Words will attempt to use the default font specified in the [DefaultFontName](https://reference.aspose.com/words/java/com.aspose.words/defaultfontsubstitutionrule/#getDefaultFontName)property. If the user has not chosen their own default font, then "Times New Roman" will be used as the default font.This rule can be disabled as shown below:<br>
       **Java**<br>
       {{< highlight csharp >}}
       fontSettings.getSubstitutionSettings().getDefaultFontSubstitution().setEnabled(false);
@@ -132,9 +132,9 @@ If **FontInfo** is available, the *FontInfo substitutionrule* will always resolv
 
 ## How to Recognize That the Font Was Replaced
 
-Sometimes, it may be unclear why the document layout has changed, or why some font does not look as expected. In such cases, font substitution warnings messages implemented by the[IWarningCallback](https://reference.aspose.com/words/java/com.aspose.words/iwarningcallback/)interface come to rescue.They have the[FontSubstitution](https://reference.aspose.com/words/java/com.aspose.words/warningtype/#FONT-SUBSTITUTION)warning type andthe standard description text format, "Font '<OriginalFont>' has not been found. Using '<SubstitutionFont>' font instead. Reason: <Reason>", with the following reasons:
+Sometimes, it may be unclear why the document layout has changed, or why some font does not look as expected. In such cases, font substitution warnings messages implemented by the [IWarningCallback](https://reference.aspose.com/words/java/com.aspose.words/iwarningcallback/) interface come to rescue. They have the [FontSubstitution](https://reference.aspose.com/words/java/com.aspose.words/warningtype/#FONT-SUBSTITUTION) warning type andthe standard description text format, "Font '<OriginalFont>' has not been found. Using '<SubstitutionFont>' font instead. Reason: <Reason>", with the following reasons:
 
-- "alternative name from the document"– for substitution by[AltName](https://reference.aspose.com/words/java/com.aspose.words/Fontinfo#AltName)
+- "alternative name from the document"– for substitution by [AltName](https://reference.aspose.com/words/java/com.aspose.words/Fontinfo#AltName)
 - "fontconfig substitution" – for substitution by font config rule
 - "table substitution" – for substitution by table rule
 - "font info substitution" – for substitution by font info rule
@@ -151,7 +151,7 @@ You can get more information about a font substitution warning issued by Aspose.
 
 There are two different mechanismsused in Aspose.Words— Font substitution and Font fallback. Font substitution is used when the font specified in the document could not be found among the font sources as it was described in the above sections. TheFont fallback mechanism is used when the font is resolved, but it does not contain a specific character. In this case, Aspose.Words tries to use one of the fallback fonts for the character.
 
-There is a[BuildAutomatic](https://reference.aspose.com/words/java/com.aspose.words/fontfallbacksettings/#buildAutomatic)method that automatically builds the fallback settings by scanning available fonts. Since this method may produce a non-optimal fallback setting, you can control the font fallback behavior byusing the properties ofthe[FontFallbackSettings](https://reference.aspose.com/words/java/com.aspose.words/fontfallbacksettings/)class.This class specifies settings of the font fallback mechanism.You can get an instance of the**FontFallbackSettings**class as follows:
+There is a [BuildAutomatic](https://reference.aspose.com/words/java/com.aspose.words/fontfallbacksettings/#buildAutomatic) method that automatically builds the fallback settings by scanning available fonts. Since this method may produce a non-optimal fallback setting, you can control the font fallback behavior byusing the properties ofthe [FontFallbackSettings](https://reference.aspose.com/words/java/com.aspose.words/fontfallbacksettings/) class. This class specifies settings of the font fallback mechanism.You can get an instance of the**FontFallbackSettings**class as follows:
 
 **Java**
 
@@ -213,7 +213,7 @@ In the above code example, the following XML file is used:
 
 ## Predefined Font FallBack Settings for Google Noto Fonts
 
-Aspose.Words provides predefined font fallback settings for Google Noto fonts. These are free fonts licensed underSIL Open Font License,thatcan be downloadedfrom Google Noto Fonts. The**FontFallbackSettings**class provides a[LoadNotoFallbackSettings](https://reference.aspose.com/words/java/com.aspose.words/fontfallbacksettings/#loadNotoFallbackSettings)method. It loads predefined fallback settings, which use Google Noto fonts as shown in thecode example below:
+Aspose.Words provides predefined font fallback settings for Google Noto fonts. These are free fonts licensed underSIL Open Font License,thatcan be downloadedfrom Google Noto Fonts. The**FontFallbackSettings**class provides a [LoadNotoFallbackSettings](https://reference.aspose.com/words/java/com.aspose.words/fontfallbacksettings/#loadNotoFallbackSettings) method. It loads predefined fallback settings, which use Google Noto fonts as shown in thecode example below:
 
 {{< gist "aspose-words-gists" "2ed86af96f590e819ced4060b5080c11" "noto-fallback-settings.java" >}}
 
@@ -225,7 +225,7 @@ Only Sans style Noto fonts with regular weight are used in the predefined settin
 
 ## Where Aspose.Words Looks for Fonts
 
-Aspose.Words attempts to find TrueType fontsonthe file system automatically. Usually, you can rely on the default behavior of Aspose.Words to find the `TrueType` fonts, but sometimes you need to specify your own folders containing TrueType fonts. The[Specifying TrueType Fonts Location](/words/java/specify-truetype-fonts-location/)topic describes how and where Aspose.Words looks for fonts, as well as how to specify your own font locations.
+Aspose.Words attempts to find TrueType fontsonthe file system automatically. Usually, you can rely on the default behavior of Aspose.Words to find the `TrueType` fonts, but sometimes you need to specify your own folders containing TrueType fonts. The [Specifying TrueType Fonts Location](/words/java/specify-truetype-fonts-location/) topic describes how and where Aspose.Words looks for fonts, as well as how to specify your own font locations.
 
 ## Differences in Processing of Font Formats in Aspose.Words and Microsoft Word
 
@@ -240,4 +240,4 @@ There are some differences in processing of font formats in Aspose.Words and Mic
 
 ## See Also
 
-- [Google Noto Fonts](https://fonts.google.com/noto)to download free fonts
+- [Google Noto Fonts](https://fonts.google.com/noto) to download free fonts

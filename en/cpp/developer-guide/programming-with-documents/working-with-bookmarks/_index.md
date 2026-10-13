@@ -19,7 +19,7 @@ The actions that can be performed with bookmarks using Aspose.Words are the same
 
 ## Insert a Bookmark
 
-Use[StartBookmark](https://reference.aspose.com/words/cpp/aspose.words/documentbuilder/startbookmark/)and[EndBookmark](https://reference.aspose.com/words/cpp/aspose.words/documentbuilder/endbookmark/)to create a bookmark by marking its start and end, respectively. Do not forget to pass the same bookmark name to both methods. Bookmarks in a document can overlap and span any range. Badly formed bookmarks or bookmarks with duplicate names will be ignored when the document is saved.
+Use [StartBookmark](https://reference.aspose.com/words/cpp/aspose.words/documentbuilder/startbookmark/) and [EndBookmark](https://reference.aspose.com/words/cpp/aspose.words/documentbuilder/endbookmark/) to create a bookmark by marking its start and end, respectively. Do not forget to pass the same bookmark name to both methods. Bookmarks in a document can overlap and span any range. Badly formed bookmarks or bookmarks with duplicate names will be ignored when the document is saved.
 
 The following code example shows how to create a new bookmark:
 
@@ -27,7 +27,7 @@ The following code example shows how to create a new bookmark:
 
 ## Obtain Bookmarks
 
-Sometimes it is necessary to obtain a bookmark collection to iterate through bookmarks or for other purposes. Use the[Node.Range](https://reference.aspose.com/words/cpp/aspose.words/node/get_range/)property exposed by any document node that returns a[Range](https://reference.aspose.com/words/cpp/aspose.words/range/)object representing the portion of the document contained in this node. Use this object to retrieve a[BookmarkCollection](https://reference.aspose.com/words/cpp/aspose.words/bookmarkcollection/)and then use the collection indexer to get a specific bookmark.
+Sometimes it is necessary to obtain a bookmark collection to iterate through bookmarks or for other purposes. Use the [Node.Range](https://reference.aspose.com/words/cpp/aspose.words/node/get_range/) property exposed by any document node that returns a [Range](https://reference.aspose.com/words/cpp/aspose.words/range/) object representing the portion of the document contained in this node. Use this object to retrieve a [BookmarkCollection](https://reference.aspose.com/words/cpp/aspose.words/bookmarkcollection/) and then use the collection indexer to get a specific bookmark.
 
 The following code example shows how to obtain bookmarks from a bookmark collection:
 
@@ -51,7 +51,7 @@ Note that some bookmarks in the document are assigned to form fields. Moving to 
 
 ## Move to a Bookmark
 
-If you need to insert rich content (not just plain text) into a bookmark, you should use[MoveToBookmark](https://reference.aspose.com/words/cpp/aspose.words/documentbuilder/movetobookmark/)to move the cursor to the bookmark and then use the[DocumentBuilder's](https://reference.aspose.com/words/cpp/aspose.words/documentbuilder/)methods and properties to insert content.
+If you need to insert rich content (not just plain text) into a bookmark, you should use [MoveToBookmark](https://reference.aspose.com/words/cpp/aspose.words/documentbuilder/movetobookmark/) to move the cursor to the bookmark and then use the [DocumentBuilder's](https://reference.aspose.com/words/cpp/aspose.words/documentbuilder/) methods and properties to insert content.
 
 ## Show Hide Bookmark Content
 

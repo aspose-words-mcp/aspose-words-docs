@@ -45,6 +45,6 @@ doc.save(data_dir + "Field.RemoveField Out.doc")
 
 ## Download Running Code
 
-Download **Remove Field (Aspose.Words)**fromany of the below mentioned social coding sites:
+Download **Remove Field (Aspose.Words)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-words/Aspose.Words-for-Java/blob/master/Plugins/Aspose_Words_Java_for_Ruby/lib/asposewordsjavaforruby/removefield.rb)

@@ -27,7 +27,7 @@ In this article, we will learn what options can be useful for working with a tex
 
 You can use the [AddBidiMarks](https://reference.aspose.com/words/java/com.aspose.words/txtsaveoptions/#setAddBidiMarks) property to specify whether to add bi-directional marks before each BiDi run when exporting in plain text format. Aspose.Words inserts Unicode Character 'RIGHT-TO-LEFT MARK' (U+200F) before each bi-directional Run in the text. This option corresponds to "Add bi-directional marks" option in MS Word File Conversion dialogue when you export to a Plain Text format. Note that it appears in dialogue only if any of Arabic or Hebrew editing languages are added in MS Word.
 
-The following code example shows how to use**AddBidiMarks** property.The default value of this property is *false*:
+The following code example shows how to use**AddBidiMarks** property. The default value of this property is *false*:
 
 {{< gist "aspose-words-gists" "c92d84644de8ee6e7148950debea90d6" "add-bidi-marks.java" >}}
 
@@ -53,7 +53,7 @@ The following code example shows how to trim leading and trailing spaces while i
 
 ## Detect Document Text Direction
 
-Aspose.Words provides the [DocumentDirection](https://reference.aspose.com/words/java/com.aspose.words/txtloadoptions/#getDocumentDirection) property in the [TxtLoadOptions](https://reference.aspose.com/words/java/com.aspose.words/txtloadoptions/) class to detect the text direction (RTL / LTR) in the document. This property sets or gets document text directions provided in the [DocumentDirection](https://reference.aspose.com/words/java/com.aspose.words/documentdirection/) enumeration.The default value is left to *right*.
+Aspose.Words provides the [DocumentDirection](https://reference.aspose.com/words/java/com.aspose.words/txtloadoptions/#getDocumentDirection) property in the [TxtLoadOptions](https://reference.aspose.com/words/java/com.aspose.words/txtloadoptions/) class to detect the text direction (RTL / LTR) in the document. This property sets or gets document text directions provided in the [DocumentDirection](https://reference.aspose.com/words/java/com.aspose.words/documentdirection/) enumeration. The default value is left to *right*.
 
 The following code example shows how to detect text direction of the document while importing TXT file:
 
@@ -69,7 +69,7 @@ The following code example shows how to export headers and footers to plain text
 
 ## Export List Indentation in Output TXT
 
-Aspose.Words introduced the [TxtListIndentation](https://reference.aspose.com/words/java/com.aspose.words/txtlistindentation/) class that allows specifying how list levels are indented while exporting to a plain text format. While working with [TxtSaveOption](https://reference.aspose.com/words/java/com.aspose.words/txtsaveoptions/), the[ListIndentation](https://reference.aspose.com/words/java/com.aspose.words/txtsaveoptions/#getListIndentation) property is provided to specify the character to beused for indenting list levels andcount specifyinghow many characters to use as indentation per one list level.
+Aspose.Words introduced the [TxtListIndentation](https://reference.aspose.com/words/java/com.aspose.words/txtlistindentation/) class that allows specifying how list levels are indented while exporting to a plain text format. While working with [TxtSaveOption](https://reference.aspose.com/words/java/com.aspose.words/txtsaveoptions/), the [ListIndentation](https://reference.aspose.com/words/java/com.aspose.words/txtsaveoptions/#getListIndentation) property is provided to specify the character to beused for indenting list levels andcount specifyinghow many characters to use as indentation per one list level.
 
 The default value for character property is'\0' indicating that there is no indentation. For count property, the default value is 0 which means no indentation.
 

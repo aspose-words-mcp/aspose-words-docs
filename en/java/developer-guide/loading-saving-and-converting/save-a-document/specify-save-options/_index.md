@@ -24,7 +24,7 @@ This page explains how to specify save options for different output formats.
 
 {{% /alert %}}
 
-When saving a document, you can set some advanced properties. Aspose.Words provides you with the[SaveOptions](https://reference.aspose.com/words/java/com.aspose.words/saveoptions/) class, which allows more precise control of the save process.There are overloads of the **Save** method that accept a **SaveOptions** object – it should be an object of a class derived from the **SaveOptions** class. Each save format has a corresponding class that holds save options for this save format, for example, there is [PdfSaveOptions](https://reference.aspose.com/words/java/com.aspose.words/pdfsaveoptions/) for saving to PDF format, [MarkdownSaveOptions](https://reference.aspose.com/words/java/com.aspose.words/markdownsaveoptions/) for saving to Markdown format, or [ImageSaveOptions](https://reference.aspose.com/words/java/com.aspose.words/imagesaveoptions/) for saving to an image.This article provides examples of working with some options classes derived from **SaveOptions**.
+When saving a document, you can set some advanced properties. Aspose.Words provides you with the [SaveOptions](https://reference.aspose.com/words/java/com.aspose.words/saveoptions/) class, which allows more precise control of the save process. There are overloads of the **Save** method that accept a **SaveOptions** object – it should be an object of a class derived from the **SaveOptions** class. Each save format has a corresponding class that holds save options for this save format, for example, there is [PdfSaveOptions](https://reference.aspose.com/words/java/com.aspose.words/pdfsaveoptions/) for saving to PDF format, [MarkdownSaveOptions](https://reference.aspose.com/words/java/com.aspose.words/markdownsaveoptions/) for saving to Markdown format, or [ImageSaveOptions](https://reference.aspose.com/words/java/com.aspose.words/imagesaveoptions/) for saving to an image.This article provides examples of working with some options classes derived from **SaveOptions**.
 
 The following code example shows how to set the save options before saving the document into HTML:
 
@@ -33,7 +33,7 @@ The following code example shows how to set the save options before saving the d
 
 {{% alert color="primary" %}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-Java/blob/master/Examples/Data/Rendering.docx).
+You can download the template file of this example from[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-Java/blob/master/Examples/Data/Rendering.docx).
 
 {{% /alert %}}
 
@@ -43,13 +43,13 @@ The article describes a few properties you can control when saving a document.
 
 Use the**Password**property to get or set a password for an encrypted document.Use the **Password**property of the corresponding class to work with the selected document format.
 
-For example, when saving a document to DOC or DOT format, use the[Password](https://reference.aspose.com/words/java/com.aspose.words/docsaveoptions/#Password)property of the[DocSaveOptions](https://reference.aspose.com/words/java/com.aspose.words/docsaveoptions/)class.
+For example, when saving a document to DOC or DOT format, use the [Password](https://reference.aspose.com/words/java/com.aspose.words/docsaveoptions/#Password) property of the [DocSaveOptions](https://reference.aspose.com/words/java/com.aspose.words/docsaveoptions/) class.
 
 The following code example shows how to set a password to encrypt a document using the RC4 encryption method:
 
 {{< gist "aspose-words-gists" "821ff3a1df0c75b2af641299b393fb60" "encrypt-document-with-password.java" >}}
 
-When saving a document to ODT format, use the[Password](https://reference.aspose.com/words/java/com.aspose.words/odtsaveoptions/#Password)property of the[OdtSaveOptions](https://reference.aspose.com/words/java/com.aspose.words/odtsaveoptions/)class.
+When saving a document to ODT format, use the [Password](https://reference.aspose.com/words/java/com.aspose.words/odtsaveoptions/#Password) property of the [OdtSaveOptions](https://reference.aspose.com/words/java/com.aspose.words/odtsaveoptions/) class.
 
 The following code example shows how to load and save OpenDocument encrypted with a password:
 
@@ -73,7 +73,7 @@ The following code example shows how to update the document creation time:
 
 ## Update Last Saved Property
 
-Aspose.Words provides anability to use the[UpdateLastSavedTimeProperty](https://reference.aspose.com/words/java/com.aspose.words/saveoptions/#getUpdateLastSavedTimeProperty)property to get or set a value determining whether the[LastSavedTime](https://reference.aspose.com/words/java/com.aspose.words/builtindocumentproperties/#getLastSavedTime)property is updated before saving.
+Aspose.Words provides anability to use the [UpdateLastSavedTimeProperty](https://reference.aspose.com/words/java/com.aspose.words/saveoptions/#getUpdateLastSavedTimeProperty) property to get or set a value determining whether the [LastSavedTime](https://reference.aspose.com/words/java/com.aspose.words/builtindocumentproperties/#getLastSavedTime) property is updated before saving.
 
 The followingcode example shows how to set this property and save the document:
 
@@ -81,7 +81,7 @@ The followingcode example shows how to set this property and save the document:
 
 ## Control External Resources When Saving a Document into HTML or SVG
 
-To convert HTML or SVG into PDF, simply invoke the[Save](https://reference.aspose.com/words/java/com.aspose.words/document/#save-java.lang.String)method and specify a file name with the “.PDF” extension. If you want to load images, CSS, etc. from external sources, you can use[IResourceSavingCallback](https://reference.aspose.com/words/java/com.aspose.words/iresourcesavingcallback/).
+To convert HTML or SVG into PDF, simply invoke the [Save](https://reference.aspose.com/words/java/com.aspose.words/document/#save-java.lang.String) method and specify a file name with the “.PDF” extension. If you want to load images, CSS, etc. from external sources, you can use[IResourceSavingCallback](https://reference.aspose.com/words/java/com.aspose.words/iresourcesavingcallback/).
 
 ## Save Black and White Image with One Bit Per Pixel Format
 
