@@ -25,7 +25,7 @@ Aspose.Words can convert any document to the MHTML (Web Archive) format. This ma
 
 The following code example shows how to convert any document to MHTML and send it by email:
 
-{{< gist "aspose-words-gists" "537e7d4e2ddd23fa701dc4bf315064b9" "docx-to-mhtml.cs" >}}
+{{< gist "aspose-words-gists" "ce77d307265430a38e77b141bb06f775" "docx-to-mhtml.h" >}}
 
 ------ 
 

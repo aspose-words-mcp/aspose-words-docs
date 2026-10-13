@@ -29,7 +29,7 @@ As with all conversion examples already described, you need to create a new docu
 
 The following code example shows how to convert DOCX to JPEG:
 
-{{< gist "aspose-words-gists" "ebbb90d74ef57db456685052a18f8e86" "docx-to-jpeg.cs" >}}
+{{< gist "aspose-words-gists" "78660568d22b261d148a22cb891ae4d6" "docx-to-jpeg.h" >}}
 
 ## Specify Save Options when Converting to Image {#specify-save-options-when-converting-to-an-image}
 
@@ -43,7 +43,7 @@ There are also properties that apply to a certain format, for example, [JpegQual
 
 The following code example shows how to create a preview of the first document page with applying some additional settings:
 
-{{< gist "aspose-words-gists" "ebbb90d74ef57db456685052a18f8e86" "get-jpeg-page-range.cs" >}}
+{{< gist "aspose-words-gists" "78660568d22b261d148a22cb891ae4d6" "get-jpeg-page-range.h" >}}
 
 ------ 
 

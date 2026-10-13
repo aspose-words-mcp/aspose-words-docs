@@ -34,7 +34,7 @@ To convert a document to Markdown, you just need to load a document in any suppo
 
 The following code example shows how to convert DOCX to Markdown:
 
-{{< gist "aspose-words-gists" "51b4cb9c451832f23527892e19c7bca6" "docx-to-markdown.cs" >}}
+{{< gist "aspose-words-gists" "1739a7dc53ee2cce1ac97f4ef9fa7310" "docx-to-markdown.h" >}}
 
 You can also specify the physical folder in which you want to save images when exporting a document to Markdown format. By default, Aspose.Words saves images in the same folder where the document file is saved, but you can override this behavior using the [ImagesFolder](https://reference.aspose.com/words/cpp/aspose.words.saving/markdownsaveoptions/get_imagesfolder/) property.
 
@@ -44,7 +44,7 @@ If the specified **ImagesFolder** does not exist, it will be created automatical
 
 The following code example shows how to specify a folder for images when saving a document to a stream:
 
-{{< gist "aspose-words-gists" "51b4cb9c451832f23527892e19c7bca6" "images-folder.cs" >}}
+{{< gist "aspose-words-gists" "1739a7dc53ee2cce1ac97f4ef9fa7310" "images-folder.h" >}}
 
 ## Specify Save Options when Converting to Markdown
 
@@ -69,7 +69,7 @@ Aspose.Words currently supports the following Markdown features, which mostly fo
 
 The following example shows how to create a document with some styles and save it to Markdown:
 
-{{< gist "aspose-words-gists" "51b4cb9c451832f23527892e19c7bca6" "supported-features.cs" >}}
+{{< gist "aspose-words-gists" "1739a7dc53ee2cce1ac97f4ef9fa7310" "supported-features.h" >}}
 
 The result of this code example is shown below.
 

@@ -21,15 +21,15 @@ This page explains how to specify save options for different output formats.
 
 {{% /alert %}}
 
-When saving a document, you can set some advanced properties. Aspose.Words provides you with the[SaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/saveoptions/) class, which allows more precise control of the save process.There are overloads of the **Save** method that accept a **SaveOptions** object – it should be an object of a class derived from the **SaveOptions** class. Each save format has a corresponding class that holds save options for this save format, for example, there is [PdfSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/pdfsaveoptions/) for saving to PDF format, [MarkdownSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/markdownsaveoptions/) for saving to Markdown format, or [ImageSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/imagesaveoptions/) for saving to an image.This article provides examples of working with some options classes derived from **SaveOptions**.
+When saving a document, you can set some advanced properties. Aspose.Words provides you with the [SaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/saveoptions/) class, which allows more precise control of the save process. There are overloads of the **Save** method that accept a **SaveOptions** object – it should be an object of a class derived from the **SaveOptions** class. Each save format has a corresponding class that holds save options for this save format, for example, there is [PdfSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/pdfsaveoptions/) for saving to PDF format, [MarkdownSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/markdownsaveoptions/) for saving to Markdown format, or [ImageSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/imagesaveoptions/) for saving to an image. This article provides examples of working with some options classes derived from **SaveOptions**.
 
 The following code example shows how to set the save options before saving the document into HTML:
 
-{{< gist "aspose-words-gists" "83e5c469d0e72b5114fb8a05a1d01977" "export-text-input-form-field-as-text.cs" >}}
+{{< gist "aspose-words-gists" "d143f183bd5dfe07f1f289704e64133c" "export-text-input-form-field-as-text.h" >}}
 
 {{% alert color="primary" %}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-C/blob/master/Examples/Data/Rendering.docx).
+You can download the template file of this example from [Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-C/blob/master/Examples/Data/Rendering.docx).
 
 {{% /alert %}}
 
@@ -37,19 +37,19 @@ The article describes a few properties you can control when saving a document.
 
 ## Encrypt a Document With a Password
 
-Use the**Password**property to get or set a password for an encrypted document.Use the **Password**property of the corresponding class to work with the selected document format.
+Use the **Password** property to get or set a password for an encrypted document. Use the **Password** property of the corresponding class to work with the selected document format.
 
-For example, when saving a document to DOC or DOT format, use the[Password](https://reference.aspose.com/words/cpp/aspose.words.saving/docsaveoptions/get_password/)property of the[DocSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/docsaveoptions/)class.
+For example, when saving a document to DOC or DOT format, use the [Password](https://reference.aspose.com/words/cpp/aspose.words.saving/docsaveoptions/get_password/) property of the [DocSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/docsaveoptions/) class.
 
 The following code example shows how to set a password to encrypt a document using the RC4 encryption method:
 
-{{< gist "aspose-words-gists" "af95c7a408187bb25cf9137465fe5ce6" "encrypt-document-with-password.cs" >}}
+{{< gist "aspose-words-gists" "b4e8a7baa7d3c08127f9a043487de21b" "encrypt-document-with-password.h" >}}
 
-When saving a document to ODT format, use the[Password](https://reference.aspose.com/words/cpp/aspose.words.saving/odtsaveoptions/get_password/)property of the[OdtSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/odtsaveoptions/)class.
+When saving a document to ODT format, use the [Password](https://reference.aspose.com/words/cpp/aspose.words.saving/odtsaveoptions/get_password/) property of the [OdtSaveOptions](https://reference.aspose.com/words/cpp/aspose.words.saving/odtsaveoptions/) class.
 
 The following code example shows how to load and save OpenDocument encrypted with a password:
 
-{{< gist "aspose-words-gists" "af95c7a408187bb25cf9137465fe5ce6" "load-save-encrypted-document.cs" >}}
+{{< gist "aspose-words-gists" "b4e8a7baa7d3c08127f9a043487de21b" "load-save-encrypted-document.h" >}}
 
 Not all formats support encryption and the use of **Password** property.
 
@@ -65,19 +65,19 @@ Aspose.Words provides an ability to use the [CreatedTime](https://reference.aspo
 
 The following code example shows how to update the document creation time:
 
-{{< gist "aspose-words-gists" "83e5c469d0e72b5114fb8a05a1d01977" "update-last-printed.cs" >}}
+{{< gist "aspose-words-gists" "d143f183bd5dfe07f1f289704e64133c" "update-last-printed.h" >}}
 
 ## Update Last Saved Property
 
-Aspose.Words provides anability to use the[UpdateLastSavedTimeProperty](https://reference.aspose.com/words/cpp/aspose.words.saving/saveoptions/set_updatelastsavedtimeproperty/)property to get or set a value determining whether the[LastSavedTime](https://reference.aspose.com/words/cpp/aspose.words.properties/builtindocumentproperties/get_lastsavedtime/)property is updated before saving.
+Aspose.Words provides an ability to use the [UpdateLastSavedTimeProperty](https://reference.aspose.com/words/cpp/aspose.words.saving/saveoptions/set_updatelastsavedtimeproperty/) property to get or set a value determining whether the [LastSavedTime](https://reference.aspose.com/words/cpp/aspose.words.properties/builtindocumentproperties/get_lastsavedtime/) property is updated before saving.
 
-The followingcode example shows how to set this property and save the document:
+The following code example shows how to set this property and save the document:
 
-{{< gist "aspose-words-gists" "83e5c469d0e72b5114fb8a05a1d01977" "update-last-saved-time.cs" >}}
+{{< gist "aspose-words-gists" "d143f183bd5dfe07f1f289704e64133c" "update-last-saved-time.h" >}}
 
 ## Control External Resources When Saving a Document into HTML or SVG
 
-To convert HTML or SVG into PDF, simply invoke the[Save](https://reference.aspose.com/words/cpp/aspose.words/document/save/)method and specify a file name with the “.PDF” extension. If you want to load images, CSS, etc. from external sources, you can use[IResourceSavingCallback](https://reference.aspose.com/words/cpp/aspose.words.saving/iresourcesavingcallback/).
+To convert HTML or SVG into PDF, simply invoke the [Save](https://reference.aspose.com/words/cpp/aspose.words/document/save/) method and specify a file name with the “.PDF” extension. If you want to load images, CSS, etc. from external sources, you can use [IResourceSavingCallback](https://reference.aspose.com/words/cpp/aspose.words.saving/iresourcesavingcallback/).
 
 ## Save Black and White Image with One Bit Per Pixel Format
 
@@ -85,7 +85,7 @@ To control image saving options, the **ImageSaveOptions** class is used. For exa
 
 The following code example shows how to save a black and white image with one bit per pixel format:
 
-{{< gist "aspose-words-gists" "83e5c469d0e72b5114fb8a05a1d01977" "format1-bpp-indexed.cs" >}}
+{{< gist "aspose-words-gists" "d143f183bd5dfe07f1f289704e64133c" "format1-bpp-indexed.h" >}}
 
 ## Related APIs
 
