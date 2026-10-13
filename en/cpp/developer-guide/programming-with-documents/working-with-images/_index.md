@@ -19,10 +19,10 @@ Aspose.Words allows users to work with images in a very flexible way. In this ar
 
 All images are stored inside **Shape** nodes in a [Document](https://reference.aspose.com/words/cpp/aspose.words/document/).To extract all images or images having a specific type from the document, follow these steps:
 
-- Use the[GetChildNodes](https://reference.aspose.com/words/cpp/aspose.words/compositenode/getchildnodes/)method to select all**Shape**nodes.
+- Use the [GetChildNodes](https://reference.aspose.com/words/cpp/aspose.words/compositenode/getchildnodes/) method to select all**Shape**nodes.
 - Iterate through resulting node collections.
-- Check the[HasImage](https://reference.aspose.com/words/cpp/aspose.words.drawing/shape/get_hasimage/)boolean property.
-- Extract image data using the[ImageData](https://reference.aspose.com/words/cpp/aspose.words.drawing/shape/get_imagedata/)property.
+- Check the [HasImage](https://reference.aspose.com/words/cpp/aspose.words.drawing/shape/get_hasimage/) boolean property.
+- Extract image data using the [ImageData](https://reference.aspose.com/words/cpp/aspose.words.drawing/shape/get_imagedata/) property.
 - Save image data to a file.
 
 The following code example shows how to extract images from a document and save them as files:
@@ -31,7 +31,7 @@ The following code example shows how to extract images from a document and save 
 
 ## Saving Images as WMF
 
-Aspose.Words provides functionality to save all the available images in a document to[WMF](https://docs.fileformat.com/image/wmf/)format while converting DOCX to RTF.
+Aspose.Words provides functionality to save all the available images in a document to [WMF](https://docs.fileformat.com/image/wmf/) format while converting DOCX to RTF.
 
 The following code example shows how to save images as WMF with RTF save options:
 

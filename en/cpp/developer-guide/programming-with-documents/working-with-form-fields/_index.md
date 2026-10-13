@@ -23,7 +23,7 @@ Placing form fields into the document via code is easy. [DocumentBuilder](https:
 
 Form fields are a particular case of Word fields that allows "interaction" with the user. Form fields in Microsoft Word include textbox, combo box and checkbox.
 
-**DocumentBuilder**provides special methods to insert each type of form field into the document:[InsertTextInput](https://reference.aspose.com/words/cpp/aspose.words/documentbuilder/inserttextinput/),[InsertCheckBox](https://reference.aspose.com/words/cpp/aspose.words/documentbuilder/insertcheckbox/), and[InsertComboBox](https://reference.aspose.com/words/cpp/aspose.words/documentbuilder/insertcombobox/). Note that if you specify a name for the form field, then a bookmark is automatically created with the same name.
+**DocumentBuilder**provides special methods to insert each type of form field into the document: [InsertTextInput](https://reference.aspose.com/words/cpp/aspose.words/documentbuilder/inserttextinput/), [InsertCheckBox](https://reference.aspose.com/words/cpp/aspose.words/documentbuilder/insertcheckbox/), and [InsertComboBox](https://reference.aspose.com/words/cpp/aspose.words/documentbuilder/insertcombobox/). Note that if you specify a name for the form field, then a bookmark is automatically created with the same name.
 
 The following code example shows how to insert a combobox form field into a document:
 
@@ -31,7 +31,7 @@ The following code example shows how to insert a combobox form field into a docu
 
 ## Obtaining Form Fields
 
-A collection of form fields is represented by the[FormFieldCollection](https://reference.aspose.com/words/cpp/aspose.words.fields/formfieldcollection/)class that can be retrieved using the[FormFields](https://reference.aspose.com/words/cpp/aspose.words/range/get_formfields/)property. This means that you can obtain form fields contained in any document node including the document itself.
+A collection of form fields is represented by the [FormFieldCollection](https://reference.aspose.com/words/cpp/aspose.words.fields/formfieldcollection/) class that can be retrieved using the [FormFields](https://reference.aspose.com/words/cpp/aspose.words/range/get_formfields/) property. This means that you can obtain form fields contained in any document node including the document itself.
 
 The following code example shows how to get a collection of form fields:
 

@@ -29,9 +29,9 @@ Aspose.Words provides an ability to convert a document into a byte array for sub
 
 To store a document in a database or to prepare a document for transmission across the web, it is often necessary to serialize the document to obtain a byte array.
 
-To serialize a[Document](https://reference.aspose.com/words/net/aspose.words/document/)object in Aspose.Words:
+To serialize a [Document](https://reference.aspose.com/words/net/aspose.words/document/) object in Aspose.Words:
 
-1. Save it to a**MemoryStream**using the[Save](https://reference.aspose.com/words/net/aspose.words/document/save/)method overload of the**Document**class.
+1. Save it to a**MemoryStream**using the [Save](https://reference.aspose.com/words/net/aspose.words/document/save/) method overload of the**Document**class.
 1. Call the**ToArray**method, which returns an array of bytes representing the document in byte form.
 
 The steps above then can be reversed to load the bytes back into a**Document**object.
@@ -46,7 +46,7 @@ The example below shows how to serialize a**Document**object to obtain a byte ar
 
 {{< gist "aspose-words-gists" "f8a622f8bc1cf3c2fa8a7a9be359faa2" "docx-to-byte.cs" >}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-.NET/blob/master/Examples/Data/Document.docx).
+You can download the template file of this example from [Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-.NET/blob/master/Examples/Data/Document.docx).
 
 ## Store, Read and Delete a Document in a Database
 

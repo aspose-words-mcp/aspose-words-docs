@@ -23,7 +23,7 @@ This topic describes how to work programmatically with lists using Aspose.Words.
 
 ## Creating Lists by Applying List Formatting
 
-Aspose.Words allows the easy creation of lists by applying list formatting. [DocumentBuilder](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/) provides the [DocumentBuilder.listFormat](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/listformat/) property that returns a [ListFormat](https://reference.aspose.com/words/nodejs-net/aspose.words.lists/listformat/) object. This object has several methods to start and end a list and to increase/decrease the indent.There are two general types of lists in Microsoft Word: bulleted and numbered.
+Aspose.Words allows the easy creation of lists by applying list formatting. [DocumentBuilder](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/) provides the [DocumentBuilder.listFormat](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/listformat/) property that returns a [ListFormat](https://reference.aspose.com/words/nodejs-net/aspose.words.lists/listformat/) object. This object has several methods to start and end a list and to increase/decrease the indent. There are two general types of lists in Microsoft Word: bulleted and numbered.
 
 - To start a bulleted list, call[ListFormat.applyBulletDefault](https://reference.aspose.com/words/nodejs-net/aspose.words.lists/listformat/applyBulletDefault/).
 - To start a numbered list, call[ListFormat.applyNumberDefault](https://reference.aspose.com/words/nodejs-net/aspose.words.lists/listformat/applynumberdefault/).

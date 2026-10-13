@@ -42,15 +42,15 @@ In Microsoft Word, these parameters are set using the "File → Options → Disp
 
 ## Comments and Revisions
 
-With Aspose.Words, you can render document comments that will look the same as in Microsoft Word.To specify whether comments are rendered, use the[CommentDisplayMode](https://reference.aspose.com/words/net/aspose.words.layout/layoutoptions/commentdisplaymode/)property.
+With Aspose.Words, you can render document comments that will look the same as in Microsoft Word.To specify whether comments are rendered, use the [CommentDisplayMode](https://reference.aspose.com/words/net/aspose.words.layout/layoutoptions/commentdisplaymode/)property.
 
 In Microsoft Word, this parameter is set using the "Track Changes Options" dialog box, as shown below:
 
 ![specify-layout-options_3](specify-layout-options-3.jpg)
 
-Also, Aspose.Words allows you to display revisions in a document. Use the[RevisionOptions](https://reference.aspose.com/words/net/aspose.words.layout/layoutoptions/revisionoptions/)property of the**LayoutOptions**class to define whether the document revisions are displayed. To control their appearance (revision highlighting color, revision bar color, etc.), use the[RevisonOptions](https://reference.aspose.com/words/net/aspose.words.layout/revisionoptions/)class.
+Also, Aspose.Words allows you to display revisions in a document. Use the [RevisionOptions](https://reference.aspose.com/words/net/aspose.words.layout/layoutoptions/revisionoptions/) property of the**LayoutOptions**class to define whether the document revisions are displayed. To control their appearance (revision highlighting color, revision bar color, etc.), use the [RevisonOptions](https://reference.aspose.com/words/net/aspose.words.layout/revisionoptions/) class.
 
-You can also have revisions displayed as comments to the content. For this purpose, use the[CommentDisplayMode](https://reference.aspose.com/words/net/aspose.words.layout/layoutoptions/commentdisplaymode/) property and [ShowInBalloons](https://reference.aspose.com/words/net/aspose.words.layout/commentdisplaymode/) value.
+You can also have revisions displayed as comments to the content. For this purpose, use the [CommentDisplayMode](https://reference.aspose.com/words/net/aspose.words.layout/layoutoptions/commentdisplaymode/) property and [ShowInBalloons](https://reference.aspose.com/words/net/aspose.words.layout/commentdisplaymode/) value.
 
 The following code example shows how to customize revisions display:
 
@@ -62,7 +62,7 @@ The image below shows how Aspose.Words renders comments and the Delete revisions
 
 ## Text Shaperfor Advanced Typography Rendering
 
-The[TextShaperFactory](https://reference.aspose.com/words/net/aspose.words.layout/layoutoptions/textshaperfactory/)property enables you to set the text shaping functionality, as well as the `OpenType` features support.
+The [TextShaperFactory](https://reference.aspose.com/words/net/aspose.words.layout/layoutoptions/textshaperfactory/) property enables you to set the text shaping functionality, as well as the `OpenType` features support.
 
 Use text shaping for document processing in the following main cases:
 

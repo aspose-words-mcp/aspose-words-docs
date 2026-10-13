@@ -64,9 +64,9 @@ The code in this section addresses all of the possible situations described abov
 
 ## How to Extract Content
 
-To extract the content from your document you need to call the **ExtractContent** method below and pass the appropriate parameters.The underlying basis of this method involves finding block level nodes (paragraphs and tables) and cloning them to create identical copies. If the marker nodes passed are block level then the method is able to simply copy the content on that level and add it to the array.
+To extract the content from your document you need to call the **ExtractContent** method below and pass the appropriate parameters. The underlying basis of this method involves finding block level nodes (paragraphs and tables) and cloning them to create identical copies. If the marker nodes passed are block level then the method is able to simply copy the content on that level and add it to the array.
 
-However if the marker nodes are inline (a child of a paragraph) then the situation becomes more complex, as it is necessary to split the paragraph at the inline node, be it a run, bookmark fields etc.Content in the cloned parent nodes not present between the markers is removed. This process is used to ensure that the inline nodes will still retain the formatting of the parent paragraph.The method will also run checks on the nodes passed as parameters and throws an exception if either node is invalid.The parameters to be passed to this method are:
+However if the marker nodes are inline (a child of a paragraph) then the situation becomes more complex, as it is necessary to split the paragraph at the inline node, be it a run, bookmark fields etc.Content in the cloned parent nodes not present between the markers is removed. This process is used to ensure that the inline nodes will still retain the formatting of the parent paragraph. The method will also run checks on the nodes passed as parameters and throws an exception if either node is invalid. The parameters to be passed to this method are:
 
 1. **StartNode** and **EndNode**. The first two parameters are the nodes which define where the extraction of the content is to begin and to end at respectively. These nodes can be both block level ([Paragraph](https://reference.aspose.com/words/net/aspose.words/paragraph/) , [Table](https://reference.aspose.com/words/net/aspose.words.tables/table/)) or inline level (e.g [Run](https://reference.aspose.com/words/net/aspose.words/run/) , [FieldStart](https://reference.aspose.com/words/net/aspose.words.fields/fieldstart/) , [BookmarkStart](https://reference.aspose.com/words/net/aspose.words/bookmark/bookmarkstart/) etc.):
    1. To pass a field you should pass the corresponding **FieldStart** object
@@ -103,7 +103,7 @@ You can download the sample file of this example from [Aspose.Words GitHub](http
 
 ## Extract Content Between Different Types of Nodes
 
-We can extract content between any combinations of block-level or inline nodes. In this scenario below we will extract the content between first paragraph and the table in the second section inclusively. We get the markers nodes by calling [FirstParagraph](https://reference.aspose.com/words/net/aspose.words/story/firstparagraph/) and [GetChild](https://reference.aspose.com/words/net/aspose.words/compositenode/getchild/) methods on the second section of the document to retrieve the appropriate **Paragraph** and **Table** nodes.For a slight variation let's instead duplicate the content and insert it below the original.
+We can extract content between any combinations of block-level or inline nodes. In this scenario below we will extract the content between first paragraph and the table in the second section inclusively. We get the markers nodes by calling [FirstParagraph](https://reference.aspose.com/words/net/aspose.words/story/firstparagraph/) and [GetChild](https://reference.aspose.com/words/net/aspose.words/compositenode/getchild/) methods on the second section of the document to retrieve the appropriate **Paragraph** and **Table** nodes. For a slight variation let's instead duplicate the content and insert it below the original.
 
 The following code example shows how to extract the content between a paragraph and table using the **ExtractContent** method:
 
@@ -117,7 +117,7 @@ You can download the sample file of this example from [Aspose.Words GitHub](http
 
 ## Extract Content Between Paragraphs Based on Style
 
-You may need to extract the content between paragraphs of the same or different style, such as between paragraphs marked with heading styles.The code below shows how to achieve this. It is a simple example which will extract the content between the first instance of the “Heading 1” and “Header 3” styles without extracting the headings as well. To do this we set the last parameter to false, which specifies that the marker nodes should not be included.
+You may need to extract the content between paragraphs of the same or different style, such as between paragraphs marked with heading styles. The code below shows how to achieve this. It is a simple example which will extract the content between the first instance of the “Heading 1” and “Header 3” styles without extracting the headings as well. To do this we set the last parameter to false, which specifies that the marker nodes should not be included.
 
 In a proper implementation this should be run in a loop to extract content between all paragraphs of these styles from the document. The extracted content is copied into a new document.
 
@@ -135,7 +135,7 @@ You can download the sample file of this example from [Aspose.Words GitHub](http
 
 ## Extract Content Between Specific Runs
 
-You can extract content between inline nodes such as a [Run](https://reference.aspose.com/words/net/aspose.words/run/) as well. **Runs** from different paragraphs can be passed as markers.The code below shows how to extract specific text in-between the same **Paragraph** node.
+You can extract content between inline nodes such as a [Run](https://reference.aspose.com/words/net/aspose.words/run/) as well. **Runs** from different paragraphs can be passed as markers. The code below shows how to extract specific text in-between the same **Paragraph** node.
 
 The following code example shows how to extract content between specific runs of the same paragraph using the **ExtractContent** method:
 

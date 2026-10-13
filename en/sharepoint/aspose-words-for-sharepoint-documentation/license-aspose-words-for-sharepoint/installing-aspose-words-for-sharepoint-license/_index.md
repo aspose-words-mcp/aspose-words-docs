@@ -10,14 +10,14 @@ url: /sharepoint/installing-aspose-words-for-sharepoint-license/
 timestamp: 2024-01-30-16-22-34
 ---
 
-Once you are happy with your evaluation, you can [purchase a license](https://purchase.aspose.com/pricing/words/family/). Before purchasing make sure you understand and agree to the license subscription terms. The license is emailed to you when the order has been paid.The license is a ZIP archive containing a regular SharePoint solution package. The archive contains:
+Once you are happy with your evaluation, you can [purchase a license](https://purchase.aspose.com/pricing/words/family/). Before purchasing make sure you understand and agree to the license subscription terms. The license is emailed to you when the order has been paid. The license is a ZIP archive containing a regular SharePoint solution package. The archive contains:
 
 - **Aspose.Words.SharePoint.License.wsp** – the SharePoint solution package file. The license is packaged as a SharePoint solution to make deployment and retraction across a server farm easy.
 - **readme.txt** – license installation instructions.
 
 ## Installation
 
-License installation is performed from the server console via **stsadm.exe**. The steps required to install the license are below.The paths are omitted for clarity. You may need to add the actual path to stsadm.exe and/or solution file when executing them.
+License installation is performed from the server console via **stsadm.exe**. The steps required to install the license are below. The paths are omitted for clarity. You may need to add the actual path to stsadm.exe and/or solution file when executing them.
 
 1. Run stsadm to add the solution to the SharePoint solution store:<br>
 {{< highlight csharp >}}

@@ -12,7 +12,7 @@ timestamp: 2024-01-27-14-07-04
 
 ## Different Conversion Options
 
-Aspose.Words for SharePoint offers a number of flexible options for converting documents.The following options are available during conversion setup:
+Aspose.Words for SharePoint offers a number of flexible options for converting documents. The following options are available during conversion setup:
 
 ### File concatenation
 

@@ -24,7 +24,7 @@ Note that the font in the document represents an entity, such as family name, st
 
 ## Font Manipulationand Performance Issues
 
-All available font manipulation mechanisms are contained in the[FontSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontsettings/)class.This class is responsible for fetching fonts within defined font sources as well as for the Font Substitution process, as described below.
+All available font manipulation mechanisms are contained in the [FontSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontsettings/) class. This class is responsible for fetching fonts within defined font sources as well as for the Font Substitution process, as described below.
 
 Fonts are parsed in several steps:
 
@@ -34,21 +34,21 @@ Fonts are parsed in several steps:
 
 When Aspose.Words encounters a font in the document for the first time, it attempts to obtain basic font information, such as the font full name, family name, version, style, from the font files located in each font source. After all the fonts are retrieved, Aspose.Words uses these details to find the required font data or a suitable replacement for the requested font.
 
-Since the procedure described above is time-consuming,it may negatively affect application performance at its first launch. However, each instance of[FontSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontsettings/)has its own cache, which could reduce the processing time of subsequent documents. For example, you can share an instance of the[FontSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontsettings/)class between different documents, which allows you to speed up the loading of the documents. The following example demonstrates this:
+Since the procedure described above is time-consuming,it may negatively affect application performance at its first launch. However, each instance of [FontSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontsettings/) has its own cache, which could reduce the processing time of subsequent documents. For example, you can share an instance of the [FontSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontsettings/) class between different documents, which allows you to speed up the loading of the documents. The following example demonstrates this:
 
 {{< gist "aspose-words-gists" "194889f2a6beb4b2aed7b1ad088392ca" "load-option-font-settings.js" >}}
 
-In the case when[FontSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontsettings/)is not defined explicitly, Aspose.Words uses the default[FontSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontsettings/)instance. This instance is also automatically shared among documents, and can be extracted as follows:
+In the case when [FontSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontsettings/) is not defined explicitly, Aspose.Words uses the default [FontSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontsettings/) instance. This instance is also automatically shared among documents, and can be extracted as follows:
 
 {{< gist "aspose-words-gists" "194889f2a6beb4b2aed7b1ad088392ca" "font-settings-default-instance.js" >}}
 
-If you are sure that all processing documents require the same font settings, then it is recommended to set up and utilize the default[FontSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontsettings/)instance.Suppose that you need to use the same font sources for all your documents. In this case, you can just amend the default instance as follows:
+If you are sure that all processing documents require the same font settings, then it is recommended to set up and utilize the default [FontSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontsettings/) instance.Suppose that you need to use the same font sources for all your documents. In this case, you can just amend the default instance as follows:
 
 {{< gist "aspose-words-gists" "194889f2a6beb4b2aed7b1ad088392ca" "font-settings-font-source.js" >}}
 
 {{% alert color="primary" %}}
 
-The custom [FontSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontsettings/)have higher priority than the default instance.
+The custom [FontSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontsettings/) have higher priority than the default instance.
 
 {{% /alert %}}
 
@@ -56,11 +56,11 @@ The custom [FontSettings](https://reference.aspose.com/words/nodejs-net/aspose.w
 
 A text in a document can be formatted with various fonts, such as Arial, Times New Roman, Verdana, and others. When Aspose.Words renders a document, it attempts to select the fonts that are specified in the document.
 
-However, there are situations when the exact font cannot be found and Aspose.Words must substitute it for a similar font instead.Aspose.Words selects the font according to the following process:
+However, there are situations when the exact font cannot be found and Aspose.Words must substitute it for a similar font instead. Aspose.Words selects the font according to the following process:
 1. Aspose.Words tries to find a font among the available font sourceswith an exact font name.
 1. Aspose.Words tries to find the required font among the fonts embedded in the original document. Some document formats such as DOCX can contain embedded fonts.
-1. If Aspose.Words is unable to locate the required fontwith the exact name match,and the[altName](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontinfo/altName/)property defined for this font, thenAspose.Words will find the font defined with[altName](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontinfo/altName/)from the[FontInfo](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontinfo/)class, which specifies the font information.
-1. If Aspose.Words is unable to locate the defined font,and[altName](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontinfo/altName/)is not also defined,then the font substitution rules are applied one-by-one, as described below (when the appropriate replacement is found, the Font Substitution Process stops and the next step is not executed):
+1. If Aspose.Words is unable to locate the required fontwith the exact name match,and the [altName](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontinfo/altName/) property defined for this font, thenAspose.Words will find the font defined with [altName](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontinfo/altName/) from the [FontInfo](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontinfo/) class, which specifies the font information.
+1. If Aspose.Words is unable to locate the defined font,and [altName](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontinfo/altName/) is not also defined,then the font substitution rules are applied one-by-one, as described below (when the appropriate replacement is found, the Font Substitution Process stops and the next step is not executed):
    1. First, Aspose.Words tries to process the font name to get the substitution, particularly it tries to remove suffixes with "-" and "," separators.<br>
       If this substitution rule takes place, a "Font '<OriginalFont>' has not been found. Using '<SubstitutionFont>' font instead. Reason: font name substitution." warning appears.<br>
    1. Then Aspose.Words attempts to apply OS font settings, if they are available, by using the **FontConfig** utility. This Non-Windows feature must be used with a FontConfig-compatible OS. Almost any Unix-based OSalready has a `FontConfig` library that is designed to provide system-wide font configuration, customization, and access to applications. Otherwise, this library can be easily installed by the user.
@@ -87,7 +87,7 @@ fontSettings.substitutionSettings.tableSubstitution.load("Table.xml")
 {{< highlight js>}}
 fontSettings.substitutionSettings.tableSubstitution.enabled = false
 {{< /highlight >}}
-   1. The[FontInfo](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontinfo/)substitution rule will be applied if the table substitution rule cannot find the font. This mechanism is enabled by default. Aspose.Words finds the most suitable font according to the font information contained in a particular document.This information can be obtained fromthe[FontInfo](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontinfo/)class as shown below:<br>
+   1. The [FontInfo](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontinfo/) substitution rule will be applied if the table substitution rule cannot find the font. This mechanism is enabled by default. Aspose.Words finds the most suitable font according to the font information contained in a particular document.This information can be obtained fromthe [FontInfo](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontinfo/) class as shown below:<br>
 {{< highlight js>}}
 let fontInfos = doc.fontInfos
 {{< /highlight >}}
@@ -95,8 +95,8 @@ let fontInfos = doc.fontInfos
 {{< highlight js>}}
 fontSettings.substitutionSettings.fontInfoSubstitution.enabled = false
 {{< /highlight >}}
-      If[FontInfo](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontinfo/)is not available for the missing font, then the process stops.<br>
-   1. [DefaultFont](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/defaultfontsubstitutionrule/)substitution rule will be applied in the case when the `FontInfo` substitution has also failed. This rule is also enabled by default. According to this rule, Aspose.Words will attempt to use the default font specified in the[defaultFontName](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/defaultfontsubstitutionrule/defaultFontName/)property.If the user has not chosen their own default font, then "Times New Roman" will be used as the default font.This rule can be disabled as shown below:<br>
+      If [FontInfo](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontinfo/) is not available for the missing font, then the process stops.<br>
+   1. [DefaultFont](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/defaultfontsubstitutionrule/) substitution rule will be applied in the case when the `FontInfo` substitution has also failed. This rule is also enabled by default. According to this rule, Aspose.Words will attempt to use the default font specified in the [defaultFontName](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/defaultfontsubstitutionrule/defaultFontName/) property. If the user has not chosen their own default font, then "Times New Roman" will be used as the default font.This rule can be disabled as shown below:<br>
 {{< highlight js>}}
 fontSettings.substitutionSettings.defaultFontSubstitution.enabled = false
 {{< /highlight >}}
@@ -117,7 +117,7 @@ If [FontInfo](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/f
 
 There are two different mechanismsused in Aspose.Words— Font substitution and Font fallback. Font substitution is used when the font specified in the document could not be found among the font sources as it was described in the above sections. TheFont fallback mechanism is used when the font is resolved, but it does not contain a specific character. In this case, Aspose.Words tries to use one of the fallback fonts for the character.
 
-There is a[buildAutomatic](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontfallbacksettings/buildAutomatic/)method that automatically builds the fallback settings by scanning available fonts. Since this method may produce a non-optimal fallback setting, you can control the font fallback behavior byusing the properties ofthe[FontFallbackSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontfallbacksettings/buildAutomatic/)class.This class specifies settings of the font fallback mechanism.You can get an instance of the[FontFallbackSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontfallbacksettings/buildAutomatic/)class as follows:
+There is a [buildAutomatic](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontfallbacksettings/buildAutomatic/) method that automatically builds the fallback settings by scanning available fonts. Since this method may produce a non-optimal fallback setting, you can control the font fallback behavior byusing the properties ofthe [FontFallbackSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontfallbacksettings/buildAutomatic/) class. This class specifies settings of the font fallback mechanism.You can get an instance of the [FontFallbackSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontfallbacksettings/buildAutomatic/) class as follows:
 
 {{< highlight js>}}
 let settings = fontSettings.fallbackSettings
@@ -171,7 +171,7 @@ In the above code example, the following XML file is used:
 
 ## Predefined Font FallBack Settings for Google Noto Fonts
 
-Aspose.Words provides predefined font fallback settings for Google Noto fonts. These are free fonts licensed underSIL Open Font License,thatcan be downloadedfrom Google Noto Fonts. The[FontFallbackSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontfallbacksettings/buildAutomatic/)class provides a[loadNotoFallbackSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontfallbacksettings/loadNotoFallbackSettings/)method. It loads predefined fallback settings, which use Google Noto fonts as shown in thecode example below:
+Aspose.Words provides predefined font fallback settings for Google Noto fonts. These are free fonts licensed underSIL Open Font License,thatcan be downloadedfrom Google Noto Fonts. The [FontFallbackSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontfallbacksettings/buildAutomatic/) class provides a [loadNotoFallbackSettings](https://reference.aspose.com/words/nodejs-net/aspose.words.fonts/fontfallbacksettings/loadNotoFallbackSettings/) method. It loads predefined fallback settings, which use Google Noto fonts as shown in thecode example below:
 
 {{< gist "aspose-words-gists" "194889f2a6beb4b2aed7b1ad088392ca" "noto-fallback-settings.js" >}}
 
@@ -183,7 +183,7 @@ Only Sans style Noto fonts with regular weight are used in the predefined settin
 
 ## Where Aspose.Words Looks for Fonts
 
-Aspose.Words attempts to find TrueType fontsonthe file system automatically. Usually, you can rely on the default behavior of Aspose.Words to find the `TrueType` fonts, but sometimes you need to specify your own folders containing TrueType fonts. The[Specifying TrueType Fonts Location](/words/nodejs-net/specifying-truetype-fonts-location/)topic describes how and where Aspose.Words looks for fonts, as well as how to specify your own font locations.
+Aspose.Words attempts to find TrueType fontsonthe file system automatically. Usually, you can rely on the default behavior of Aspose.Words to find the `TrueType` fonts, but sometimes you need to specify your own folders containing TrueType fonts. The [Specifying TrueType Fonts Location](/words/nodejs-net/specifying-truetype-fonts-location/) topic describes how and where Aspose.Words looks for fonts, as well as how to specify your own font locations.
 
 ## Differences in Processing of Font Formats in Aspose.Words and Microsoft Word
 
@@ -198,4 +198,4 @@ There are some differences in processing of font formats in Aspose.Words and Mic
 
 ## See Also
 
-- [Google Noto Fonts](https://fonts.google.com/noto)to download free fonts
+- [Google Noto Fonts](https://fonts.google.com/noto) to download free fonts

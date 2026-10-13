@@ -39,6 +39,6 @@ puts "NodeType: " + node.nodeTypeToString(node_type)
 
 ## Download Running Code
 
-Download **Working With Nodes (Aspose.Words)**fromany of the below mentioned social coding sites:
+Download **Working With Nodes (Aspose.Words)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-words/Aspose.Words-for-Java/blob/master/Plugins/Aspose_Words_Java_for_Ruby/lib/asposewordsjavaforruby/nodes.rb)

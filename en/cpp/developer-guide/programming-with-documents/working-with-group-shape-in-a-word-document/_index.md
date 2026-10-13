@@ -17,7 +17,7 @@ Sometimes you need to add a group shape into a Word document. Such a group shape
 
 In Microsoft Word, you can quickly add a group shape using the Group command/button. An individual shape in a group can be moved separately.
 
-In Aspose.Words it is very easy to add a group shape usingthe [GroupShape](https://reference.aspose.com/words/cpp/aspose.words.drawing.groupshape/)class. The shape is created separately usingthe [Shape](https://reference.aspose.com/words/cpp/aspose.words.drawing/shape/)class and then added tothe **GroupShape**object usingthe [AppendChild](https://reference.aspose.com/words/cpp/aspose.words/compositenode/appendchild/)method.
+In Aspose.Words it is very easy to add a group shape usingthe [GroupShape](https://reference.aspose.com/words/cpp/aspose.words.drawing.groupshape/) class. The shape is created separately usingthe [Shape](https://reference.aspose.com/words/cpp/aspose.words.drawing/shape/) class and then added tothe **GroupShape**object usingthe [AppendChild](https://reference.aspose.com/words/cpp/aspose.words/compositenode/appendchild/) method.
 
 The following code example shows how to add a group shape into a Word document:
 

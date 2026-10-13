@@ -13,9 +13,9 @@ url: /java/your-first-application/
 timestamp: 2024-01-27-14-07-04
 ---
 
-This article gives you an idea of getting started with Aspose.Words for Android via Java. It will demonstrate how to set up a new Android project from scratch, add a reference to the Aspose.Words JAR and create a new document which is saved to disk in DOCX format.This example uses[Android Studio](https://developer.android.com/studio/index.html)for development and the application is run on the Android Emulator.To get started with Aspose.Words for Androidvia Java, please follow this step-by-step tutorial to create an app which uses Aspose.Words for Androidvia Java:
+This article gives you an idea of getting started with Aspose.Words for Android via Java. It will demonstrate how to set up a new Android project from scratch, add a reference to the Aspose.Words JAR and create a new document which is saved to disk in DOCX format.This example uses [Android Studio](https://developer.android.com/studio/index.html) for development and the application is run on the Android Emulator.To get started with Aspose.Words for Androidvia Java, please follow this step-by-step tutorial to create an app which uses Aspose.Words for Androidvia Java:
 
-1. Download and the[Android Studio](https://developer.android.com/studio/index.html)and install it to any location.
+1. Download and the [Android Studio](https://developer.android.com/studio/index.html) and install it to any location.
 1. Run the Android Studio.
 1. Create a new Android Application Project.<br>
 ![install-aspose-words-for-android-via-java-3](install-aspose-words-for-android-via-java-3.jpg)<br>

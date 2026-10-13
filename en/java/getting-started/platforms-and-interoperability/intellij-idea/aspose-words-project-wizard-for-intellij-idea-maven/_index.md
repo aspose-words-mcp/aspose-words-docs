@@ -21,7 +21,7 @@ In a 2010 **Infoworld** report, IntelliJ received the highest test center score 
 
 ## Aspose.Words for Java
 
-[Aspose.Words for Java](https://products.aspose.com/words/java/)is an advanced class library for Java that enables you to perform a great range of document processing tasks directly within your Java applications.
+[Aspose.Words for Java](https://products.aspose.com/words/java/) is an advanced class library for Java that enables you to perform a great range of document processing tasks directly within your Java applications.
 
 [Aspose.Words for Java](https://products.aspose.com/words/java/) supports processing word (DOC, DOCX, OOXML, RTF) HTML, OpenDocument, PDF, EPUB, XPS, and all image formats. With Aspose.Words you can
 generate, modify, and convert documents without using Microsoft Word.
@@ -45,7 +45,7 @@ The plugin contains two wizards-----
 
 ` `**Wizard 2:** Aspose.Words Examples
 
-- **Aspose.Words Examples Wizard** lets you create/copy downloaded[Source Code Examples of Aspose.Words for Java API](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples) into your project. All the examples for the selected category will get copied to the project's "com.aspose.words.examples" package folder along with the required resources within "src/main/resources" folder needed to run the examples.
+- **Aspose.Words Examples Wizard** lets you create/copy downloaded [Source Code Examples of Aspose.Words for Java API](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples) into your project. All the examples for the selected category will get copied to the project's "com.aspose.words.examples" package folder along with the required resources within "src/main/resources" folder needed to run the examples.
 - [Source Code Examples of Aspose.Words for Java API](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples) are meant for demonstrating the different usages of the API.
 
 ## System Requirements and Supported Platforms

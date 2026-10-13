@@ -23,7 +23,7 @@ Placing form fields into the document via code is easy. [DocumentBuilder](https:
 
 Form fields are a particular case of Word fields that allows "interaction" with the user. Form fields in Microsoft Word include textbox, combo box and checkbox.
 
-[DocumentBuilder](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/)provides special methods to insert each type of form field into the document:[insertTextInput](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/inserttextinput/),[insertCheckBox](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/insertcheckbox/), and[insertComboBox](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/insertcombobox/). Note that if you specify a name for the form field, then a bookmark is automatically created with the same name.
+[DocumentBuilder](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/)provides special methods to insert each type of form field into the document: [insertTextInput](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/inserttextinput/), [insertCheckBox](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/insertcheckbox/), and [insertComboBox](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/insertcombobox/). Note that if you specify a name for the form field, then a bookmark is automatically created with the same name.
 
 The following code example shows how to insert a combobox form field into a document:
 

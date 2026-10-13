@@ -39,7 +39,7 @@ In this example, you create a simple Hello World console application that makes 
 ### Creating the Console Application
 
 To create the Hello World program, followthe steps below:
-1. Once Docker is installed, make sure that it uses Linux Containers (default).If necessary, select theSwitch to Linux containersoption from the Docker Desktops menu.
+1. Once Docker is installed, make sure that it uses Linux Containers (default). If necessary, select theSwitch to Linux containersoption from the Docker Desktops menu.
 1. In Visual Studio, create a .NET Core console application.<br>
 ![net-console-application](https://lh5.googleusercontent.com/PArWoC8_leOnhtaF-5BMb3b4jHwI3G03WoyMK3bXZpsQKN50YzvEQBwoRniyCWKIcdR0EZGuwn3S8Z0ZK6FQ4cjMSWgH3CwSqReW4bMt-3OjZjrdt9yuWbkMdhyNjwwaaYPC5Ylr)<br>
 1. Install the latest Aspose.Words version from NuGet. SkiaSharp will be installed as a dependency of Aspose.Words.<br>
@@ -111,7 +111,7 @@ To work with graphics, Aspose.Words for .NET Standard depends on SkiaSharp. This
 - Ubuntu 18.04 and 19.04
 - Alpine 3.9
 
-SkiaSharp does not work on Windows Nano Server due to a lack of some native dependencies,[which is a known issue in SkiaSharp](https://github.com/mono/SkiaSharp/issues/676). The issue will be resolved in 1.68.1.1 version of SkiaSharp. If you need to run Aspose.Words in a Windows container, use the .NET Framework base image with the .NET Framework version of Aspose.Words, which does not depend on SkiaSharp.
+SkiaSharp does not work on Windows Nano Server due to a lack of some native dependencies, [which is a known issue in SkiaSharp](https://github.com/mono/SkiaSharp/issues/676). The issue will be resolved in 1.68.1.1 version of SkiaSharp. If you need to run Aspose.Words in a Windows container, use the .NET Framework base image with the .NET Framework version of Aspose.Words, which does not depend on SkiaSharp.
 
 SkiaSharp is a wrapper around the native Skia library. The following runtimes are provided in the SkiaSharp NuGet package:
 
@@ -224,9 +224,9 @@ ENTRYPOINT ["/opt/rh/rh-dotnet21/root/usr/bin/dotnet", "Aspose.Words.Docker.Samp
 - [Install Docker Desktop on Mac](https://docs.docker.com/docker-for-mac/install/)
 - [Visual Studio 2017, .NET Core 2.2 SDK](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=netcore22#dependencies)
 - [Switch to Linux containers](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers)option
-- Install[SkiaSharp.NativeAssets.Linux](https://www.nuget.org/packages/SkiaSharp.NativeAssets.Linux)
+- Install [SkiaSharp.NativeAssets.Linux](https://www.nuget.org/packages/SkiaSharp.NativeAssets.Linux)
 - Additional information on [.NET Core SDK](https://hub.docker.com/_/microsoft-dotnet-sdk)
-- Use additional NuGet packages:[SkiaSharp.NativeAssets.Linux](https://www.nuget.org/packages/SkiaSharp.NativeAssets.Linux),[SkiaSharp.NativeAssets.Linux.NoDependencies](https://www.nuget.org/packages/SkiaSharp.NativeAssets.Linux.NoDependencies),[Goelze.SkiaSharp.NativeAssets.AlpineLinux](https://www.nuget.org/packages/Goelze.SkiaSharp.NativeAssets.AlpineLinux),[Jellyfin.SkiaSharp.NativeAssets.LinuxArm](https://www.nuget.org/packages/Jellyfin.SkiaSharp.NativeAssets.LinuxArm)
+- Use additional NuGet packages: [SkiaSharp.NativeAssets.Linux](https://www.nuget.org/packages/SkiaSharp.NativeAssets.Linux), [SkiaSharp.NativeAssets.Linux.NoDependencies](https://www.nuget.org/packages/SkiaSharp.NativeAssets.Linux.NoDependencies), [Goelze.SkiaSharp.NativeAssets.AlpineLinux](https://www.nuget.org/packages/Goelze.SkiaSharp.NativeAssets.AlpineLinux), [Jellyfin.SkiaSharp.NativeAssets.LinuxArm](https://www.nuget.org/packages/Jellyfin.SkiaSharp.NativeAssets.LinuxArm)
 - [RHEL 7 (x64)](https://hub.docker.com/r/kkamberta/dotnet-21-rhel7)
 
 ------

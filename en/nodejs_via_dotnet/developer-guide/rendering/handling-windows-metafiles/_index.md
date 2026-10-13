@@ -27,7 +27,7 @@ The existing issue with Windows Metafile is that it is not supported by most non
 
 ## Controlling the Aspose.Words Metafile Player
 
-The[MetafileRenderingOptions](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/metafilerenderingoptions/)class enables you to control the metafile player.For example, you can determine how metafile images should be rendered using the[renderingMode](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/metafilerenderingoptions/renderingMode/) property,which has a special meaning when converting to bitmaps (see also the[ImageSaveOptions.metafileRenderingOptions](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/imagesaveoptions/metafileRenderingOptions/)property).
+The [MetafileRenderingOptions](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/metafilerenderingoptions/) class enables you to control the metafile player. For example, you can determine how metafile images should be rendered using the [renderingMode](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/metafilerenderingoptions/renderingMode/) property,which has a special meaning when converting to bitmaps (see also the [ImageSaveOptions.metafileRenderingOptions](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/imagesaveoptions/metafileRenderingOptions/) property).
 
 Saving to a bitmap works differently on platforms other than .NET. While .NET GDI+ rendering is a reference that works almost perfect even for the most complex metafile format, on other platforms it may cause issues or not be supported at all.
 
@@ -37,7 +37,7 @@ Raster operations is a complex metafile feature, that currently has limited supp
 
 There are binary and ternary raster operations:
 
-- Binary raster operations are applied to pen drawing commands, such as drawing lines and curves. When drawing a line, the pen color is combined with the destination bitmap color (the color of the corresponding pixel on the device surface) by using specified bitwise logical operations with hex color values.The image example below illustrates the effect of all 16 binary raster operations applied to 20 different color bars. The vertical color bars are drawn first, the horizontal bars are drawn after each binary raster operation is applied. For the simple cases, R2_BLACK draws black, R2_NOT inverses the color, R2_NOP does not change the background, and R2_WHITE draws white.
+- Binary raster operations are applied to pen drawing commands, such as drawing lines and curves. When drawing a line, the pen color is combined with the destination bitmap color (the color of the corresponding pixel on the device surface) by using specified bitwise logical operations with hex color values. The image example below illustrates the effect of all 16 binary raster operations applied to 20 different color bars. The vertical color bars are drawn first, the horizontal bars are drawn after each binary raster operation is applied. For the simple cases, R2_BLACK draws black, R2_NOT inverses the color, R2_NOP does not change the background, and R2_WHITE draws white.
 
 <img src="handling-windows-metafiles-1.png" alt="handling-windows-metafiles-aspose-words-net-1" style="width:650px"/>
 
@@ -45,7 +45,7 @@ There are binary and ternary raster operations:
 
 <img src="handling-windows-metafiles-2.png" alt="handling-windows-metafiles-aspose-words-net-2" style="width:650px"/>
 
-Raster operations can not be converted to vector graphics directly. Aspose.Words emulates raster operations by partially rasterizing the device surface affected by raster operations. For this purpose, the[emulateRasterOperations](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/metafilerenderingoptions/emulateRasterOperations/) property is used.
+Raster operations can not be converted to vector graphics directly. Aspose.Words emulates raster operations by partially rasterizing the device surface affected by raster operations. For this purpose, the [emulateRasterOperations](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/metafilerenderingoptions/emulateRasterOperations/) property is used.
 
 {{% alert color="primary" %}}
 
@@ -57,13 +57,13 @@ While binary raster operations are not currently supported and the limited numbe
 
 Aspose.Words does not support a number of metafile features that are most complex or rare.In this case Aspose.Wordsmay perform fallback to a different type of metafile player. 
 
-Firstly, Aspose.Words performs fallback from the vector metafile player to raster, which It is controlled by the[renderingMode](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/metafilerenderingoptions/renderingMode/)property. If the fallback feature is disabled,Aspose.Words tries to render some substitution graphics instead of the features that are not supported.
+Firstly, Aspose.Words performs fallback from the vector metafile player to raster, which It is controlled by the [renderingMode](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/metafilerenderingoptions/renderingMode/) property. If the fallback feature is disabled,Aspose.Words tries to render some substitution graphics instead of the features that are not supported.
 
 Aspose.Words successfully plays metafile to raster using GDI+ on .NET, which makes this callback option safe.
 
 Secondly, there is an option for EMF+ Dual metafile to fallback from playing the EMF+ part to the EMF part. It is controlled by [emfPlusDualRenderingMode](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/metafilerenderingoptions/emfPlusDualRenderingMode/). If there are some issues occur when playing the EMF part, then fallback to raster may be performed as well.
 
-As for raster operations, if the[emulateRasterOperations](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/metafilerenderingoptions/emulateRasterOperations/) is disabled, then raster operations are considered as not supported, which triggers fallback to bitmap metafile player if it is enabled. Therefore, if you have a metafile with raster operations, but you do not want to use raster operations emulation and yet want to get the vector output with substitution graphics, then select the [MetafileRenderingMode.Vector](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/metafilerenderingmode/).
+As for raster operations, if the [emulateRasterOperations](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/metafilerenderingoptions/emulateRasterOperations/) is disabled, then raster operations are considered as not supported, which triggers fallback to bitmap metafile player if it is enabled. Therefore, if you have a metafile with raster operations, but you do not want to use raster operations emulation and yet want to get the vector output with substitution graphics, then select the [MetafileRenderingMode.Vector](https://reference.aspose.com/words/nodejs-net/aspose.words.saving/metafilerenderingmode/).
 
 ------ 
 

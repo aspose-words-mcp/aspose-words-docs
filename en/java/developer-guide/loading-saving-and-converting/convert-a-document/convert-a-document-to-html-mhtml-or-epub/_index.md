@@ -27,7 +27,7 @@ EPUB (short for "Electronic Publication") is an HTML-based format commonly used 
 
 ## Convert a Document
 
-For simple conversion to HTML, MHTML, or EPUB,one of the[Save](https://reference.aspose.com/words/java/com.aspose.words/document/#save-java.lang.String-int)method overloads is used. You can save the document to a file or stream and explicitly set the output documentsave format or define it from the file name extension.
+For simple conversion to HTML, MHTML, or EPUB,one of the [Save](https://reference.aspose.com/words/java/com.aspose.words/document/#save-java.lang.String-int) method overloads is used. You can save the document to a file or stream and explicitly set the output documentsave format or define it from the file name extension.
 
 The following example shows how to convert DOCX to HTML with specifying a save format:
 
@@ -37,7 +37,7 @@ To convert a document to MHTML or EPUB, use `SaveFormat.MHTML` or `SaveFormat.EP
 
 ## Convert a Document with Round-trip Information
 
-The HTML format does not support many Microsoft Word features, and if we need to restore a document model as close to the original as possible, we need to save some extra information within the HTML file. Such information is also called "round-trip information". For this purpose, Aspose.Wordsprovides an ability to export round-trip information when saving to HTML, MHTML, or EPUB using the[ExportRoundtripInformation](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getExportRoundtripInformation)property. Saving the round-trip information allows restoring document properties such as tabs, comments, headers, and footers during the loading documents of the listed formats back into a**Document**object.
+The HTML format does not support many Microsoft Word features, and if we need to restore a document model as close to the original as possible, we need to save some extra information within the HTML file. Such information is also called "round-trip information". For this purpose, Aspose.Wordsprovides an ability to export round-trip information when saving to HTML, MHTML, or EPUB using the [ExportRoundtripInformation](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getExportRoundtripInformation) property. Saving the round-trip information allows restoring document properties such as tabs, comments, headers, and footers during the loading documents of the listed formats back into a**Document**object.
 
 The default value is**true**for HTML and**false**for MHTML and EPUB:
 
@@ -50,7 +50,7 @@ The following code example shows how to export round-trip information when conve
 
 {{% alert color="primary" %}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-.NET/blob/master/Examples/Data/Rendering.docx).
+You can download the template file of this example from[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-.NET/blob/master/Examples/Data/Rendering.docx).
 
 {{% /alert %}}
 
@@ -62,15 +62,15 @@ Aspose.Words allows to convert a Word document to HTML using default or custom s
 
 Using Aspose.Words we can specify a physical folder where all resources, such as images, fonts, and external CSS, are saved when a document is converted to HTML. By default, this is an empty string.
 
-Specifying the[ResourceFolder](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getResourceFolder)property is the simplest way to set the folder where all resources should be written. We can use individual properties, such as[FontsFolder](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getFontsFolder)which saves fonts to the specified folder and[ImagesFolder](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getImagesFolder)which saves images to a specified folder.When a relative path is specified,**FontsFolder**and**ImagesFolder**refer to the folder where the code assembly is located,**ResourceFolder**and[CssStyleSheetFileName](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getCssStyleSheetFileName)refer to the output folder where the HTML document is located.
+Specifying the [ResourceFolder](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getResourceFolder) property is the simplest way to set the folder where all resources should be written. We can use individual properties, such as[FontsFolder](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getFontsFolder) which saves fonts to the specified folder and [ImagesFolder](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getImagesFolder) which saves images to a specified folder.When a relative path is specified,**FontsFolder**and**ImagesFolder**refer to the folder where the code assembly is located,**ResourceFolder**and [CssStyleSheetFileName](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getCssStyleSheetFileName) refer to the output folder where the HTML document is located.
 
-In this example,**ResourceFolder**specifies the relative path. This path refers to the output folder where the HTML document is saved.The value of the**ResourceFolderAlias**property is used to create URLs for all resources.
+In this example,**ResourceFolder**specifies the relative path. This path refers to the output folder where the HTML document is saved. The value of the**ResourceFolderAlias**property is used to create URLs for all resources.
 
 The following code example shows how to work with these properties:
 
 {{< gist "aspose-words-gists" "c2ec8aa36ef37670eceec8da5c612b86" "export-resources.java" >}}
 
-Using the[ResourceFolderAlias](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getResourceFolderAlias)property, we can also specify the name of the folder used to construct URIs of all resources written into an HTML document. This is the simplest way to specify how URIs should be generated for all resource files. The same information can be specified for images and fonts separately via[ImagesFolderAlias](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getImagesFolderAlias)and[FontsFolderAlias](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getFontsFolderAlias)properties, respectively.
+Using the [ResourceFolderAlias](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getResourceFolderAlias) property, we can also specify the name of the folder used to construct URIs of all resources written into an HTML document. This is the simplest way to specify how URIs should be generated for all resource files. The same information can be specified for images and fonts separately via [ImagesFolderAlias](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getImagesFolderAlias) and [FontsFolderAlias](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getFontsFolderAlias) properties, respectively.
 
 However, there is no individual property for CSS. The behavior of the**FontsFolder**,**FontsFolderAlias**,**ImagesFolder**,**ImagesFolderAlias**and**CssStyleSheetFileName**properties are not changed. Note that the**CssStyleSheetFileName**property is used both for specifying folder name and file name.
 
@@ -79,7 +79,7 @@ However, there is no individual property for CSS. The behavior of the**FontsFold
 
 ### Export Base64 Encoding FontsResources
 
-Aspose.Words provides an ability tospecify whether font resources should be embedded into HTML in Base64 encodings. To perform this, use the[ExportFontsAsBase64](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getExportFontsAsBase64)property– this is an extension of the[ExportFontResources](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getExportFontResources)property. By default,its value is**false**,and fonts are written into separate files.But ifthis option is set to**true**, fonts will be embedded into the document's CSS in Base64 encoding. The**ExportFontsAsBase64**property only affects HTML format and does not affect EPUB and MHTML.
+Aspose.Words provides an ability tospecify whether font resources should be embedded into HTML in Base64 encodings. To perform this, use the [ExportFontsAsBase64](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getExportFontsAsBase64) property– this is an extension of the [ExportFontResources](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/#getExportFontResources) property. By default,its value is**false**,and fonts are written into separate files.But ifthis option is set to**true**, fonts will be embedded into the document's CSS in Base64 encoding. The**ExportFontsAsBase64**property only affects HTML format and does not affect EPUB and MHTML.
 
 The following code example shows how to export Base64-encoded fonts to HTML:
 
@@ -87,7 +87,7 @@ The following code example shows how to export Base64-encoded fonts to HTML:
 
 ## Specify Save Options when Conversion to EPUB
 
-Aspose.Words allows converting a Word document into EPUB format using default or custom save options.You can specify a number of options by passing an instance of[HtmlSaveOptions](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/)to the[Save](https://reference.aspose.com/words/java/com.aspose.words/document/#save-java.lang.String-com.aspose.words.SaveOptions)method.
+Aspose.Words allows converting a Word document into EPUB format using default or custom save options.You can specify a number of options by passing an instance of[HtmlSaveOptions](https://reference.aspose.com/words/java/com.aspose.words/htmlsaveoptions/) to the [Save](https://reference.aspose.com/words/java/com.aspose.words/document/#save-java.lang.String-com.aspose.words.SaveOptions) method.
 
 The following code example shows how to converts a Word document to EPUB with specifying some custom save options:
 
@@ -95,7 +95,7 @@ The following code example shows how to converts a Word document to EPUB with sp
 
 {{% alert color="primary" %}}
 
-You can download the template file of this examplefrom[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples/src/main/resources/com/aspose/words/examples/loading_saving/ExportResourcesUsingHtmlSaveOptions/Document.EpubConversion.doc).
+You can download the template file of this example from[Aspose.Words GitHub](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples/src/main/resources/com/aspose/words/examples/loading_saving/ExportResourcesUsingHtmlSaveOptions/Document.EpubConversion.doc).
 
 {{% /alert %}}
 

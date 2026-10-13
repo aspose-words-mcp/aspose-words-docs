@@ -13,11 +13,11 @@ url: /nodejs-net/working-with-textboxes/
 timestamp: 2025-07-09-10-05-05
 ---
 
-In Aspose.Words, [TextBox](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/textbox/) class is used to specify how a text is displayed inside a shape. It provides a public property named as [parent](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/textbox/parent/)to get the parent shape for the text box to allow customer to find linked [Shape](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/shape/) from linked [TextBox](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/textbox/).
+In Aspose.Words, [TextBox](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/textbox/) class is used to specify how a text is displayed inside a shape. It provides a public property named as [parent](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/textbox/parent/) to get the parent shape for the text box to allow customer to find linked [Shape](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/shape/) from linked [TextBox](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/textbox/).
 
 ## Creating a Link
 
-[TextBox](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/textbox/) class provides [isValidLinkTarget](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/textbox/isValidLinkTarget/) method in order to check whether the[TextBox](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/textbox/) can be linked to the target Textbox.
+[TextBox](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/textbox/) class provides [isValidLinkTarget](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/textbox/isValidLinkTarget/) method in order to check whether the [TextBox](https://reference.aspose.com/words/nodejs-net/aspose.words.drawing/textbox/) can be linked to the target Textbox.
 
 The following code example shows how to check if the `TextBox` can be linked to the target Textbox:
 

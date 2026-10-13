@@ -41,10 +41,10 @@ Note that the number of pages in a document affects the conversion time.
 
 Converting from the DOC or DOCX document format into the PDF format in Aspose.Words is very easy and can be accomplished with just two lines of code that:
 
-1. Load your document into a[Document](https://reference.aspose.com/words/java/com.aspose.words/document/)object using one of its constructors by specifying the document name with its format extension.
-1. Invoke one of the[Document.Save](https://reference.aspose.com/words/java/com.aspose.words/document/#save-java.lang.String-int)methodson the**Document**object and specify the desired output format as PDF by entering afile name with the “.PDF” extension.
+1. Load your document into a[Document](https://reference.aspose.com/words/java/com.aspose.words/document/) object using one of its constructors by specifying the document name with its format extension.
+1. Invoke one of the [Document.Save](https://reference.aspose.com/words/java/com.aspose.words/document/#save-java.lang.String-int) methodson the**Document**object and specify the desired output format as PDF by entering afile name with the “.PDF” extension.
 
-The following code example shows how to convert a document from DOCX into PDF using the[Save](https://reference.aspose.com/words/java/com.aspose.words/document/#save-java.lang.String)method:
+The following code example shows how to convert a document from DOCX into PDF using the [Save](https://reference.aspose.com/words/java/com.aspose.words/document/#save-java.lang.String) method:
 
 {{< gist "aspose-words-gists" "b237846932dfcde42358bd0c887661a5" "docx-to-pdf.java" >}}
 
@@ -52,7 +52,7 @@ You can download the template file of this example from[Aspose.Words GitHub](htt
 
 {{% alert color="primary" %}}
 
-Sometimes it is necessary to specify additional options, which can affect the result of saving a document as a PDF. These options can be specified using the[PdfSaveOptions](https://reference.aspose.com/words/java/com.aspose.words/pdfsaveoptions/)class, containing properties that determine how the PDF output will be displayed.
+Sometimes it is necessary to specify additional options, which can affect the result of saving a document as a PDF. These options can be specified using the [PdfSaveOptions](https://reference.aspose.com/words/java/com.aspose.words/pdfsaveoptions/) class, containing properties that determine how the PDF output will be displayed.
 
 Note that with the same technique, you can convert any flow-layout format document to PDF format.
 
@@ -60,9 +60,9 @@ Note that with the same technique, you can convert any flow-layout format docume
 
 ### Convert to Different PDF Standards
 
-Aspose.Words provides the[PdfCompliance](https://reference.aspose.com/words/java/com.aspose.words/pdfcompliance/)enumeration to support the conversion of DOC orDOCX into various PDF format standards (such as PDF 1.7, PDF 1.5, etc.).
+Aspose.Words provides the [PdfCompliance](https://reference.aspose.com/words/java/com.aspose.words/pdfcompliance/) enumeration to support the conversion of DOC orDOCX into various PDF format standards (such as PDF 1.7, PDF 1.5, etc.).
 
-The following code example demonstrates how to convert a document to PDF 1.7 using[PdfSaveOptions](https://reference.aspose.com/words/java/com.aspose.words/pdfsaveoptions/)with compliance to PDF17:
+The following code example demonstrates how to convert a document to PDF 1.7 using[PdfSaveOptions](https://reference.aspose.com/words/java/com.aspose.words/pdfsaveoptions/) with compliance to PDF17:
 
 {{< gist "aspose-words-gists" "b237846932dfcde42358bd0c887661a5" "conversion-to-pdf17.java" >}}
 
@@ -94,6 +94,6 @@ Using the **OptimizeOutput** property may affect the accuracy of content display
 
 ## See Also
 
-- The article[Rendering](/words/java/rendering/)for more information on the fixed-page and flow-layout formats
-- The article[Converting to Fixed-page Format](/words/java/converting-to-fixed-page-format/#what-is-a-page-layout)for more information on the page layout
-- The article[Specify Rendering Options When Converting to PDF](/words/java/specify-rendering-options-when-converting-to-pdf/)for more information on using the `PdfSaveOptions` class
+- The article[Rendering](/words/java/rendering/) for more information on the fixed-page and flow-layout formats
+- The article[Converting to Fixed-page Format](/words/java/converting-to-fixed-page-format/#what-is-a-page-layout) for more information on the page layout
+- The article[Specify Rendering Options When Converting to PDF](/words/java/specify-rendering-options-when-converting-to-pdf/) for more information on using the `PdfSaveOptions` class

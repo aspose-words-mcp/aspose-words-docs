@@ -21,14 +21,14 @@ The Eclipse IDE can be extended with additional software components. Eclipse cal
 
 ## Aspose.Words for Java
 
-[Aspose.Words for Java](https://products.aspose.com/words/java/)is an advanced class library for Java that enables you to perform a great range of document processing tasks directly within your Javaapplications.
+[Aspose.Words for Java](https://products.aspose.com/words/java/) is an advanced class library for Java that enables you to perform a great range of document processing tasks directly within your Javaapplications.
 
-[Aspose.Words for Java](https://products.aspose.com/words/java/)supports processing word (DOC, DOCX, OOXML, RTF) HTML, OpenDocument, PDF, EPUB, XPS, and all image formats. With Aspose.Words you cangenerate, modify, and convert documents without using Microsoft Word.
+[Aspose.Words for Java](https://products.aspose.com/words/java/) supports processing word (DOC, DOCX, OOXML, RTF) HTML, OpenDocument, PDF, EPUB, XPS, and all image formats. With Aspose.Words you cangenerate, modify, and convert documents without using Microsoft Word.
 
 ## Aspose.Words Java for Eclipse (Maven)
 
-- Aspose.Words Java for Eclipse (Maven) is a Plugin for **Eclipse IDE** by **Aspose.** The Plugin intended for developers using Maven platform for Java developments and want to use [Aspose.Words for Java](https://products.aspose.com/words/java/) in their projects. The Plugin lets you create maven projects for using [Aspose.Words for Java API](https://products.aspose.com/words/java/)and also download [Code Examples](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples)of the API.
-- The plugin provides following features to work with [Aspose.Words for Java API](https://products.aspose.com/words/java/)within **Eclipse IDE** comfortably:<br>
+- Aspose.Words Java for Eclipse (Maven) is a Plugin for **Eclipse IDE** by **Aspose.** The Plugin intended for developers using Maven platform for Java developments and want to use [Aspose.Words for Java](https://products.aspose.com/words/java/) in their projects. The Plugin lets you create maven projects for using [Aspose.Words for Java API](https://products.aspose.com/words/java/) and also download [Code Examples](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples) of the API.
+- The plugin provides following features to work with [Aspose.Words for Java API](https://products.aspose.com/words/java/) within **Eclipse IDE** comfortably:<br>
 ![aspose-words-java-for-eclipse](aspose-words-java-for-eclipse.png)<br>
 **WIZARDS**:<br>
 The plugin contains two wizards
@@ -36,17 +36,17 @@ The plugin contains two wizards
 **Aspose.Words Maven Project (wizard)**
 
 - This New Project wizardlets developers to create**Maven** project for using [Aspose.Words for Java](https://products.aspose.com/words/java/) from **New -> Project -> Maven-> Aspose.Words Maven Project.**
-- The reference of[Aspose.Words for Java API](https://products.aspose.com/words/java/)maven dependency is automatically fetched from[Aspose Cloud Maven Repository](https://releases.aspose.com/words/java/)and gets added in the pom.xml.
-- The created project will always contain most recent available version **Maven** Dependency for[Aspose.Words for Java API](https://products.aspose.com/words/java/).
-- The wizard steps also presents with the option for downloading [Code Examples](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples)for using[Aspose.Words for Java API](https://products.aspose.com/words/java/).
+- The reference of [Aspose.Words for Java API](https://products.aspose.com/words/java/) maven dependency is automatically fetched from [Aspose Cloud Maven Repository](https://releases.aspose.com/words/java/) and gets added in the pom.xml.
+- The created project will always contain most recent available version **Maven** Dependency for [Aspose.Words for Java API](https://products.aspose.com/words/java/).
+- The wizard steps also presents with the option for downloading [Code Examples](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples) for using [Aspose.Words for Java API](https://products.aspose.com/words/java/).
 
 **Aspose.Words Code Example (wizard)**
 
-- This New File wizard lets you copy the downloaded [Code Examples](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples)into your project for using [Aspose.Words for Java](https://products.aspose.com/words/java/) from **New -> Other -> Java -> Aspose.Words Code Example.**
+- This New File wizard lets you copy the downloaded [Code Examples](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples) into your project for using [Aspose.Words for Java](https://products.aspose.com/words/java/) from **New -> Other -> Java -> Aspose.Words Code Example.**
 - Available samples are displayed in tree format from where the user can select them categorically.
 - All the examples within the selected category will get copied to the project's "**com.aspose.words.examples**" package folder along with the required resources within "**src/main/resources**" folder needed to run the examples.
-- [Code Examples](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples)of [Aspose.Words for Java API](https://products.aspose.com/words/java/)are meant for demonstrating the various of the API.
-- The wizard will also look for and updates for newly available[Code Examples](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples)from[Aspose.Words for Java examples repository.](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples)
+- [Code Examples](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples) of [Aspose.Words for Java API](https://products.aspose.com/words/java/) are meant for demonstrating the various of the API.
+- The wizard will also look for and updates for newly available [Code Examples](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples) from [Aspose.Words for Java examples repository.](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples)
 
 ## System Requirements and Supported Platforms
 
@@ -111,7 +111,7 @@ license.setLicense("Aspose.Words.Java.lic");
 - Or you want to report any issue you found in the plugin
 - Have any improvement suggestion or like to make any feature request
 
-Please follow[**GitHub Issues Tracker**](https://github.com/aspose-words/Aspose.Words-for-Java/issues)for logging any issues found in the plugin.
+Please follow [**GitHub Issues Tracker**](https://github.com/aspose-words/Aspose.Words-for-Java/issues) for logging any issues found in the plugin.
 
 ### Extend and Contribute
 

@@ -45,7 +45,7 @@ You can download the latest Aspose.Words at:
 
 ### Installing
 
-You can find the information on how to install Aspose.Words for Java on the[ "Installation"](/words/java/installation/) page.
+You can find the information on how to install Aspose.Words for Java on the [ "Installation"](/words/java/installation/) page.
 
 ## Get Started with Aspose.Words
 

@@ -75,7 +75,7 @@ If you have opted to download [Examples Source Codes](https://github.com/aspose-
 
 ### Using Aspose.Words Examples Wizard
 
-To create/copy [Examples Source Codes](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples)into the project using **Aspose.Words Examples Wizard**, you need to first download the examples by opting "Also Download Examples Source Code" on [Aspose.Words Maven Project Wizard.](/words/java/installing-and-using-aspose-words-java-for-eclipse-maven/#installingandusingaspose-wordsjavaforeclipse-maven-aspose-wordsmavenproject-wizard)
+To create/copy [Examples Source Codes](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples) into the project using **Aspose.Words Examples Wizard**, you need to first download the examples by opting "Also Download Examples Source Code" on [Aspose.Words Maven Project Wizard.](/words/java/installing-and-using-aspose-words-java-for-eclipse-maven/#installingandusingaspose-wordsjavaforeclipse-maven-aspose-wordsmavenproject-wizard)
 
 Then follow the steps below on IntelliJ IDEA:
 
@@ -85,7 +85,7 @@ Then follow the steps below on IntelliJ IDEA:
 ![aspose-words-java-for-intellij-idea-13](install-and-use-aspose-words-for-intellij-idea-maven-11.jpeg)
 1. Select **Aspose.Words Example** Option from Menu - As shown below:<br>
 ![aspose-words-java-for-intellij-idea-14](install-and-use-aspose-words-for-intellij-idea-maven-12.jpeg)<br>
-The wizard will refresh/check for the latest available[Aspose.Words for Java API Examples](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples)<br>
+The wizard will refresh/check for the latest available [Aspose.Words for Java API Examples](https://github.com/aspose-words/Aspose.Words-for-Java/tree/master/Examples)<br>
 ![aspose-words-java-for-intellij-idea-15](install-and-use-aspose-words-for-intellij-idea-maven-13.jpeg)
 1. **Aspose.Words Examples wizard** dialog will appear, where you can select any examples category to create/copy the examples into your project<br>
 Select any examples category and click **Create**:<br>

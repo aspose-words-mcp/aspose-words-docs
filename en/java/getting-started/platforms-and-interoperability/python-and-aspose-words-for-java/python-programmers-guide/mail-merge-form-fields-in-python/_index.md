@@ -24,7 +24,7 @@ timestamp: 2024-01-27-14-07-04
 doc = self.Document(self.dataDir + "Template.doc")
 \# Setup Mail Merge event handler to do the custom work.
 c = HandleMergeField()
-proxy = jpype.JProxy("com.aspose.words.IFieldMergingCallback", inst=c)
+proxy = jpype.JProxy("com.aspose.words. IfieldMergingCallback", inst=c)
 doc.getMailMerge().setFieldMergingCallback(proxy)
 \# This is the data for mail merge.
 fieldNames = ["RecipientName", "SenderName", "FaxNumber", "PhoneNumber",

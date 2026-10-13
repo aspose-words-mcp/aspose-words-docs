@@ -277,6 +277,6 @@ As a result, the "TestDoc.pdf" file should be placed in the "Shared Documents" f
 
 ## See Also
 
-- The article[Rendering](/words/net/rendering/)for more information on the fixed-page and flow-layout formats
-- The article[Converting to Fixed-page Format](/words/net/converting-to-fixed-page-format/#what-is-a-page-layout)for more information on the page layout
-- The article[Specify Rendering Options When Converting to PDF](/words/net/specify-rendering-options-when-converting-to-pdf/)for more information on using the [PdfSaveOptions](https://reference.aspose.com/words/net/aspose.words.saving/pdfsaveoptions/) class
+- The article [Rendering](/words/net/rendering/) for more information on the fixed-page and flow-layout formats
+- The article [Converting to Fixed-page Format](/words/net/converting-to-fixed-page-format/#what-is-a-page-layout) for more information on the page layout
+- The article [Specify Rendering Options When Converting to PDF](/words/net/specify-rendering-options-when-converting-to-pdf/) for more information on using the [PdfSaveOptions](https://reference.aspose.com/words/net/aspose.words.saving/pdfsaveoptions/) class

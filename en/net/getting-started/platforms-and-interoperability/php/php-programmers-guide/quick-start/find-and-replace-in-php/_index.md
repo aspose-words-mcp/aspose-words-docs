@@ -48,6 +48,6 @@ print "Text found and replaced successfully.\nFile saved at " . $dataDir . "Repl
 
 ## Download Running Code
 
-Download **Find and Replace Example (Aspose.Words)**fromany of the below mentioned social coding sites:
+Download **Find and Replace Example (Aspose.Words)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-words/Aspose.Words-for-.NET/blob/master/Plugins/Aspose_Words_NET_for_PHP/src/aspose/words/quickstart/FindAndReplace.php)

@@ -63,6 +63,6 @@ end
 
 ## Download Running Code
 
-Download **Compress Images (Aspose.Words)**fromany of the below mentioned social coding sites:
+Download **Compress Images (Aspose.Words)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-words/Aspose.Words-for-Java/blob/master/Plugins/Aspose_Words_Java_for_Ruby/lib/asposewordsjavaforruby/compressimages.rb)

@@ -25,7 +25,7 @@ This page explains how to work with shapes such as images, text boxes, and drawi
 
 This topic discusses how to work programmatically with shapes using Aspose.Words.
 
-The shapes in Aspose.Words representan object in the drawing layer, such as an AutoShape, textbox, freeform, OLE object, ActiveX control, or picture.A Word document can contain one or more different shapes. Shapes in Aspose.Words are represented by the[Shape](https://reference.aspose.com/words/java/com.aspose.words/shape/)class.
+The shapes in Aspose.Words representan object in the drawing layer, such as an AutoShape, textbox, freeform, OLE object, ActiveX control, or picture.A Word document can contain one or more different shapes. Shapes in Aspose.Words are represented by the [Shape](https://reference.aspose.com/words/java/com.aspose.words/shape/) class.
 
 ## Inserting Shapes Using Document Builder
 
@@ -93,7 +93,7 @@ The following code example shows how to do this:
 
 {{< gist "aspose-words-gists" "ae9835338c044aaa3ac54592b7062db8" "insert-horizontal-rule.java" >}}
 
-Aspose.Words API providesthe [HorizontalRuleFormat](https://reference.aspose.com/words/java/com.aspose.words/shape/#getHorizontalRuleFormat) property to access the properties of the horizontal rule shape. The[HorizontalRuleFormat](https://reference.aspose.com/words/java/com.aspose.words/horizontalruleformat/) class exposes basic properties like Height, Color, NoShade etc. for the formatting of a horizontal rule.
+Aspose.Words API providesthe [HorizontalRuleFormat](https://reference.aspose.com/words/java/com.aspose.words/shape/#getHorizontalRuleFormat) property to access the properties of the horizontal rule shape. the [HorizontalRuleFormat](https://reference.aspose.com/words/java/com.aspose.words/horizontalruleformat/) class exposes basic properties like Height, Color, NoShade etc. for the formatting of a horizontal rule.
 
 The following code example shows how to set**HorizontalRuleFormat**:
 
@@ -101,7 +101,7 @@ The following code example shows how to set**HorizontalRuleFormat**:
 
 ## Import Shapes with Math XML as Shapes into DOM
 
-You can use the [ConvertShapeToOfficeMath](https://reference.aspose.com/words/java/com.aspose.words/loadoptions/#setConvertShapeToOfficeMath-boolean) property to convert the shapes with EquationXML to Office Math objects.The default value of this property corresponds to Microsoft Word behavior, i.e. shapes with equation XML are not converted to Office math objects.
+You can use the [ConvertShapeToOfficeMath](https://reference.aspose.com/words/java/com.aspose.words/loadoptions/#setConvertShapeToOfficeMath-boolean) property to convert the shapes with EquationXML to Office Math objects. The default value of this property corresponds to Microsoft Word behavior, i.e. shapes with equation XML are not converted to Office math objects.
 
 The following code example shows how to convert shapes to Office Math objects:
 

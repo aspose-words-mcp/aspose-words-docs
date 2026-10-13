@@ -25,7 +25,7 @@ A hyperlink in Microsoft Word documents is the `HYPERLINK` field. In Aspose.Word
 
 ## Insert a Hyperlink
 
-Usethe [InsertHyperlink](https://reference.aspose.com/words/java/com.aspose.words/documentbuilder/#insertHyperlink-java.lang.String-java.lang.String-boolean)method to insert a hyperlink into the document. This method accepts three parameters:
+Usethe [InsertHyperlink](https://reference.aspose.com/words/java/com.aspose.words/documentbuilder/#insertHyperlink-java.lang.String-java.lang.String-boolean) method to insert a hyperlink into the document. This method accepts three parameters:
 
 1. Text of the link to be displayed in the document
 2. Link destination (URL or a name of a bookmark inside the document)

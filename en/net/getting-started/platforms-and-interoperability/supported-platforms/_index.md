@@ -23,7 +23,7 @@ This page explains supported platforms and frameworks.
 
 ## .NET Framework
 
-You can confidently use Aspose.Words for .NET to build any type of x86 or x64 (32-bit or 64-bit) .NET application including ASP.NET, Web Services and WinForms.Aspose.Words for .NET is easy to deploy because it consists of just a single assembly without any dependencies (except on the .NET Framework itself). `Aspose.Words.dll` is CLS compliant, written entirely in C# and contains only safe managed code.Aspose.Words for .NET supports all versions of the Microsoft .NET Framework from 2.0 to 4.8.A single MSI installer is provided that caters both for 32-bit and 64-bit environments. The installer contains the following items:
+You can confidently use Aspose.Words for .NET to build any type of x86 or x64 (32-bit or 64-bit) .NET application including ASP.NET, Web Services and WinForms. Aspose.Words for .NET is easy to deploy because it consists of just a single assembly without any dependencies (except on the .NET Framework itself). `Aspose.Words.dll` is CLS compliant, written entirely in C# and contains only safe managed code. Aspose.Words for .NET supports all versions of the Microsoft .NET Framework from 2.0 to 4.8.A single MSI installer is provided that caters both for 32-bit and 64-bit environments. The installer contains the following items:
 
 - `Aspose.Words.dll` assemblies for different .NET Framework versions
 - Demo projects for ASP.NET and WinForms in C# and `VB.NET`
@@ -55,7 +55,7 @@ Aspose.Words for .NET can be used as a `COM` object to develop applications in p
 
 ## Mono
 
-How about creating an application that generates DOC files, or maybe converts DOC and DOCX to PDF and much more, all on openSUSE or Ubuntu? Yes, you can run Aspose.Words for .NET with Mono.[Mono](https://www.mono-project.com/Main_Page/) is a project led by Novell (formerly by Ximian) to create an ECMA standard compliant .NET compatible set of tools, including among others a C# compiler and a Common Language Runtime. Mono can be run on Linux, FreeBSD, UNIX, Mac OS X, Solaris and Windows operating systems (for more info see [https://en.wikipedia.org/wiki/Mono(software)](https://en.wikipedia.org/wiki/Mono_\(software\)).Aspose.Words for .NET can be used with Mono 2.4 and higher.
+How about creating an application that generates DOC files, or maybe converts DOC and DOCX to PDF and much more, all on openSUSE or Ubuntu? Yes, you can run Aspose.Words for .NET with Mono.[Mono](https://www.mono-project.com/Main_Page/) is a project led by Novell (formerly by Ximian) to create an ECMA standard compliant .NET compatible set of tools, including among others a C# compiler and a Common Language Runtime. Mono can be run on Linux, FreeBSD, UNIX, Mac OS X, Solaris and Windows operating systems (for more info see [https://en.wikipedia.org/wiki/Mono(software)](https://en.wikipedia.org/wiki/Mono_\(software\)). Aspose.Words for .NET can be used with Mono 2.4 and higher.
 
 **Developing an application with Aspose.Words on Mono** 
 
@@ -67,7 +67,7 @@ The Windows Azure Platform (Azure) is an internet-scale cloud services platform 
 
 **Why Aspose.Words in Azure?**
 
-Azure provides services to run applications and store data. A great number of Internet-connected web and corporate applications will be built to run in Azure. These applications will require capabilities to generate, transform and store various types of documents. The documents could be contracts, reports, policies, resumes, invoices and so on.Aspose.Words for .NET is a class library that can be used on a server for generating, converting and processing documents in a variety of formats. It makes a perfect sense to use Aspose.Words for .NET to solve document programming tasks when you develop an application to run in Windows Azure.Here are just some ideas how you can use Aspose.Words for .NET in Azure:
+Azure provides services to run applications and store data. A great number of Internet-connected web and corporate applications will be built to run in Azure. These applications will require capabilities to generate, transform and store various types of documents. The documents could be contracts, reports, policies, resumes, invoices and so on. Aspose.Words for .NET is a class library that can be used on a server for generating, converting and processing documents in a variety of formats. It makes a perfect sense to use Aspose.Words for .NET to solve document programming tasks when you develop an application to run in Windows Azure.Here are just some ideas how you can use Aspose.Words for .NET in Azure:
 
 - Convert documents uploaded by users in various formats into a standard, for example DOCX format and store in the Windows Azure Storage.
 - Load a document template from the Windows Azure Storage and populate it with data from SQL Azure to generate a report, contract or another document.

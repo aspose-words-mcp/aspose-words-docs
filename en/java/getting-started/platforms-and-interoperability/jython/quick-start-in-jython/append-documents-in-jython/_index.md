@@ -37,6 +37,6 @@ if __name__ == '__main__':
 
 ## Download Running Code
 
-Download **Append Documents (Aspose.Words)**fromany of the below mentioned social coding sites:
+Download **Append Documents (Aspose.Words)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-words/Aspose.Words-for-Java/releases/tag/Aspose.Words_Java_for_Jython-v1.0.0)

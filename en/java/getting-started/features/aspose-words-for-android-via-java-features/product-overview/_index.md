@@ -34,7 +34,7 @@ Aspose.Words for Android via Javafeatures can be divided into four main areas:
 
 ### Platform Independence
 
-Aspose.Words for Android via Javacan be used wherever the Android Runtime environment is installed.Aspose.Words for Androidvia Java is available for Java SE 5, 6 and 7 and will run on Android systems running Android OS 2.0 or greater. This means almost all Android developers can use Aspose.Words for Androidvia Java to enrich their applications.
+Aspose.Words for Android via Javacan be used wherever the Android Runtime environment is installed. Aspose.Words for Androidvia Java is available for Java SE 5, 6 and 7 and will run on Android systems running Android OS 2.0 or greater. This means almost all Android developers can use Aspose.Words for Androidvia Java to enrich their applications.
 
 ### Performance and Scalability
 

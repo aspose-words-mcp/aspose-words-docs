@@ -120,7 +120,7 @@ The following code example shows how to set the style of content control:
 
 ## Working with Repeating Section Content Control
 
-The repeating section content control allows repeating the content contained within it. Using Aspose.Words, thestructured document tag nodes of the repeating section and repeating section item types can be created and for this purpose,[SdtType enumeration type](https://reference.aspose.com/words/net/aspose.words.markup/sdttype/) provides**RepeatingSectionItem** property.
+The repeating section content control allows repeating the content contained within it. Using Aspose.Words, thestructured document tag nodes of the repeating section and repeating section item types can be created and for this purpose, [SdtType enumeration type](https://reference.aspose.com/words/net/aspose.words.markup/sdttype/) provides**RepeatingSectionItem** property.
 
 The following code example showshow to bind a repeating section content control to a table:
 

@@ -23,7 +23,7 @@ In this article, we will look at each way in more detail and analyze how to inse
 
 ## Inserting Fields into a Document using DocumentBuilder
 
-In Aspose.Words the [insertField](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/insertField/) method is used to insert new fields into a document. The first parameter accepts the full field code of the field to be inserted. The second parameter is optional and allows the field result of the field to be set manually. If this is not supplied then the field is updated automatically. You can pass null or empty to this parameter to insert a field with an empty field value.If you are not sure about the particular field code syntax, create the field in Microsoft Word first and switch to see its field code.
+In Aspose.Words the [insertField](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/insertField/) method is used to insert new fields into a document. The first parameter accepts the full field code of the field to be inserted. The second parameter is optional and allows the field result of the field to be set manually. If this is not supplied then the field is updated automatically. You can pass null or empty to this parameter to insert a field with an empty field value. If you are not sure about the particular field code syntax, create the field in Microsoft Word first and switch to see its field code.
 
 {{% alert color="primary" %}}
 

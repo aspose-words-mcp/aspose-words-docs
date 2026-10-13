@@ -43,7 +43,7 @@ The following example shows how to use Aspose.Words in Azure Functionwith the de
 
 ## Creating an Azure Functions Application
 
-You need touse Visual Studio to create an Azure Functions Application.The created application already has a simple “Hello World” function code.
+You need touse Visual Studio to create an Azure Functions Application. The created application already has a simple “Hello World” function code.
 
 In this example, you create a simple “Hello World” document and return it to the user's browser as a PDF file. To accomplish this:
 
@@ -105,7 +105,7 @@ namespace AsposeWordsAzureTestApp
 
 ## See Also
 
-- Active[Microsoft Azure subscription](https://docs.microsoft.com/en-us/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing)
-- Create a[free account](https://azure.microsoft.com/en-us/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio)in Microsoft Azure
+- Active [Microsoft Azure subscription](https://docs.microsoft.com/en-us/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing)
+- Create a [free account](https://azure.microsoft.com/en-us/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio)in Microsoft Azure
 - Install [the latest Azure Functions tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs#check-your-tools-version) to create the project in Visual Studio 2017
 - Use Visual Studio to [create an Azure Functions Application](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio)

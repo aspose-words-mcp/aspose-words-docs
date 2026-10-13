@@ -23,7 +23,7 @@ Often you will work with documents containing a table of contents (TOC). Using A
 
 ## Insert a Table of Contents Programmatically
 
-You can insert a `TOC` (table of contents) field into the document at the current position by calling the[DocumentBuilder. insertTableOfContents](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/inserttableofcontents/)method.
+You can insert a `TOC` (table of contents) field into the document at the current position by calling the [DocumentBuilder. insertTableOfContents](https://reference.aspose.com/words/nodejs-net/aspose.words/documentbuilder/inserttableofcontents/)method.
 
 A table of contents in a Word document can be built in a number of ways and formatted using a variety of options. The field switches that you pass to the method control the way the table is built and displayed in your document.
 
@@ -43,7 +43,7 @@ Without the methods used in the example, when you open the output document, you 
 
 ## Update the Table of Contents
 
-Aspose.Words allows you to completely update a `TOC` with only a few lines of code. This can be done to populate a newly inserted `TOC` or to update an existing `TOC` after changes to the document have been made.The following two methods must be used in order to update the `TOC` fields in the document:
+Aspose.Words allows you to completely update a `TOC` with only a few lines of code. This can be done to populate a newly inserted `TOC` or to update an existing `TOC` after changes to the document have been made. The following two methods must be used in order to update the `TOC` fields in the document:
 
 1. [Document.updateFields](https://reference.aspose.com/words/nodejs-net/aspose.words/document/updatefields/)
 1. [Document.updatePageLayout](https://reference.aspose.com/words/nodejs-net/aspose.words/document/updatepagelayout/)
@@ -54,7 +54,7 @@ The following code example shows how to completely rebuild `TOC` fields in the d
 
 {{< gist "aspose-words-gists" "e0ccef8441be6a8e2de5810acdefd25a" "update-fields.js" >}}
 
-The first call to [Document.updateFields](https://reference.aspose.com/words/nodejs-net/aspose.words/document/updatefields/) will build the `TOC`, all text entries are populated and the `TOC` appears almost complete. The only thing missing is the page numbers which for now are displayed with “?”.The second call to [Document.updatePageLayout](https://reference.aspose.com/words/nodejs-net/aspose.words/document/updatepagelayout/) will build the layout of the document in memory.This needs to be done to gather the page numbers of the entries. The correct page numbers calculated from this call are then inserted into the TOC.
+The first call to [Document.updateFields](https://reference.aspose.com/words/nodejs-net/aspose.words/document/updatefields/) will build the `TOC`, all text entries are populated and the `TOC` appears almost complete. The only thing missing is the page numbers which for now are displayed with “?”. The second call to [Document.updatePageLayout](https://reference.aspose.com/words/nodejs-net/aspose.words/document/updatepagelayout/) will build the layout of the document in memory.This needs to be done to gather the page numbers of the entries. The correct page numbers calculated from this call are then inserted into the TOC.
 
 ## Use Switches to Control the Behavior of the Table of Contents.
 
@@ -63,7 +63,7 @@ As with any other field, the `TOC` field can accept switches defined within the 
 ![working-with-table-of-contents-aspose-words-net](working-with-table-of-contents-1.png)
 
 
-By default these switches above are included when inserting a default `TOC` in the document. A `TOC` with no switches will include content from the built-in heading styles (as if the &#92;O switch is set).The available `TOC` switches that are supported by Aspose.Words are listed below and their uses are described in detail. They can be divided into separate sections based off their type. The switches in the first section define what content to include in the `TOC` and the switches in the second section control the appearance of the TOC.If a switch is not listed here then it is currently unsupported. All switches will be supported in future versions. We are adding further support with every release.
+By default these switches above are included when inserting a default `TOC` in the document. A `TOC` with no switches will include content from the built-in heading styles (as if the &#92;O switch is set). The available `TOC` switches that are supported by Aspose.Words are listed below and their uses are described in detail. They can be divided into separate sections based off their type. The switches in the first section define what content to include in the `TOC` and the switches in the second section control the appearance of the TOC. If a switch is not listed here then it is currently unsupported. All switches will be supported in future versions. We are adding further support with every release.
 
 ### Entry Marking Switches
 
@@ -109,7 +109,7 @@ Using the [Style](https://reference.aspose.com/words/nodejs-net/aspose.words/sty
 
 ## Remove a Table of Contents from the Document
 
-A table of contents can be removed from the document by removing all nodes found between the [FieldStart](https://reference.aspose.com/words/nodejs-net/aspose.words.fields/fieldstart/) and [FieldEnd](https://reference.aspose.com/words/nodejs-net/aspose.words.fields/fieldend/) node of the `TOC` field.The code below demonstrates this. The removal of the `TOC` field is simpler than a normal field as we do not keep track of nested fields. Instead we check the [FieldEnd](https://reference.aspose.com/words/nodejs-net/aspose.words.fields/fieldend/) node is of type [FieldType.FieldToc](https://reference.aspose.com/words/nodejs-net/aspose.words.fields/fieldtype/) which means we have encountered the end of the current TOC. This technique can be used in this case without worrying about any nested fields as we can assume that any properly formed document will have no fully nested `TOC` field inside another `TOC` field.
+A table of contents can be removed from the document by removing all nodes found between the [FieldStart](https://reference.aspose.com/words/nodejs-net/aspose.words.fields/fieldstart/) and [FieldEnd](https://reference.aspose.com/words/nodejs-net/aspose.words.fields/fieldend/) node of the `TOC` field. The code below demonstrates this. The removal of the `TOC` field is simpler than a normal field as we do not keep track of nested fields. Instead we check the [FieldEnd](https://reference.aspose.com/words/nodejs-net/aspose.words.fields/fieldend/) node is of type [FieldType.FieldToc](https://reference.aspose.com/words/nodejs-net/aspose.words.fields/fieldtype/) which means we have encountered the end of the current TOC. This technique can be used in this case without worrying about any nested fields as we can assume that any properly formed document will have no fully nested `TOC` field inside another `TOC` field.
 
 Firstly the [FieldStart](https://reference.aspose.com/words/nodejs-net/aspose.words.fields/fieldstart/) nodes of each `TOC` are collected and stored. The specified `TOC` is then enumerated so all nodes within the field are visited and stored. The nodes are then removed from the document. Below code sample demonstrates how to remove a specified `TOC` from a document.
 

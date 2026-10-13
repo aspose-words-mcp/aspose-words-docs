@@ -24,7 +24,7 @@ This page demonstrates how to use Aspose.Words for Python to control document di
 
 {{% /alert %}}
 
-Sometimes you may need to change the appearance of a document, for example, set language preferences or the number of lines per page.Aspose.Words provides the ability to control how the document will be displayed, as well as some additional options. This article describes such possibilities.
+Sometimes you may need to change the appearance of a document, for example, set language preferences or the number of lines per page. Aspose.Words provides the ability to control how the document will be displayed, as well as some additional options. This article describes such possibilities.
 
 ## Set Document Display Options
 

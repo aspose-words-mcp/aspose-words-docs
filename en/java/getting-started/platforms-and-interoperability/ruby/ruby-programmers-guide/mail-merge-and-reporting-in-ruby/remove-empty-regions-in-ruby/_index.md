@@ -47,6 +47,6 @@ end
 
 ## Download Running Code
 
-Download **Remove Empty Regions (Aspose.Words)**fromany of the below mentioned social coding sites:
+Download **Remove Empty Regions (Aspose.Words)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-words/Aspose.Words-for-Java/blob/master/Plugins/Aspose_Words_Java_for_Ruby/lib/asposewordsjavaforruby/mergefield.rb)

@@ -21,16 +21,16 @@ This page explains how to work with VBA macros, including enabling and modifying
 
 {{% /alert %}}
 
-Visual Basic for Applications (VBA) for Microsoft Word is a simple but powerful programming language that can be used to extend the functionality.Aspose.Words API provides three classesto get access to the VBA project source code:
+Visual Basic for Applications (VBA) for Microsoft Word is a simple but powerful programming language that can be used to extend the functionality. Aspose.Words API provides three classesto get access to the VBA project source code:
 
-- The[VBAProject](https://reference.aspose.com/words/java/com.aspose.words/vbaproject/)class provides access to VBA project information
-- The[VBAModulesCollection](https://reference.aspose.com/words/java/com.aspose.words/vbamodulecollection/)class returns the collection of VBA project modules
-- The[VbaModule](https://reference.aspose.com/words/java/com.aspose.words/vbamodule/)class provides access to the VBA project module
-- The[VbaModuleType](https://reference.aspose.com/words/java/com.aspose.words/vbamoduletype/) enumeration defines thetypes of a model in a VBA project. The module can be a procedural module, document module, class module, or designer module
+- The [VBAProject](https://reference.aspose.com/words/java/com.aspose.words/vbaproject/) class provides access to VBA project information
+- The [VBAModulesCollection](https://reference.aspose.com/words/java/com.aspose.words/vbamodulecollection/) class returns the collection of VBA project modules
+- The [VbaModule](https://reference.aspose.com/words/java/com.aspose.words/vbamodule/) class provides access to the VBA project module
+- The [VbaModuleType](https://reference.aspose.com/words/java/com.aspose.words/vbamoduletype/) enumeration defines thetypes of a model in a VBA project. The module can be a procedural module, document module, class module, or designer module
 
 ## Create a VBA Project
 
-Aspose.Words API provides the[VbaProject](https://reference.aspose.com/words/java/com.aspose.words/document/#getVbaProject)property to get or set VbaProject in the document.
+Aspose.Words API provides the [VbaProject](https://reference.aspose.com/words/java/com.aspose.words/document/#getVbaProject) property to get or set VbaProject in the document.
 
 The following code example demonstrates how to create a VBA project and VBA Module along with basic properties e.g. Name and Type:
 
@@ -56,7 +56,7 @@ The following code example shows how to modify VBA Macros using the [SourceCode]
 
 With Aspose.Words it is also possible to clone VBA projects.
 
-The following code example shows how to clone the VBA Project using the[Clone](https://reference.aspose.com/words/java/com.aspose.words/vbaproject/#deepClone)property which creates a copy of the existing project:
+The following code example shows how to clone the VBA Project using the [Clone](https://reference.aspose.com/words/java/com.aspose.words/vbaproject/#deepClone) property which creates a copy of the existing project:
 
 {{< gist "aspose-words-gists" "b4005e4d5f26b32e4d1b017d1b98aaa0" "clone-vba-project.java" >}}
 
@@ -64,7 +64,7 @@ The following code example shows how to clone the VBA Project using the[Clone](h
 
 You can also clone VBA modules if needed.
 
-The following code example shows how to clone the VBA Module using the[Clone](https://reference.aspose.com/words/java/com.aspose.words/vbaproject/#deepClone)property which creates a copy of the existing project:
+The following code example shows how to clone the VBA Module using the [Clone](https://reference.aspose.com/words/java/com.aspose.words/vbaproject/#deepClone) property which creates a copy of the existing project:
 
 {{< gist "aspose-words-gists" "b4005e4d5f26b32e4d1b017d1b98aaa0" "clone-vba-module.java" >}}
 

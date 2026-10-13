@@ -21,7 +21,7 @@ Federal Information Processing Standards (FIPS) are a set of openly published st
 
 Aspose.Words for Java and Aspose.Words for Android use the Bouncy Castle FIPS JAR for encryption, decryption and signing documents. The JAR has been designed and implemented to meet the FIPS 140-2, Level 1 requirements.
 
-FIPS 140-2 is a U.S. government computer security standard used to approve cryptographic modules.This standardspecifies the security requirementsthat will be satisfied by a cryptographic module and provides high levels of security intended to cover a wide range of potential applications and environments.For more details on FIPS 140-2, see the[NIST publication](https://www.nist.gov/publications/security-requirements-cryptographic-modules-includes-change-notices-1232002?pub_id=902003).
+FIPS 140-2 is a U.S. government computer security standard used to approve cryptographic modules.This standardspecifies the security requirementsthat will be satisfied by a cryptographic module and provides high levels of security intended to cover a wide range of potential applications and environments. For more details on FIPS 140-2, see the [NIST publication](https://www.nist.gov/publications/security-requirements-cryptographic-modules-includes-change-notices-1232002?pub_id=902003).
 
 Aspose.Words for .NET uses the general Bouncy Castle version without support for FIPS.
 
